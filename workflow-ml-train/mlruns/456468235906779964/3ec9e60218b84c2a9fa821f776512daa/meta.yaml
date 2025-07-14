@@ -1,0 +1,15 @@
+artifact_uri: /mlruns/456468235906779964/3ec9e60218b84c2a9fa821f776512daa/artifacts
+end_time: 1751776934611
+entry_point_name: ''
+experiment_id: '456468235906779964'
+lifecycle_stage: active
+run_id: 3ec9e60218b84c2a9fa821f776512daa
+run_name: audio_only_ensemble_training_pipeline
+run_uuid: 3ec9e60218b84c2a9fa821f776512daa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751776852570
+status: 4
+tags: []
+user_id: root

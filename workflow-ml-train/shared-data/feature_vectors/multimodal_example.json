@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "created_at": "2024-12-28T10:30:00Z",
+    "version": "1.0",
+    "description": "Example multimodal feature vector for balanced audio and content analysis",
+    "total_features": 8
+  },
+  "strategy": "multimodal",
+  "description": "Balanced multimodal feature set optimized for song popularity prediction",
+  "selected_features_by_service": {
+    "audio": [
+      "audio_energy",
+      "audio_valence", 
+      "audio_danceability",
+      "audio_tempo",
+      "audio_primary_genre"
+    ],
+    "content": [
+      "content_sentiment_polarity",
+      "content_emotion_love",
+      "content_word_count"
+    ]
+  },
+  "selected_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability", 
+    "audio_tempo",
+    "audio_primary_genre",
+    "content_sentiment_polarity",
+    "content_emotion_love",
+    "content_word_count"
+  ],
+  "estimated_accuracy": "0.80-0.90",
+  "training_time": "5-7 minutes",
+  "use_cases": [
+    "General song popularity prediction",
+    "Balanced audio + lyrical analysis",
+    "Moderate training time with good accuracy"
+  ],
+  "notes": "This feature vector balances audio characteristics with content sentiment and themes for comprehensive song analysis."
+} 

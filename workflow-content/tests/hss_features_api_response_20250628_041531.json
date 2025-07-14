@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "features": {
+    "sentiment_polarity": 0.17407407407407408,
+    "sentiment_subjectivity": 0.3189814814814815,
+    "avg_sentence_length": 88.0,
+    "avg_word_length": 4.284090909090909,
+    "lexical_diversity": 0.8295454545454546,
+    "word_count": 88,
+    "unique_words": 41,
+    "vocabulary_density": 0.4659090909090909,
+    "readability": 0.088809090909091,
+    "theme_diversity": 3,
+    "motif_count": 0,
+    "narrative_complexity": 0
+  },
+  "analysis_id": "9b1ca590-de75-4d98-b4d7-ff87c5f554c4"
+}

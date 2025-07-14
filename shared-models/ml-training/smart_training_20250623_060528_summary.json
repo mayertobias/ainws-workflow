@@ -1,0 +1,9 @@
+{
+  "training_id": "smart_training_20250623_060528",
+  "status": "failed",
+  "strategy": "smart_ensemble",
+  "models_trained": {},
+  "performance_metrics": {},
+  "timestamp": "2025-06-23T06:05:28.050316",
+  "error": "[Errno 2] No such file or directory: '/app/data/training_data/filtered/sample_dataset.csv'"
+}

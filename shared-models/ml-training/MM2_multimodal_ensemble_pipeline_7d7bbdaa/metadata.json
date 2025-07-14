@@ -1,0 +1,1122 @@
+{
+  "model_id": "MM2_multimodal_ensemble_pipeline_7d7bbdaa",
+  "model_type": "Ensemble",
+  "task_type": "regression",
+  "ensemble_models": [
+    "RandomForestRegressor",
+    "XGBRegressor"
+  ],
+  "strategy": "multimodal",
+  "pipeline_id": "pipeline_7d7bbdaa",
+  "experiment_name": "MM2",
+  "mse": 0.004607975569280452,
+  "rmse": 0.06788207104442566,
+  "mae": 0.05690025693319113,
+  "r2_score": 0.9459325259540452,
+  "mape": 76873996.91505861,
+  "n_features": 27,
+  "selected_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_tempo",
+    "audio_acousticness",
+    "audio_instrumentalness",
+    "audio_loudness",
+    "audio_key",
+    "audio_brightness",
+    "audio_mood_happy",
+    "audio_mood_sad",
+    "audio_primary_genre",
+    "lyrics_sentiment_polarity",
+    "lyrics_sentiment_subjectivity",
+    "lyrics_word_count",
+    "lyrics_unique_words",
+    "lyrics_vocabulary_density",
+    "lyrics_sentence_count",
+    "lyrics_avg_words_per_sentence",
+    "lyrics_avg_sentence_length",
+    "lyrics_avg_word_length",
+    "lyrics_lexical_diversity",
+    "lyrics_verse_count",
+    "lyrics_repetition_score",
+    "rhythmic_appeal_index",
+    "emotional_impact_score",
+    "commercial_viability_index"
+  ],
+  "feature_importance": {
+    "audio_energy": 0.05031095348189284,
+    "audio_valence": 0.04946848516931172,
+    "audio_danceability": 0.04476732005137485,
+    "audio_tempo": 0.05063537688719844,
+    "audio_acousticness": 0.03745583967817588,
+    "audio_instrumentalness": 0.04027729197133096,
+    "audio_loudness": 0.05363652483311718,
+    "audio_key": 0.025892548939190577,
+    "audio_brightness": 0.053990994641021965,
+    "audio_mood_happy": 0.005867969810630836,
+    "audio_mood_sad": 0.015442607177883849,
+    "audio_primary_genre": 0.023888244170471282,
+    "lyrics_sentiment_polarity": 0.0449539320274922,
+    "lyrics_sentiment_subjectivity": 0.026147195485835734,
+    "lyrics_word_count": 0.06206999985822021,
+    "lyrics_unique_words": 0.034441181217897576,
+    "lyrics_vocabulary_density": 0.03415971254988664,
+    "lyrics_sentence_count": 0.01841701422582578,
+    "lyrics_avg_words_per_sentence": 0.015485978532118782,
+    "lyrics_avg_sentence_length": 0.02029673656114944,
+    "lyrics_avg_word_length": 0.026383547218263848,
+    "lyrics_lexical_diversity": 0.0338254995720359,
+    "lyrics_verse_count": 4.268211089957374e-05,
+    "lyrics_repetition_score": 0.0,
+    "rhythmic_appeal_index": 0.05957844533419388,
+    "emotional_impact_score": 0.08730401318506378,
+    "commercial_viability_index": 0.08525990530951619
+  },
+  "shap_feature_importance": {
+    "ensemble": {
+      "audio_energy": 0.005496599103835801,
+      "audio_valence": 0.00604711046096339,
+      "audio_danceability": 0.00952258822792029,
+      "audio_tempo": 0.010684996223161526,
+      "audio_acousticness": 0.019224496128701175,
+      "audio_instrumentalness": 0.004181428043596197,
+      "audio_loudness": 0.011408403565645549,
+      "audio_key": 0.009359497118593803,
+      "audio_brightness": 0.006505241086929653,
+      "audio_mood_happy": 0.0001532043824065842,
+      "audio_mood_sad": 0.000625035501755929,
+      "audio_primary_genre": 0.025250114546233444,
+      "lyrics_sentiment_polarity": 0.003840144176749377,
+      "lyrics_sentiment_subjectivity": 0.0029280932391206175,
+      "lyrics_word_count": 0.11358482511323466,
+      "lyrics_unique_words": 0.021030146665582575,
+      "lyrics_vocabulary_density": 0.0037940133056624226,
+      "lyrics_sentence_count": 0.019340708355277143,
+      "lyrics_avg_words_per_sentence": 0.009198186678907714,
+      "lyrics_avg_sentence_length": 0.005821875341290266,
+      "lyrics_avg_word_length": 0.017900912283920652,
+      "lyrics_lexical_diversity": 0.001543176192980515,
+      "lyrics_verse_count": 8.225854702818534e-07,
+      "lyrics_repetition_score": 0.0,
+      "rhythmic_appeal_index": 0.00271802870843446,
+      "emotional_impact_score": 0.003470104813679144,
+      "commercial_viability_index": 0.014042667573819773
+    },
+    "random_forest": {
+      "audio_energy": 0.00810613847647911,
+      "audio_valence": 0.0083323964004889,
+      "audio_danceability": 0.0031003162333967573,
+      "audio_tempo": 0.008415562387724543,
+      "audio_acousticness": 0.008767526459344732,
+      "audio_instrumentalness": 0.0021341498425609157,
+      "audio_loudness": 0.015626866813443947,
+      "audio_key": 0.008344934915646016,
+      "audio_brightness": 0.0025109056164772663,
+      "audio_mood_happy": 0.0001541810789151549,
+      "audio_mood_sad": 0.0008206093488656283,
+      "audio_primary_genre": 0.03343028775245256,
+      "lyrics_sentiment_polarity": 0.005226894769099471,
+      "lyrics_sentiment_subjectivity": 0.0016637302429499496,
+      "lyrics_word_count": 0.07915981399976747,
+      "lyrics_unique_words": 0.016172509481429818,
+      "lyrics_vocabulary_density": 0.005528657594484996,
+      "lyrics_sentence_count": 0.02605377566704707,
+      "lyrics_avg_words_per_sentence": 0.002541256878310133,
+      "lyrics_avg_sentence_length": 0.005472713902292553,
+      "lyrics_avg_word_length": 0.01744844889112213,
+      "lyrics_lexical_diversity": 0.002033349924194122,
+      "lyrics_verse_count": 1.6451709405637068e-06,
+      "lyrics_repetition_score": 0.0,
+      "rhythmic_appeal_index": 0.0012943359272785553,
+      "emotional_impact_score": 0.002973341369986995,
+      "commercial_viability_index": 0.01197017188939098
+    },
+    "xgboost": {
+      "audio_energy": "0.0033668522",
+      "audio_valence": "0.0066313865",
+      "audio_danceability": "0.015997304",
+      "audio_tempo": "0.01295443",
+      "audio_acousticness": "0.029681468",
+      "audio_instrumentalness": "0.00960267",
+      "audio_loudness": "0.0073127807",
+      "audio_key": "0.011685814",
+      "audio_brightness": "0.01468719",
+      "audio_mood_happy": "0.00036420918",
+      "audio_mood_sad": "0.00084393134",
+      "audio_primary_genre": "0.017069943",
+      "lyrics_sentiment_polarity": "0.0034495955",
+      "lyrics_sentiment_subjectivity": "0.0045016436",
+      "lyrics_word_count": "0.14800984",
+      "lyrics_unique_words": "0.025974613",
+      "lyrics_vocabulary_density": "0.0033735759",
+      "lyrics_sentence_count": "0.012725984",
+      "lyrics_avg_words_per_sentence": "0.0158884",
+      "lyrics_avg_sentence_length": "0.006171035",
+      "lyrics_avg_word_length": "0.018360468",
+      "lyrics_lexical_diversity": "0.0028069457",
+      "lyrics_verse_count": "0.0",
+      "lyrics_repetition_score": "0.0",
+      "rhythmic_appeal_index": "0.005108722",
+      "emotional_impact_score": "0.009581562",
+      "commercial_viability_index": "0.01670403"
+    },
+    "categorical_analysis": {
+      "audio_features": {
+        "total_importance": 0,
+        "percentage_contribution": 0.0,
+        "feature_count": 0,
+        "top_features": {}
+      },
+      "lyrics_features": {
+        "total_importance": 0.19898290393819626,
+        "percentage_contribution": 100.0,
+        "feature_count": 12,
+        "top_features": {
+          "lyrics_word_count": 0.11358482511323466,
+          "lyrics_unique_words": 0.021030146665582575,
+          "lyrics_sentence_count": 0.019340708355277143,
+          "lyrics_avg_word_length": 0.017900912283920652,
+          "lyrics_avg_words_per_sentence": 0.009198186678907714
+        }
+      }
+    },
+    "business_insights": {
+      "dominant_modality": "lyrics",
+      "dominance_strength": 1.0,
+      "audio_contribution": 0.0,
+      "lyrics_contribution": 100.0,
+      "prediction_driver": "lyrics_driven_hits",
+      "top_audio_predictors": [],
+      "top_lyrics_predictors": [
+        "lyrics_word_count",
+        "lyrics_unique_words",
+        "lyrics_sentence_count",
+        "lyrics_avg_word_length",
+        "lyrics_avg_words_per_sentence"
+      ],
+      "model_confidence_factors": {
+        "feature_coverage": 28,
+        "sample_reliability": 100,
+        "ensemble_agreement": "moderate"
+      }
+    },
+    "analysis_meta": {
+      "sample_size": 100,
+      "total_features": 28,
+      "models_analyzed": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "combination_method": "average",
+      "feature_categories": {
+        "audio": 0,
+        "lyrics": 12
+      }
+    }
+  },
+  "music_theory_analysis": {
+    "core_musical_features": {
+      "rhythmic_foundation": [
+        "audio_tempo",
+        "audio_danceability"
+      ],
+      "emotional_core": [
+        "audio_valence",
+        "audio_energy",
+        "lyrics_sentiment_positive",
+        "lyrics_sentiment_negative"
+      ],
+      "sonic_character": [
+        "audio_loudness",
+        "audio_brightness",
+        "audio_warmth",
+        "audio_complexity"
+      ],
+      "textural_elements": [
+        "audio_acousticness",
+        "audio_instrumentalness",
+        "audio_speechiness"
+      ],
+      "narrative_depth": [
+        "lyrics_complexity_score",
+        "lyrics_narrative_complexity",
+        "lyrics_unique_words"
+      ],
+      "genre_context": [
+        "audio_primary_genre",
+        "audio_top_genre_1_prob"
+      ]
+    },
+    "feature_weights": {
+      "audio_energy": 2.5,
+      "audio_valence": 2.5,
+      "audio_danceability": 2.5,
+      "audio_tempo": 2.5,
+      "audio_acousticness": 1.5,
+      "audio_instrumentalness": 1.5,
+      "audio_loudness": 1.5,
+      "audio_key": 1.0,
+      "audio_brightness": 1.5,
+      "audio_mood_happy": 1.0,
+      "audio_mood_sad": 1.0,
+      "audio_primary_genre": 0.6,
+      "lyrics_sentiment_polarity": 1.0,
+      "lyrics_sentiment_subjectivity": 1.0,
+      "lyrics_word_count": 1.5,
+      "lyrics_unique_words": 1.5,
+      "lyrics_vocabulary_density": 1.0,
+      "lyrics_sentence_count": 1.0,
+      "lyrics_avg_words_per_sentence": 1.0,
+      "lyrics_avg_sentence_length": 1.0,
+      "lyrics_avg_word_length": 1.0,
+      "lyrics_lexical_diversity": 1.5,
+      "lyrics_verse_count": 1.0,
+      "lyrics_repetition_score": 1.0,
+      "rhythmic_appeal_index": 2.5,
+      "emotional_impact_score": 2.5,
+      "commercial_viability_index": 2.5
+    },
+    "alignment_score": 0.42732449941855194,
+    "engineered_features": [
+      "lyrics_repetition_score",
+      "rhythmic_appeal_index",
+      "emotional_impact_score",
+      "commercial_viability_index"
+    ],
+    "core_features_ratio": 0.25
+  },
+  "pca_analysis": {
+    "total_features": 28,
+    "components_for_80_variance": "10",
+    "components_for_90_variance": "13",
+    "components_for_95_variance": "15",
+    "total_variance_explained": 0.9999999999999999,
+    "feature_loadings": {
+      "PC1": {
+        "variance_explained": 0.18064466083371755,
+        "top_features": [
+          [
+            "emotional_impact_score",
+            0.44133457541944904
+          ],
+          [
+            "rhythmic_appeal_index",
+            0.3769972921527313
+          ],
+          [
+            "audio_danceability",
+            0.35214421036296606
+          ],
+          [
+            "audio_tempo",
+            0.32027076204395954
+          ],
+          [
+            "lyrics_repetition_score",
+            0.31853584746677255
+          ]
+        ]
+      },
+      "PC2": {
+        "variance_explained": 0.1484108509110661,
+        "top_features": [
+          [
+            "lyrics_avg_word_length",
+            0.4451903734792951
+          ],
+          [
+            "lyrics_readability",
+            0.42874631747642983
+          ],
+          [
+            "lyrics_lexical_diversity",
+            0.3783798160917927
+          ],
+          [
+            "lyrics_vocabulary_density",
+            0.352903988507954
+          ],
+          [
+            "lyrics_unique_words",
+            0.30439075734360954
+          ]
+        ]
+      },
+      "PC3": {
+        "variance_explained": 0.10499254732278782,
+        "top_features": [
+          [
+            "lyrics_sentence_count",
+            0.48715534428813456
+          ],
+          [
+            "lyrics_avg_words_per_sentence",
+            0.41981560864421874
+          ],
+          [
+            "lyrics_avg_sentence_length",
+            0.41981560864421874
+          ],
+          [
+            "lyrics_word_count",
+            0.35011814221983906
+          ],
+          [
+            "lyrics_unique_words",
+            0.26649337703607584
+          ]
+        ]
+      },
+      "PC4": {
+        "variance_explained": 0.0798044953303334,
+        "top_features": [
+          [
+            "audio_brightness",
+            0.5023332758982332
+          ],
+          [
+            "audio_acousticness",
+            0.40203742008801535
+          ],
+          [
+            "audio_mood_happy",
+            0.4020108898450508
+          ],
+          [
+            "audio_mood_sad",
+            0.30893480774046306
+          ],
+          [
+            "audio_tempo",
+            0.2208458019051117
+          ]
+        ]
+      },
+      "PC5": {
+        "variance_explained": 0.06865562032740825,
+        "top_features": [
+          [
+            "audio_instrumentalness",
+            0.39054688122762465
+          ],
+          [
+            "audio_energy",
+            0.38275097575401773
+          ],
+          [
+            "audio_tempo",
+            0.3587975727719086
+          ],
+          [
+            "audio_mood_sad",
+            0.28501368098113034
+          ],
+          [
+            "lyrics_avg_words_per_sentence",
+            0.2596672152875487
+          ]
+        ]
+      },
+      "PC6": {
+        "variance_explained": 0.05920627517202138,
+        "top_features": [
+          [
+            "lyrics_word_count",
+            0.41766398801345167
+          ],
+          [
+            "lyrics_lexical_diversity",
+            0.34319051896687486
+          ],
+          [
+            "lyrics_avg_words_per_sentence",
+            0.32591977272728045
+          ],
+          [
+            "lyrics_avg_sentence_length",
+            0.32591977272728045
+          ],
+          [
+            "lyrics_vocabulary_density",
+            0.30470642848776935
+          ]
+        ]
+      }
+    },
+    "musical_patterns": {
+      "PC1": {
+        "type": "\ud83c\udfb5 Engineered Musical",
+        "variance": 0.18064466083371755,
+        "features": [
+          "emotional_impact_score",
+          "rhythmic_appeal_index",
+          "audio_danceability",
+          "audio_tempo",
+          "lyrics_repetition_score"
+        ]
+      },
+      "PC2": {
+        "type": "\ud83d\udcdd Lyrics-Dominant",
+        "variance": 0.1484108509110661,
+        "features": [
+          "lyrics_avg_word_length",
+          "lyrics_readability",
+          "lyrics_lexical_diversity",
+          "lyrics_vocabulary_density",
+          "lyrics_unique_words"
+        ]
+      },
+      "PC3": {
+        "type": "\ud83d\udcdd Lyrics-Dominant",
+        "variance": 0.10499254732278782,
+        "features": [
+          "lyrics_sentence_count",
+          "lyrics_avg_words_per_sentence",
+          "lyrics_avg_sentence_length",
+          "lyrics_word_count",
+          "lyrics_unique_words"
+        ]
+      },
+      "PC4": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.0798044953303334,
+        "features": [
+          "audio_brightness",
+          "audio_acousticness",
+          "audio_mood_happy",
+          "audio_mood_sad",
+          "audio_tempo"
+        ]
+      },
+      "PC5": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.06865562032740825,
+        "features": [
+          "audio_instrumentalness",
+          "audio_energy",
+          "audio_tempo",
+          "audio_mood_sad",
+          "lyrics_avg_words_per_sentence"
+        ]
+      },
+      "PC6": {
+        "type": "\ud83d\udcdd Lyrics-Dominant",
+        "variance": 0.05920627517202138,
+        "features": [
+          "lyrics_word_count",
+          "lyrics_lexical_diversity",
+          "lyrics_avg_words_per_sentence",
+          "lyrics_avg_sentence_length",
+          "lyrics_vocabulary_density"
+        ]
+      }
+    },
+    "feature_correlations": {
+      "audio_energy": {
+        "total_contribution": 0.0709093339671646,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.0709093339671646
+      },
+      "audio_valence": {
+        "total_contribution": 0.07378353421122563,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.07378353421122563
+      },
+      "audio_danceability": {
+        "total_contribution": 0.08408871009708933,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.08408871009708933
+      },
+      "audio_tempo": {
+        "total_contribution": 0.0667379062180353,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.0667379062180353
+      },
+      "audio_acousticness": {
+        "total_contribution": 0.061383954858706624,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.061383954858706624
+      },
+      "audio_instrumentalness": {
+        "total_contribution": 0.06554893211591878,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.06554893211591878
+      },
+      "audio_loudness": {
+        "total_contribution": 0.03098772021266038,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.03098772021266038
+      },
+      "audio_key": {
+        "total_contribution": 0.0180739512958659,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.0180739512958659
+      },
+      "audio_brightness": {
+        "total_contribution": 0.015530503246048762,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.015530503246048762
+      },
+      "audio_mood_happy": {
+        "total_contribution": 0.025134971874830783,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.025134971874830783
+      },
+      "audio_mood_sad": {
+        "total_contribution": 0.029899862736798493,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.029899862736798493
+      },
+      "audio_primary_genre": {
+        "total_contribution": 0.008805999666539999,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.008805999666539999
+      },
+      "lyrics_sentiment_polarity": {
+        "total_contribution": 0.01622213898345424,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.01622213898345424
+      },
+      "lyrics_sentiment_subjectivity": {
+        "total_contribution": 0.062323582002407285,
+        "primary_component": "2",
+        "variance_weighted_contribution": 0.062323582002407285
+      },
+      "lyrics_word_count": {
+        "total_contribution": 0.07784430531151558,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.07784430531151558
+      },
+      "lyrics_unique_words": {
+        "total_contribution": 0.07968501802469664,
+        "primary_component": "2",
+        "variance_weighted_contribution": 0.07968501802469664
+      },
+      "lyrics_vocabulary_density": {
+        "total_contribution": 0.07690030279804468,
+        "primary_component": "2",
+        "variance_weighted_contribution": 0.07690030279804468
+      },
+      "lyrics_sentence_count": {
+        "total_contribution": 0.06790572216297341,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.06790572216297341
+      },
+      "lyrics_avg_words_per_sentence": {
+        "total_contribution": 0.07666357801800017,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.07666357801800017
+      },
+      "lyrics_avg_sentence_length": {
+        "total_contribution": 0.07666357801800017,
+        "primary_component": "3",
+        "variance_weighted_contribution": 0.07666357801800017
+      },
+      "lyrics_avg_word_length": {
+        "total_contribution": 0.08932302203829681,
+        "primary_component": "2",
+        "variance_weighted_contribution": 0.08932302203829681
+      },
+      "lyrics_lexical_diversity": {
+        "total_contribution": 0.09028914749442446,
+        "primary_component": "2",
+        "variance_weighted_contribution": 0.09028914749442446
+      },
+      "lyrics_readability": {
+        "total_contribution": 0.08063241566202661,
+        "primary_component": "2",
+        "variance_weighted_contribution": 0.08063241566202661
+      },
+      "lyrics_verse_count": {
+        "total_contribution": 0.0,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.0
+      },
+      "lyrics_repetition_score": {
+        "total_contribution": 0.06931001903550296,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.06931001903550296
+      },
+      "rhythmic_appeal_index": {
+        "total_contribution": 0.09020468373213177,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.09020468373213177
+      },
+      "emotional_impact_score": {
+        "total_contribution": 0.09640667042997605,
+        "primary_component": "1",
+        "variance_weighted_contribution": 0.09640667042997605
+      }
+    },
+    "feature_clusters": {
+      "PC1": [
+        {
+          "feature": "emotional_impact_score",
+          "loading": -0.44133457541944904,
+          "abs_loading": 0.44133457541944904
+        },
+        {
+          "feature": "rhythmic_appeal_index",
+          "loading": -0.3769972921527313,
+          "abs_loading": 0.3769972921527313
+        },
+        {
+          "feature": "audio_danceability",
+          "loading": -0.35214421036296606,
+          "abs_loading": 0.35214421036296606
+        },
+        {
+          "feature": "audio_tempo",
+          "loading": -0.32027076204395954,
+          "abs_loading": 0.32027076204395954
+        },
+        {
+          "feature": "lyrics_repetition_score",
+          "loading": -0.31853584746677255,
+          "abs_loading": 0.31853584746677255
+        },
+        {
+          "feature": "audio_energy",
+          "loading": -0.29965625142676217,
+          "abs_loading": 0.29965625142676217
+        },
+        {
+          "feature": "audio_valence",
+          "loading": -0.2784715843970599,
+          "abs_loading": 0.2784715843970599
+        },
+        {
+          "feature": "audio_acousticness",
+          "loading": -0.24647540175053403,
+          "abs_loading": 0.24647540175053403
+        },
+        {
+          "feature": "audio_instrumentalness",
+          "loading": -0.2270332384273374,
+          "abs_loading": 0.2270332384273374
+        },
+        {
+          "feature": "lyrics_lexical_diversity",
+          "loading": 0.10309721525504813,
+          "abs_loading": 0.10309721525504813
+        }
+      ],
+      "PC2": [
+        {
+          "feature": "lyrics_avg_word_length",
+          "loading": -0.4451903734792951,
+          "abs_loading": 0.4451903734792951
+        },
+        {
+          "feature": "lyrics_readability",
+          "loading": -0.42874631747642983,
+          "abs_loading": 0.42874631747642983
+        },
+        {
+          "feature": "lyrics_lexical_diversity",
+          "loading": -0.3783798160917927,
+          "abs_loading": 0.3783798160917927
+        },
+        {
+          "feature": "lyrics_vocabulary_density",
+          "loading": -0.352903988507954,
+          "abs_loading": 0.352903988507954
+        },
+        {
+          "feature": "lyrics_unique_words",
+          "loading": -0.30439075734360954,
+          "abs_loading": 0.30439075734360954
+        },
+        {
+          "feature": "lyrics_word_count",
+          "loading": -0.25098952147175996,
+          "abs_loading": 0.25098952147175996
+        },
+        {
+          "feature": "lyrics_sentiment_subjectivity",
+          "loading": -0.24617802779105477,
+          "abs_loading": 0.24617802779105477
+        },
+        {
+          "feature": "lyrics_avg_words_per_sentence",
+          "loading": -0.17811070847319013,
+          "abs_loading": 0.17811070847319013
+        },
+        {
+          "feature": "lyrics_avg_sentence_length",
+          "loading": -0.17811070847319013,
+          "abs_loading": 0.17811070847319013
+        },
+        {
+          "feature": "lyrics_sentence_count",
+          "loading": -0.1066065094573909,
+          "abs_loading": 0.1066065094573909
+        }
+      ],
+      "PC3": [
+        {
+          "feature": "lyrics_sentence_count",
+          "loading": -0.48715534428813456,
+          "abs_loading": 0.48715534428813456
+        },
+        {
+          "feature": "lyrics_avg_words_per_sentence",
+          "loading": 0.41981560864421874,
+          "abs_loading": 0.41981560864421874
+        },
+        {
+          "feature": "lyrics_avg_sentence_length",
+          "loading": 0.41981560864421874,
+          "abs_loading": 0.41981560864421874
+        },
+        {
+          "feature": "lyrics_word_count",
+          "loading": -0.35011814221983906,
+          "abs_loading": 0.35011814221983906
+        },
+        {
+          "feature": "lyrics_unique_words",
+          "loading": -0.26649337703607584,
+          "abs_loading": 0.26649337703607584
+        },
+        {
+          "feature": "audio_loudness",
+          "loading": -0.21975298615218633,
+          "abs_loading": 0.21975298615218633
+        },
+        {
+          "feature": "audio_mood_sad",
+          "loading": 0.15232507653831717,
+          "abs_loading": 0.15232507653831717
+        },
+        {
+          "feature": "audio_acousticness",
+          "loading": 0.1519707597110913,
+          "abs_loading": 0.1519707597110913
+        },
+        {
+          "feature": "lyrics_lexical_diversity",
+          "loading": 0.14772015665395366,
+          "abs_loading": 0.14772015665395366
+        },
+        {
+          "feature": "audio_instrumentalness",
+          "loading": -0.1441248145144014,
+          "abs_loading": 0.1441248145144014
+        }
+      ],
+      "PC4": [
+        {
+          "feature": "audio_brightness",
+          "loading": 0.5023332758982332,
+          "abs_loading": 0.5023332758982332
+        },
+        {
+          "feature": "audio_acousticness",
+          "loading": -0.40203742008801535,
+          "abs_loading": 0.40203742008801535
+        },
+        {
+          "feature": "audio_mood_happy",
+          "loading": -0.4020108898450508,
+          "abs_loading": 0.4020108898450508
+        },
+        {
+          "feature": "audio_mood_sad",
+          "loading": -0.30893480774046306,
+          "abs_loading": 0.30893480774046306
+        },
+        {
+          "feature": "audio_tempo",
+          "loading": 0.2208458019051117,
+          "abs_loading": 0.2208458019051117
+        },
+        {
+          "feature": "audio_danceability",
+          "loading": 0.2048671262379703,
+          "abs_loading": 0.2048671262379703
+        },
+        {
+          "feature": "audio_energy",
+          "loading": -0.20060612923548504,
+          "abs_loading": 0.20060612923548504
+        },
+        {
+          "feature": "lyrics_repetition_score",
+          "loading": 0.19890542489948881,
+          "abs_loading": 0.19890542489948881
+        },
+        {
+          "feature": "audio_loudness",
+          "loading": 0.17363513881102816,
+          "abs_loading": 0.17363513881102816
+        },
+        {
+          "feature": "audio_instrumentalness",
+          "loading": -0.1408874793580712,
+          "abs_loading": 0.1408874793580712
+        }
+      ],
+      "PC5": [
+        {
+          "feature": "audio_instrumentalness",
+          "loading": 0.39054688122762465,
+          "abs_loading": 0.39054688122762465
+        },
+        {
+          "feature": "audio_energy",
+          "loading": 0.38275097575401773,
+          "abs_loading": 0.38275097575401773
+        },
+        {
+          "feature": "audio_tempo",
+          "loading": -0.3587975727719086,
+          "abs_loading": 0.3587975727719086
+        },
+        {
+          "feature": "audio_mood_sad",
+          "loading": -0.28501368098113034,
+          "abs_loading": 0.28501368098113034
+        },
+        {
+          "feature": "lyrics_avg_words_per_sentence",
+          "loading": 0.2596672152875487,
+          "abs_loading": 0.2596672152875487
+        },
+        {
+          "feature": "lyrics_avg_sentence_length",
+          "loading": 0.2596672152875487,
+          "abs_loading": 0.2596672152875487
+        },
+        {
+          "feature": "audio_danceability",
+          "loading": -0.21572574576606235,
+          "abs_loading": 0.21572574576606235
+        },
+        {
+          "feature": "rhythmic_appeal_index",
+          "loading": 0.21063086821459776,
+          "abs_loading": 0.21063086821459776
+        },
+        {
+          "feature": "audio_loudness",
+          "loading": 0.21035596796834835,
+          "abs_loading": 0.21035596796834835
+        },
+        {
+          "feature": "lyrics_sentiment_polarity",
+          "loading": -0.20226705397690709,
+          "abs_loading": 0.20226705397690709
+        }
+      ],
+      "PC6": [
+        {
+          "feature": "lyrics_word_count",
+          "loading": -0.41766398801345167,
+          "abs_loading": 0.41766398801345167
+        },
+        {
+          "feature": "lyrics_lexical_diversity",
+          "loading": 0.34319051896687486,
+          "abs_loading": 0.34319051896687486
+        },
+        {
+          "feature": "lyrics_avg_words_per_sentence",
+          "loading": -0.32591977272728045,
+          "abs_loading": 0.32591977272728045
+        },
+        {
+          "feature": "lyrics_avg_sentence_length",
+          "loading": -0.32591977272728045,
+          "abs_loading": 0.32591977272728045
+        },
+        {
+          "feature": "lyrics_vocabulary_density",
+          "loading": 0.30470642848776935,
+          "abs_loading": 0.30470642848776935
+        },
+        {
+          "feature": "audio_instrumentalness",
+          "loading": 0.25551190744022506,
+          "abs_loading": 0.25551190744022506
+        },
+        {
+          "feature": "lyrics_unique_words",
+          "loading": -0.24271250636852257,
+          "abs_loading": 0.24271250636852257
+        },
+        {
+          "feature": "audio_energy",
+          "loading": 0.2379894507599982,
+          "abs_loading": 0.2379894507599982
+        },
+        {
+          "feature": "audio_key",
+          "loading": -0.2306073813212052,
+          "abs_loading": 0.2306073813212052
+        },
+        {
+          "feature": "audio_primary_genre",
+          "loading": -0.22275424503589714,
+          "abs_loading": 0.22275424503589714
+        }
+      ]
+    },
+    "dimensionality_reduction_potential": {
+      "high_reduction": "10",
+      "medium_reduction": "13",
+      "conservative_reduction": "15",
+      "efficiency_score": 0.6428571428571429
+    },
+    "pca_insights": {
+      "most_informative_features": [
+        [
+          "emotional_impact_score",
+          {
+            "total_contribution": 0.09640667042997605,
+            "primary_component": "1",
+            "variance_weighted_contribution": 0.09640667042997605
+          }
+        ],
+        [
+          "lyrics_lexical_diversity",
+          {
+            "total_contribution": 0.09028914749442446,
+            "primary_component": "2",
+            "variance_weighted_contribution": 0.09028914749442446
+          }
+        ],
+        [
+          "rhythmic_appeal_index",
+          {
+            "total_contribution": 0.09020468373213177,
+            "primary_component": "1",
+            "variance_weighted_contribution": 0.09020468373213177
+          }
+        ],
+        [
+          "lyrics_avg_word_length",
+          {
+            "total_contribution": 0.08932302203829681,
+            "primary_component": "2",
+            "variance_weighted_contribution": 0.08932302203829681
+          }
+        ],
+        [
+          "audio_danceability",
+          {
+            "total_contribution": 0.08408871009708933,
+            "primary_component": "1",
+            "variance_weighted_contribution": 0.08408871009708933
+          }
+        ],
+        [
+          "lyrics_readability",
+          {
+            "total_contribution": 0.08063241566202661,
+            "primary_component": "2",
+            "variance_weighted_contribution": 0.08063241566202661
+          }
+        ],
+        [
+          "lyrics_unique_words",
+          {
+            "total_contribution": 0.07968501802469664,
+            "primary_component": "2",
+            "variance_weighted_contribution": 0.07968501802469664
+          }
+        ],
+        [
+          "lyrics_word_count",
+          {
+            "total_contribution": 0.07784430531151558,
+            "primary_component": "3",
+            "variance_weighted_contribution": 0.07784430531151558
+          }
+        ],
+        [
+          "lyrics_vocabulary_density",
+          {
+            "total_contribution": 0.07690030279804468,
+            "primary_component": "2",
+            "variance_weighted_contribution": 0.07690030279804468
+          }
+        ],
+        [
+          "lyrics_avg_words_per_sentence",
+          {
+            "total_contribution": 0.07666357801800017,
+            "primary_component": "3",
+            "variance_weighted_contribution": 0.07666357801800017
+          }
+        ]
+      ],
+      "component_summary": {
+        "PC1": {
+          "variance_explained": 0.18064466083371755,
+          "cumulative_variance": 0.18064466083371755,
+          "dominant_features": [
+            "emotional_impact_score",
+            "rhythmic_appeal_index",
+            "audio_danceability"
+          ]
+        },
+        "PC2": {
+          "variance_explained": 0.1484108509110661,
+          "cumulative_variance": 0.32905551174478365,
+          "dominant_features": [
+            "lyrics_avg_word_length",
+            "lyrics_readability",
+            "lyrics_lexical_diversity"
+          ]
+        },
+        "PC3": {
+          "variance_explained": 0.10499254732278782,
+          "cumulative_variance": 0.4340480590675715,
+          "dominant_features": [
+            "lyrics_sentence_count",
+            "lyrics_avg_words_per_sentence",
+            "lyrics_avg_sentence_length"
+          ]
+        },
+        "PC4": {
+          "variance_explained": 0.0798044953303334,
+          "cumulative_variance": 0.5138525543979049,
+          "dominant_features": [
+            "audio_brightness",
+            "audio_acousticness",
+            "audio_mood_happy"
+          ]
+        },
+        "PC5": {
+          "variance_explained": 0.06865562032740825,
+          "cumulative_variance": 0.5825081747253131,
+          "dominant_features": [
+            "audio_instrumentalness",
+            "audio_energy",
+            "audio_tempo"
+          ]
+        },
+        "PC6": {
+          "variance_explained": 0.05920627517202138,
+          "cumulative_variance": 0.6417144498973345,
+          "dominant_features": [
+            "lyrics_word_count",
+            "lyrics_lexical_diversity",
+            "lyrics_avg_words_per_sentence"
+          ]
+        }
+      }
+    }
+  },
+  "training_timestamp": "2025-07-11T12:50:10.650813",
+  "mlflow_run_id": "98f129e60167475fb25fdced4a8f4f8d",
+  "mlflow_experiment_id": "258616727830598619",
+  "model_paths": {
+    "ensemble_joblib": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/ensemble_model.joblib",
+    "ensemble_pkl": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/ensemble_model.pkl",
+    "random_forest": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/random_forest_model.joblib",
+    "xgboost": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/xgboost_model.joblib"
+  }
+}

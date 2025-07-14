@@ -1,0 +1,23 @@
+{
+  "training_id": "audio_only_training_experiment_20250627_063346",
+  "mlflow_run_id": "bffb06fe454f497fbb39858bf423b4f9",
+  "strategy": "smart_ensemble",
+  "dataset_info": {
+    "original_path": "/app/shared-data/training_data/filtered/filtered_audio_only_corrected_20250621_180350.csv",
+    "total_songs_in_filtered_csv": 50,
+    "audio_only_songs_processed": 0,
+    "multimodal_songs_processed": 45
+  },
+  "models_trained": {
+    "multimodal": {
+      "model_version_dir": "/app/models/ml-training/multimodal_ensemble_audio_only_training_experiment_20250627_063346",
+      "model_path": "/app/models/ml-training/multimodal_ensemble_audio_only_training_experiment_20250627_063346/model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_audio_only_training_experiment_20250627_063346/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_audio_only_training_experiment_20250627_063346/features.json",
+      "r2_score": -0.7672979569949612,
+      "mse": 658.9184975462695
+    }
+  },
+  "timestamp": "2025-06-27T06:35:10.806586",
+  "model_registry_path": "/app/models/ml-training/model_registry.json"
+}

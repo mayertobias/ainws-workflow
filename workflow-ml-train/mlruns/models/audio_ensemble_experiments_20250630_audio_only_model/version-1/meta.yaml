@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1751321856499
+current_stage: None
+description: ''
+last_updated_timestamp: 1751321856499
+name: audio_ensemble_experiments_20250630_audio_only_model
+run_id: 33a29ec449f44ce3ac1e206493c657c8
+run_link: ''
+source: /mlruns/420657453551896593/33a29ec449f44ce3ac1e206493c657c8/artifacts/model
+status: READY
+status_message: null
+storage_location: /mlruns/420657453551896593/33a29ec449f44ce3ac1e206493c657c8/artifacts/model
+user_id: null
+version: 1

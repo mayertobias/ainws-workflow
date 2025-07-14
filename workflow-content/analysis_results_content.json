@@ -1,0 +1,163 @@
+{
+    "status": "success",
+    "results": {
+      "sentiment": {
+        "polarity": 0.05557208994708994,
+        "subjectivity": 0.5948082010582012,
+        "emotional_scores": {
+          "love": 0.9,
+          "heart": 0.3
+        }
+      },
+      "complexity": {
+        "avg_sentence_length": 27.90909090909091,
+        "avg_word_length": 3.252442996742671,
+        "lexical_diversity": 0.2263843648208469
+      },
+      "themes": {
+        "top_words": [
+          "hee",
+          "billie",
+          "jean",
+          "oh",
+          "lover"
+        ],
+        "main_nouns": [
+          "no",
+          "lover",
+          "son",
+          "baby",
+          "kid"
+        ],
+        "main_verbs": [
+          "says",
+          "told",
+          "claims",
+          "dance",
+          "danced"
+        ],
+        "entities": [
+          "one",
+          "jean",
+          "forty days",
+          "forty nights",
+          "hoo",
+          "three",
+          "ohh"
+        ]
+      },
+      "readability": 0.8564017175007406,
+      "emotional_progression": [
+        {
+          "verse": 1.0,
+          "polarity": 0.05557208994708994,
+          "subjectivity": 0.5948082010582012,
+          "emotional_density": 0.03278688524590164
+        }
+      ],
+      "narrative_structure": {
+        "structure": "simple",
+        "verse_count": 1,
+        "repetition_score": 0,
+        "avg_verse_length": 61.0
+      },
+      "key_motifs": [
+        {
+          "phrase": "is not",
+          "frequency": 18,
+          "significance": 0.29508196721311475
+        },
+        {
+          "phrase": "not my",
+          "frequency": 17,
+          "significance": 0.2786885245901639
+        },
+        {
+          "phrase": "is not my",
+          "frequency": 17,
+          "significance": 0.2786885245901639
+        },
+        {
+          "phrase": "am the",
+          "frequency": 12,
+          "significance": 0.19672131147540983
+        },
+        {
+          "phrase": "the one",
+          "frequency": 12,
+          "significance": 0.19672131147540983
+        },
+        {
+          "phrase": "i am the",
+          "frequency": 12,
+          "significance": 0.19672131147540983
+        },
+        {
+          "phrase": "billie jean",
+          "frequency": 12,
+          "significance": 0.19672131147540983
+        },
+        {
+          "phrase": "am the one",
+          "frequency": 11,
+          "significance": 0.18032786885245902
+        },
+        {
+          "phrase": "i am the one",
+          "frequency": 11,
+          "significance": 0.18032786885245902
+        },
+        {
+          "phrase": "jean is",
+          "frequency": 11,
+          "significance": 0.18032786885245902
+        }
+      ],
+      "theme_clusters": [
+        {
+          "cluster_id": 0,
+          "top_terms": [
+            "says",
+            "oh",
+            "son",
+            "kid son",
+            "kid"
+          ],
+          "lines_count": 44
+        },
+        {
+          "cluster_id": 1,
+          "top_terms": [
+            "billie",
+            "jean",
+            "billie jean",
+            "jean lover",
+            "lover"
+          ],
+          "lines_count": 12
+        },
+        {
+          "cluster_id": 2,
+          "top_terms": [
+            "round",
+            "floor",
+            "floor round",
+            "dance floor",
+            "dance"
+          ],
+          "lines_count": 5
+        }
+      ],
+      "statistics": {
+        "word_count": 614,
+        "unique_words": 81,
+        "vocabulary_density": 0.13192182410423453,
+        "sentence_count": 22,
+        "avg_words_per_sentence": 27.90909090909091
+      }
+    },
+    "error": null,
+    "timestamp": "2025-07-08T02:57:27.830846",
+    "processing_time_ms": 215.70062637329102,
+    "analysis_id": null
+  }

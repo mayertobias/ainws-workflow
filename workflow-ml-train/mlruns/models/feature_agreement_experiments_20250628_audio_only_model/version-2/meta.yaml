@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1751148107895
+current_stage: None
+description: ''
+last_updated_timestamp: 1751148107895
+name: feature_agreement_experiments_20250628_audio_only_model
+run_id: e60b775d8ef849fe9c169de5e23a5704
+run_link: ''
+source: /mlruns/121788018033958386/e60b775d8ef849fe9c169de5e23a5704/artifacts/model
+status: READY
+status_message: null
+storage_location: /mlruns/121788018033958386/e60b775d8ef849fe9c169de5e23a5704/artifacts/model
+user_id: null
+version: 2

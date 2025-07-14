@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "created_at": "2025-06-28T02:46:10.593916",
+    "version": "2.0",
+    "description": "Balanced mix of audio and content features with corrected lyrical analysis",
+    "total_features": 11
+  },
+  "strategy": "multimodal",
+  "description": "Balanced mix of audio and content features",
+  "selected_features_by_service": {
+    "audio": [
+      "audio_energy",
+      "audio_valence",
+      "audio_danceability",
+      "audio_tempo",
+      "audio_primary_genre"
+    ],
+    "content": [
+      "content_sentiment_polarity",
+      "content_sentiment_subjectivity",
+      "content_emotion_love",
+      "content_word_count",
+      "content_readability",
+      "content_lexical_diversity"
+    ]
+  },
+  "estimated_accuracy": "0.80-0.90",
+  "training_time": "5-7 minutes",
+  "selected_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_tempo",
+    "audio_primary_genre",
+    "content_sentiment_polarity",
+    "content_sentiment_subjectivity",
+    "content_emotion_love",
+    "content_word_count",
+    "content_readability",
+    "content_lexical_diversity"
+  ]
+}

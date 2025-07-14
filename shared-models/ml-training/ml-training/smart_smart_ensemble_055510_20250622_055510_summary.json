@@ -1,0 +1,13 @@
+{
+  "training_id": "smart_smart_ensemble_055510_20250622_055510",
+  "strategy": "smart_ensemble",
+  "dataset_info": {
+    "original_path": "/app/data/training_data/filtered/filtered_audio_only_corrected_20250621_180350.csv",
+    "total_songs_in_filtered_csv": 400,
+    "audio_only_songs_processed": 0,
+    "multimodal_songs_processed": 321
+  },
+  "models_trained": {},
+  "timestamp": "2025-06-22T05:58:56.162472",
+  "model_registry_path": "/app/models/ml-training/ml-training/model_registry.json"
+}

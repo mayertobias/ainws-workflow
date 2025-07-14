@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752197958804
+current_stage: None
+description: ''
+last_updated_timestamp: 1752197958804
+name: test_skip_agreement_multimodal_ensemble_model
+run_id: 46ecb989474e47d7b139c5189e3cb5e9
+run_link: ''
+source: /mlruns/255584533797233989/46ecb989474e47d7b139c5189e3cb5e9/artifacts/ensemble_model
+status: READY
+status_message: null
+storage_location: /mlruns/255584533797233989/46ecb989474e47d7b139c5189e3cb5e9/artifacts/ensemble_model
+user_id: null
+version: 1

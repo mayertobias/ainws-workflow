@@ -1,0 +1,110 @@
+{
+  "status": "success",
+  "results": {
+    "sentiment": {
+      "polarity": 0.17407407407407408,
+      "subjectivity": 0.3189814814814815,
+      "emotional_scores": {
+        "pain": -0.7,
+        "hope": 0.6,
+        "love": 0.9
+      }
+    },
+    "complexity": {
+      "avg_sentence_length": 88.0,
+      "avg_word_length": 4.284090909090909,
+      "lexical_diversity": 0.8295454545454546
+    },
+    "themes": {
+      "top_words": [
+        "verse",
+        "moving",
+        "hope",
+        "walking",
+        "street"
+      ],
+      "main_nouns": [
+        "verse",
+        "hope",
+        "street",
+        "night",
+        "city"
+      ],
+      "main_verbs": [
+        "moving",
+        "walking",
+        "burning",
+        "calling",
+        "feels"
+      ],
+      "entities": [
+        "1",
+        "night",
+        "tomorrow",
+        "2"
+      ]
+    },
+    "readability": 0.088809090909091,
+    "emotional_progression": [
+      {
+        "verse": 1.0,
+        "polarity": 0.17407407407407408,
+        "subjectivity": 0.3189814814814815,
+        "emotional_density": 0.2
+      }
+    ],
+    "narrative_structure": {
+      "structure": "simple",
+      "verse_count": 1,
+      "repetition_score": 0,
+      "avg_verse_length": 20.0
+    },
+    "key_motifs": [],
+    "theme_clusters": [
+      {
+        "cluster_id": 0,
+        "top_terms": [
+          "bridge",
+          "chorus",
+          "feels",
+          "hope",
+          "hope carry"
+        ],
+        "lines_count": 16
+      },
+      {
+        "cluster_id": 1,
+        "top_terms": [
+          "verse",
+          "words said",
+          "keeps moving",
+          "feels",
+          "head"
+        ],
+        "lines_count": 2
+      },
+      {
+        "cluster_id": 2,
+        "top_terms": [
+          "moving",
+          "don",
+          "moving don",
+          "don look",
+          "look"
+        ],
+        "lines_count": 2
+      }
+    ],
+    "statistics": {
+      "word_count": 88,
+      "unique_words": 41,
+      "vocabulary_density": 0.4659090909090909,
+      "sentence_count": 1,
+      "avg_words_per_sentence": 88.0
+    }
+  },
+  "error": null,
+  "timestamp": "2025-06-27T22:45:30.781984",
+  "processing_time_ms": 244.27485466003418,
+  "analysis_id": null
+}

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752390984528
+current_stage: None
+description: ''
+last_updated_timestamp: 1752390984528
+name: 1307_1_audio_only_ensemble_model
+run_id: ec2ac86329f8436687d65d8dbda7ebbe
+run_link: ''
+source: /mlruns/485437107758618575/ec2ac86329f8436687d65d8dbda7ebbe/artifacts/ensemble_model
+status: READY
+status_message: null
+storage_location: /mlruns/485437107758618575/ec2ac86329f8436687d65d8dbda7ebbe/artifacts/ensemble_model
+user_id: null
+version: 1

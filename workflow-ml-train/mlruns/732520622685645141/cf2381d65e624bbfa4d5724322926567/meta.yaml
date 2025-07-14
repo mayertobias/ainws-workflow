@@ -1,0 +1,15 @@
+artifact_uri: /mlruns/732520622685645141/cf2381d65e624bbfa4d5724322926567/artifacts
+end_time: 1751438540142
+entry_point_name: ''
+experiment_id: '732520622685645141'
+lifecycle_stage: active
+run_id: cf2381d65e624bbfa4d5724322926567
+run_name: multimodal_ensemble_training_pipeline
+run_uuid: cf2381d65e624bbfa4d5724322926567
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751438526803
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,66 @@
+# Optimized Intelligence Service Requirements
+# Removed: torch (2.6GB), transformers (1GB+), development dependencies
+# Focus: AI API clients only
+
+# Core FastAPI dependencies
+fastapi==0.115.12
+uvicorn==0.34.3
+pydantic==2.11.5
+pydantic-settings==2.6.1
+
+# HTTP client for service communication
+httpx==0.26.0
+
+# Multipart handling for file uploads
+python-multipart==0.0.20
+
+# Redis for caching
+redis==5.0.1
+
+# Database support (PostgreSQL) - lightweight
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+
+# AI/LLM API Clients (lightweight)
+openai==1.54.3
+google-generativeai==0.8.3
+anthropic==0.40.0
+
+# JSON processing (fast)
+orjson==3.10.10
+
+# Environment configuration
+python-dotenv==1.0.1
+
+# Logging
+structlog==24.4.0
+
+# Security
+cryptography==43.0.3
+
+# Rate limiting
+slowapi==0.1.9
+
+# Utilities
+tenacity==9.0.0
+cachetools==5.5.0
+
+# Report generation and visualization
+plotly==5.17.0
+pandas==2.2.0
+numpy==1.26.4
+reportlab==4.0.9
+
+# HSS Feature Translator - installed separately after copying  
+# (removed from requirements.txt to avoid path issues)
+
+# REMOVED (saves ~7GB):
+# - torch==2.6.0 (2.6GB)
+# - transformers==4.46.2 (1GB+)
+# - Development dependencies (pytest, black, etc.)
+# - alembic (not needed for API-only service)
+# - celery (not needed for API-only service)
+
+# NOTE: HuggingFace provider will gracefully fail if transformers not available
+# Install separately if local model inference is needed:
+# pip install torch==2.6.0 transformers==4.46.2 

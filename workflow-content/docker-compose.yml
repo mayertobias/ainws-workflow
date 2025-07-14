@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  workflow-content:
+    build: .
+    ports:
+      - "8002:8002"
+    environment:
+      - DEBUG=true
+      - PORT=8002
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/workflow_content
+      - REDIS_URL=redis://redis:6379/1
+      - LYRICS_DIR=/tmp/lyrics
+      - OUTPUT_DIR=/tmp/output
+    volumes:
+      - ./app:/app/app
+      - lyrics_data:/tmp/lyrics
+      - output_data:/tmp/output
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - workflow-network
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=workflow_content
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5450:5432"  # Changed to 5450 to avoid conflicts
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - workflow-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6400:6379"  # Changed to 6400 to avoid port conflicts
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 30s
+      retries: 3
+    networks:
+      - workflow-network
+
+volumes:
+  postgres_data:
+  redis_data:
+  lyrics_data:
+  output_data:
+
+networks:
+  workflow-network:
+    driver: bridge 

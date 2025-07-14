@@ -1,0 +1,221 @@
+"""
+Enhanced A/B Testing models for workflow orchestration
+"""
+
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Any, Literal
+from pydantic import BaseModel, Field
+from enum import Enum
+import uuid
+
+class ABTestStatus(str, Enum):
+    """A/B test status"""
+    DRAFT = "draft"
+    RUNNING = "running"
+    PAUSED = "paused"
+    COMPLETED = "completed"
+    FAILED = "failed"
+
+class TrafficSplitStrategy(str, Enum):
+    """Traffic split strategies"""
+    PERCENTAGE = "percentage"
+    STICKY_SESSION = "sticky_session"
+    FEATURE_BASED = "feature_based"
+    GRADUAL_ROLLOUT = "gradual_rollout"
+
+class StatisticalTest(str, Enum):
+    """Statistical test types"""
+    T_TEST = "t_test"
+    MANN_WHITNEY = "mann_whitney"
+    CHI_SQUARE = "chi_square"
+    BOOTSTRAP = "bootstrap"
+
+class ABTestMetric(BaseModel):
+    """Individual metric for A/B testing"""
+    name: str = Field(..., description="Metric name")
+    type: Literal["accuracy", "precision", "recall", "f1_score", "latency", "throughput", "custom"] = Field(..., description="Metric type")
+    target_improvement: float = Field(..., description="Target improvement percentage")
+    current_value: float = Field(0.0, description="Current metric value")
+    statistical_test: StatisticalTest = Field(StatisticalTest.T_TEST, description="Statistical test to use")
+    is_primary: bool = Field(False, description="Whether this is the primary metric")
+
+class ABTestVariant(BaseModel):
+    """A/B test variant configuration"""
+    variant_id: str = Field(..., description="Unique variant identifier")
+    name: str = Field(..., description="Human-readable variant name")
+    model_id: str = Field(..., description="Model identifier")
+    model_version: str = Field(..., description="Model version")
+    traffic_percentage: float = Field(..., ge=0, le=100, description="Traffic percentage")
+    configuration: Dict[str, Any] = Field(default_factory=dict, description="Variant-specific configuration")
+    
+class ABTestConfiguration(BaseModel):
+    """A/B test configuration"""
+    test_id: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Unique test identifier")
+    name: str = Field(..., description="Test name")
+    description: Optional[str] = Field(None, description="Test description")
+    
+    # Variants
+    variants: List[ABTestVariant] = Field(..., min_items=2, description="Test variants")
+    
+    # Traffic configuration
+    traffic_strategy: TrafficSplitStrategy = Field(TrafficSplitStrategy.PERCENTAGE, description="Traffic split strategy")
+    total_traffic_percentage: float = Field(100.0, ge=0, le=100, description="Percentage of total traffic to include in test")
+    
+    # Statistical configuration
+    metrics: List[ABTestMetric] = Field(..., min_items=1, description="Metrics to track")
+    confidence_level: float = Field(0.95, ge=0.8, le=0.99, description="Statistical confidence level")
+    minimum_sample_size: int = Field(1000, ge=100, description="Minimum sample size per variant")
+    maximum_duration_days: int = Field(30, ge=1, le=365, description="Maximum test duration")
+    
+    # Targeting
+    target_criteria: Optional[Dict[str, Any]] = Field(None, description="Targeting criteria")
+    exclusion_criteria: Optional[Dict[str, Any]] = Field(None, description="Exclusion criteria")
+    
+    # Monitoring
+    alert_thresholds: Dict[str, float] = Field(default_factory=dict, description="Alert thresholds")
+    auto_stop_conditions: Dict[str, Any] = Field(default_factory=dict, description="Auto-stop conditions")
+
+class ABTestSample(BaseModel):
+    """Individual sample in A/B test"""
+    sample_id: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Unique sample identifier")
+    test_id: str = Field(..., description="A/B test identifier")
+    variant_id: str = Field(..., description="Variant identifier")
+    timestamp: datetime = Field(default_factory=datetime.utcnow, description="Sample timestamp")
+    
+    # Input data
+    input_features: Dict[str, Any] = Field(..., description="Input features")
+    
+    # Results
+    prediction_result: Dict[str, Any] = Field(..., description="Prediction result")
+    metrics: Dict[str, float] = Field(..., description="Measured metrics")
+    
+    # Context
+    session_id: Optional[str] = Field(None, description="Session identifier")
+    user_id: Optional[str] = Field(None, description="User identifier")
+    metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional metadata")
+
+class ABTestStatistics(BaseModel):
+    """Statistical analysis results"""
+    metric_name: str = Field(..., description="Metric name")
+    variant_stats: Dict[str, Dict[str, float]] = Field(..., description="Per-variant statistics")
+    
+    # Statistical test results
+    p_value: float = Field(..., description="P-value from statistical test")
+    confidence_interval: Dict[str, float] = Field(..., description="Confidence interval")
+    effect_size: float = Field(..., description="Effect size")
+    statistical_power: float = Field(..., description="Statistical power")
+    
+    # Recommendations
+    is_significant: bool = Field(..., description="Whether result is statistically significant")
+    winner: Optional[str] = Field(None, description="Winning variant ID if significant")
+    recommendation: str = Field(..., description="Recommendation text")
+
+class ABTestExecution(BaseModel):
+    """A/B test execution state"""
+    test_id: str = Field(..., description="Test identifier")
+    configuration: ABTestConfiguration = Field(..., description="Test configuration")
+    
+    # Status
+    status: ABTestStatus = Field(ABTestStatus.DRAFT, description="Test status")
+    created_at: datetime = Field(default_factory=datetime.utcnow, description="Creation timestamp")
+    started_at: Optional[datetime] = Field(None, description="Start timestamp")
+    completed_at: Optional[datetime] = Field(None, description="Completion timestamp")
+    
+    # Runtime data
+    total_samples: int = Field(0, description="Total samples collected")
+    variant_samples: Dict[str, int] = Field(default_factory=dict, description="Samples per variant")
+    
+    # Results
+    current_statistics: List[ABTestStatistics] = Field(default_factory=list, description="Current statistical results")
+    winner_declared: Optional[str] = Field(None, description="Declared winner variant ID")
+    
+    # Monitoring
+    alerts_triggered: List[Dict[str, Any]] = Field(default_factory=list, description="Triggered alerts")
+    error_log: List[Dict[str, Any]] = Field(default_factory=list, description="Error log")
+
+class ABTestRequest(BaseModel):
+    """Request to create A/B test"""
+    configuration: ABTestConfiguration = Field(..., description="Test configuration")
+    start_immediately: bool = Field(False, description="Start test immediately")
+
+class ABTestResponse(BaseModel):
+    """Response from A/B test creation"""
+    test_id: str = Field(..., description="Test identifier")
+    status: ABTestStatus = Field(..., description="Test status")
+    message: str = Field(..., description="Response message")
+
+class ABTestListResponse(BaseModel):
+    """Response for listing A/B tests"""
+    tests: List[ABTestExecution] = Field(..., description="List of A/B tests")
+    total_count: int = Field(..., description="Total number of tests")
+    active_count: int = Field(..., description="Number of active tests")
+
+class ABTestPredictionRequest(BaseModel):
+    """Request for A/B test prediction"""
+    test_id: str = Field(..., description="Test identifier")
+    input_features: Dict[str, Any] = Field(..., description="Input features")
+    session_id: Optional[str] = Field(None, description="Session identifier")
+    user_id: Optional[str] = Field(None, description="User identifier")
+    metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional metadata")
+
+class ABTestPredictionResponse(BaseModel):
+    """Response from A/B test prediction"""
+    sample_id: str = Field(..., description="Sample identifier")
+    test_id: str = Field(..., description="Test identifier")
+    variant_id: str = Field(..., description="Selected variant")
+    variant_name: str = Field(..., description="Variant name")
+    prediction_result: Dict[str, Any] = Field(..., description="Prediction result")
+    metrics: Dict[str, float] = Field(..., description="Measured metrics")
+
+# Enhanced models for improved analytics
+class ExperimentMetric(BaseModel):
+    """Enhanced experiment metric definition"""
+    metric_id: str = Field(..., description="Unique metric identifier")
+    name: str = Field(..., description="Human-readable metric name")
+    description: str = Field(..., description="Metric description")
+    metric_type: Literal["conversion", "continuous", "count"] = Field(..., description="Metric type")
+    primary: bool = Field(False, description="Whether this is a primary metric")
+    guardrail: bool = Field(False, description="Whether this is a guardrail metric")
+    threshold: Optional[float] = Field(None, description="Threshold for guardrail metrics")
+
+class VariantConfig(BaseModel):
+    """Enhanced variant configuration"""
+    variant_id: str = Field(..., description="Unique variant identifier")
+    name: str = Field(..., description="Human-readable variant name")
+    traffic_allocation: float = Field(..., ge=0, le=100, description="Traffic percentage")
+    model_configuration: Optional[Dict[str, Any]] = Field(None, description="Model-specific configuration")
+    feature_overrides: Optional[Dict[str, Any]] = Field(None, description="Feature flag overrides")
+
+class ExperimentConfig(BaseModel):
+    """Enhanced experiment configuration"""
+    experiment_id: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Unique experiment identifier")
+    name: str = Field(..., min_length=1, max_length=100, description="Experiment name")
+    description: str = Field(..., max_length=500, description="Experiment description")
+    
+    # Lifecycle Management
+    status: ABTestStatus = Field(ABTestStatus.DRAFT, description="Experiment status")
+    created_at: datetime = Field(default_factory=datetime.utcnow, description="Creation timestamp")
+    start_date: Optional[datetime] = Field(None, description="Start date")
+    end_date: Optional[datetime] = Field(None, description="End date")
+    
+    # Assignment Configuration
+    unit_of_diversion: Literal["user_id", "session_id"] = Field("user_id", description="Unit of diversion")
+    assignment_seed: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Salt for consistent hashing")
+    
+    # Variants & Traffic
+    variants: List[VariantConfig] = Field(..., min_items=2, description="Experiment variants")
+    
+    # Metrics & Analysis
+    primary_metrics: List[ExperimentMetric] = Field(..., min_items=1, description="Primary metrics")
+    secondary_metrics: List[ExperimentMetric] = Field(default_factory=list, description="Secondary metrics")
+    guardrail_metrics: List[ExperimentMetric] = Field(default_factory=list, description="Guardrail metrics")
+    
+    # Statistical Configuration
+    alpha: float = Field(0.05, ge=0.01, le=0.1, description="Significance level")
+    power: float = Field(0.8, ge=0.7, le=0.95, description="Statistical power")
+    minimum_sample_size: Optional[int] = Field(None, description="Minimum samples per variant")
+    
+    # Business Configuration
+    target_audience: Optional[Dict[str, Any]] = Field(None, description="Targeting criteria")
+    hypothesis: Optional[str] = Field(None, description="Experiment hypothesis")
+    success_criteria: Optional[str] = Field(None, description="Success criteria")

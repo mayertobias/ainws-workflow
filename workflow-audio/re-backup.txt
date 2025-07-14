@@ -1,0 +1,85 @@
+# Optimized Audio Service Requirements
+# Removed: matplotlib, seaborn (visualization not needed in production)
+# Focus: Core audio processing only
+
+# Core audio processing (essential)
+#essentia>=2.1b6.dev90
+essentia
+#essentia-tensorflow
+#librosa>=0.10.0
+pydub>=0.25.0
+mutagen>=1.47.0
+
+# Core FastAPI dependencies
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.8.0
+pydantic-settings>=2.0.0
+python-multipart>=0.0.6
+
+# Essential scientific computing (lightweight versions)
+numpy<2.0.0,>=1.24.0
+scipy>=1.11.0  # Required by librosa
+
+# ML for audio analysis (if needed)
+scikit-learn>=1.3.0
+
+# Data processing (lightweight)
+pandas>=2.0.0
+
+# HTTP requests
+requests>=2.31.0
+
+# REMOVED (saves ~1.7GB):
+# - matplotlib>=3.8.0 (200MB+)
+# - seaborn>=0.13.0 (100MB+)
+# - Additional scipy components not needed for audio
+# - Development/testing dependencies 
+
+# Database and persistence (NEW - CRITICAL FOR DATA PERSISTENCE)
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# Redis for caching and idempotency (NEW)
+redis[hiredis]==5.0.1
+
+# Audio analysis
+numpy==1.24.3
+scipy==1.11.4
+librosa==0.10.1
+soundfile==0.12.1
+
+# Audio utilities and codecs
+mutagen==1.47.0
+pydub==0.25.1
+
+# HTTP and async support
+httpx==0.25.2
+aiofiles==23.2.1
+
+# Configuration and utilities
+click==8.1.7
+python-dotenv==1.0.0
+
+# Logging and monitoring
+structlog==23.2.0
+
+# Security and validation
+email-validator==2.1.0
+passlib[bcrypt]==1.7.4
+
+# Testing (development)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+
+# Development tools
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
+# Type checking
+mypy==1.7.1
+types-redis==4.6.0.11 

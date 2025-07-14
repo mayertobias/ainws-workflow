@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "created_at": "2025-06-28T02:46:10.594209",
+    "version": "2.0",
+    "description": "Features focused on emotional content and sentiment with corrected lyrical analysis",
+    "total_features": 10
+  },
+  "strategy": "multimodal",
+  "description": "Features focused on emotional content and sentiment",
+  "selected_features_by_service": {
+    "audio": [
+      "audio_valence",
+      "audio_energy",
+      "audio_danceability"
+    ],
+    "content": [
+      "content_sentiment_polarity",
+      "content_sentiment_subjectivity",
+      "content_emotion_love",
+      "content_emotion_pain",
+      "content_emotion_hope",
+      "content_narrative_complexity",
+      "content_emotional_progression_count"
+    ]
+  },
+  "estimated_accuracy": "0.75-0.85",
+  "training_time": "3-5 minutes",
+  "selected_features": [
+    "audio_valence",
+    "audio_energy",
+    "audio_danceability",
+    "content_sentiment_polarity",
+    "content_sentiment_subjectivity",
+    "content_emotion_love",
+    "content_emotion_pain",
+    "content_emotion_hope",
+    "content_narrative_complexity",
+    "content_emotional_progression_count"
+  ]
+}

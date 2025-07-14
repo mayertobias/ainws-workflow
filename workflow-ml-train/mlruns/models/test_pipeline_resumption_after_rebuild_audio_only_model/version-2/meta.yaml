@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1751230134293
+current_stage: None
+description: ''
+last_updated_timestamp: 1751230134293
+name: test_pipeline_resumption_after_rebuild_audio_only_model
+run_id: 1a8b9cfb56b740ae9efee32dde2de154
+run_link: ''
+source: /mlruns/170099965644103441/1a8b9cfb56b740ae9efee32dde2de154/artifacts/model
+status: READY
+status_message: null
+storage_location: /mlruns/170099965644103441/1a8b9cfb56b740ae9efee32dde2de154/artifacts/model
+user_id: null
+version: 2

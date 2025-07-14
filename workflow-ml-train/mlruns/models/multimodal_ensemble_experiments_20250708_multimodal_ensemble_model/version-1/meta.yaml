@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752003609838
+current_stage: None
+description: ''
+last_updated_timestamp: 1752003609838
+name: multimodal_ensemble_experiments_20250708_multimodal_ensemble_model
+run_id: 3e0592f0dcb549169267a555eea053a9
+run_link: ''
+source: /mlruns/782682320851278487/3e0592f0dcb549169267a555eea053a9/artifacts/ensemble_model
+status: READY
+status_message: null
+storage_location: /mlruns/782682320851278487/3e0592f0dcb549169267a555eea053a9/artifacts/ensemble_model
+user_id: null
+version: 1

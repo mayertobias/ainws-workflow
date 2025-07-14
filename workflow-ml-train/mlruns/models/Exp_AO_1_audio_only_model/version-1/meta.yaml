@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1751343251849
+current_stage: None
+description: ''
+last_updated_timestamp: 1751343251849
+name: Exp_AO_1_audio_only_model
+run_id: 17647eb9803742b8aaa459296910bb60
+run_link: ''
+source: /mlruns/483713280673768284/17647eb9803742b8aaa459296910bb60/artifacts/model
+status: READY
+status_message: null
+storage_location: /mlruns/483713280673768284/17647eb9803742b8aaa459296910bb60/artifacts/model
+user_id: null
+version: 1

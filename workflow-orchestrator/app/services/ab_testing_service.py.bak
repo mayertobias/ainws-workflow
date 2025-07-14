@@ -1,0 +1,507 @@
+"""
+A/B Testing Service for Workflow Orchestrator
+
+Provides comprehensive A/B testing capabilities including:
+- Test configuration and management
+- Traffic routing and variant selection
+- Statistical analysis and significance testing
+- Automated winner determination
+- Real-time monitoring and alerts
+"""
+
+import asyncio
+import logging
+import json
+import random
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Any, Tuple
+from collections import defaultdict
+import statistics
+import httpx
+from scipy import stats
+import numpy as np
+
+from ..models.ab_testing import (
+    ABTestConfiguration, ABTestExecution, ABTestSample, ABTestStatistics,
+    ABTestStatus, TrafficSplitStrategy, StatisticalTest, ABTestVariant,
+    ABTestPredictionRequest, ABTestPredictionResponse, ABTestMetric
+)
+from ..config.settings import settings
+
+logger = logging.getLogger(__name__)
+
+class ABTestingService:
+    """
+    Core A/B testing service for managing experiments and traffic routing.
+    """
+    
+    def __init__(self):
+        """Initialize A/B testing service."""
+        self.active_tests: Dict[str, ABTestExecution] = {}
+        self.samples_storage: Dict[str, List[ABTestSample]] = defaultdict(list)
+        self.service_clients: Dict[str, httpx.AsyncClient] = {}
+        
+        # Initialize service clients
+        self._initialize_service_clients()
+        
+        # Background tasks
+        self.monitoring_task: Optional[asyncio.Task] = None
+        self.analysis_task: Optional[asyncio.Task] = None
+        
+        logger.info("A/B Testing service initialized")
+    
+    def _initialize_service_clients(self):
+        """Initialize HTTP clients for microservices."""
+        service_urls = settings.get_service_urls()
+        
+        for service_name, url in service_urls.items():
+            timeout = httpx.Timeout(30.0)
+            self.service_clients[service_name] = httpx.AsyncClient(
+                base_url=url,
+                timeout=timeout,
+                follow_redirects=True
+            )
+    
+    async def start_background_tasks(self):
+        """Start background monitoring and analysis tasks."""
+        if not self.monitoring_task:
+            self.monitoring_task = asyncio.create_task(self._monitoring_loop())
+        if not self.analysis_task:
+            self.analysis_task = asyncio.create_task(self._analysis_loop())
+        
+        logger.info("A/B testing background tasks started")
+    
+    async def stop_background_tasks(self):
+        """Stop background tasks."""
+        if self.monitoring_task:
+            self.monitoring_task.cancel()
+            try:
+                await self.monitoring_task
+            except asyncio.CancelledError:
+                pass
+        
+        if self.analysis_task:
+            self.analysis_task.cancel()
+            try:
+                await self.analysis_task
+            except asyncio.CancelledError:
+                pass
+        
+        logger.info("A/B testing background tasks stopped")
+    
+    async def create_test(self, configuration: ABTestConfiguration) -> ABTestExecution:
+        """Create a new A/B test."""
+        try:
+            # Validate configuration
+            self._validate_test_configuration(configuration)
+            
+            # Create test execution
+            test_execution = ABTestExecution(
+                test_id=configuration.test_id,
+                configuration=configuration,
+                status=ABTestStatus.DRAFT,
+                variant_samples={variant.variant_id: 0 for variant in configuration.variants}
+            )
+            
+            # Store test
+            self.active_tests[configuration.test_id] = test_execution
+            
+            logger.info(f"Created A/B test: {configuration.test_id}")
+            return test_execution
+            
+        except Exception as e:
+            logger.error(f"Error creating A/B test: {e}")
+            raise
+    
+    async def start_test(self, test_id: str) -> ABTestExecution:
+        """Start an A/B test."""
+        try:
+            test = self.active_tests.get(test_id)
+            if not test:
+                raise ValueError(f"Test not found: {test_id}")
+            
+            if test.status != ABTestStatus.DRAFT:
+                raise ValueError(f"Test cannot be started from status: {test.status}")
+            
+            # Update status
+            test.status = ABTestStatus.RUNNING
+            test.started_at = datetime.utcnow()
+            
+            logger.info(f"Started A/B test: {test_id}")
+            return test
+            
+        except Exception as e:
+            logger.error(f"Error starting A/B test {test_id}: {e}")
+            raise
+    
+    async def stop_test(self, test_id: str, reason: str = "Manual stop") -> ABTestExecution:
+        """Stop an A/B test."""
+        try:
+            test = self.active_tests.get(test_id)
+            if not test:
+                raise ValueError(f"Test not found: {test_id}")
+            
+            # Update status
+            test.status = ABTestStatus.COMPLETED
+            test.completed_at = datetime.utcnow()
+            
+            # Perform final analysis
+            await self._analyze_test_results(test)
+            
+            logger.info(f"Stopped A/B test: {test_id}, reason: {reason}")
+            return test
+            
+        except Exception as e:
+            logger.error(f"Error stopping A/B test {test_id}: {e}")
+            raise
+    
+    async def route_prediction_request(self, request: ABTestPredictionRequest) -> ABTestPredictionResponse:
+        """Route prediction request through A/B test."""
+        try:
+            test = self.active_tests.get(request.test_id)
+            if not test or test.status != ABTestStatus.RUNNING:
+                raise ValueError(f"Test not active: {request.test_id}")
+            
+            # Select variant
+            selected_variant = self._select_variant(test, request)
+            
+            # Make prediction using selected variant
+            prediction_result = await self._make_prediction(selected_variant, request.input_features)
+            
+            # Calculate metrics
+            metrics = self._calculate_metrics(prediction_result, test.configuration.metrics)
+            
+            # Store sample
+            sample = ABTestSample(
+                test_id=request.test_id,
+                variant_id=selected_variant.variant_id,
+                input_features=request.input_features,
+                prediction_result=prediction_result,
+                metrics=metrics,
+                session_id=request.session_id,
+                user_id=request.user_id,
+                metadata=request.metadata
+            )
+            
+            self.samples_storage[request.test_id].append(sample)
+            
+            # Update counters
+            test.total_samples += 1
+            test.variant_samples[selected_variant.variant_id] += 1
+            
+            return ABTestPredictionResponse(
+                sample_id=sample.sample_id,
+                test_id=request.test_id,
+                variant_id=selected_variant.variant_id,
+                variant_name=selected_variant.name,
+                prediction_result=prediction_result,
+                metrics=metrics
+            )
+            
+        except Exception as e:
+            logger.error(f"Error routing prediction request: {e}")
+            raise
+    
+    def _select_variant(self, test: ABTestExecution, request: ABTestPredictionRequest) -> ABTestVariant:
+        """Select variant based on traffic splitting strategy."""
+        variants = test.configuration.variants
+        strategy = test.configuration.traffic_strategy
+        
+        if strategy == TrafficSplitStrategy.PERCENTAGE:
+            # Weighted random selection
+            weights = [variant.traffic_percentage for variant in variants]
+            return random.choices(variants, weights=weights)[0]
+        
+        elif strategy == TrafficSplitStrategy.STICKY_SESSION:
+            # Use session ID for consistent routing
+            if request.session_id:
+                hash_value = hash(request.session_id) % 100
+                cumulative = 0
+                for variant in variants:
+                    cumulative += variant.traffic_percentage
+                    if hash_value < cumulative:
+                        return variant
+            # Fallback to percentage
+            return self._select_variant_by_percentage(variants)
+        
+        elif strategy == TrafficSplitStrategy.FEATURE_BASED:
+            # Route based on input features
+            return self._select_variant_by_features(variants, request.input_features)
+        
+        else:
+            # Default to percentage
+            return self._select_variant_by_percentage(variants)
+    
+    def _select_variant_by_percentage(self, variants: List[ABTestVariant]) -> ABTestVariant:
+        """Select variant by percentage."""
+        weights = [variant.traffic_percentage for variant in variants]
+        return random.choices(variants, weights=weights)[0]
+    
+    def _select_variant_by_features(self, variants: List[ABTestVariant], features: Dict[str, Any]) -> ABTestVariant:
+        """Select variant based on features."""
+        # Simple feature-based routing example
+        # In production, this would use more sophisticated logic
+        feature_hash = hash(str(sorted(features.items()))) % 100
+        cumulative = 0
+        for variant in variants:
+            cumulative += variant.traffic_percentage
+            if feature_hash < cumulative:
+                return variant
+        return variants[0]
+    
+    async def _make_prediction(self, variant: ABTestVariant, input_features: Dict[str, Any]) -> Dict[str, Any]:
+        """Make prediction using selected variant."""
+        try:
+            # Call ML prediction service with specific model
+            client = self.service_clients.get("workflow-ml-prediction")
+            if not client:
+                raise ValueError("ML prediction service not available")
+            
+            response = await client.post(
+                "/predict/single",
+                json={
+                    "model_id": variant.model_id,
+                    "features": input_features,
+                    "include_confidence": True,
+                    "include_feature_importance": False
+                }
+            )
+            
+            if response.status_code != 200:
+                raise ValueError(f"Prediction failed: {response.status_code}")
+            
+            return response.json()
+            
+        except Exception as e:
+            logger.error(f"Error making prediction with variant {variant.variant_id}: {e}")
+            raise
+    
+    def _calculate_metrics(self, prediction_result: Dict[str, Any], metric_configs: List[ABTestMetric]) -> Dict[str, float]:
+        """Calculate metrics from prediction result."""
+        metrics = {}
+        
+        for metric_config in metric_configs:
+            if metric_config.type == "latency":
+                # Extract latency from prediction result
+                metrics[metric_config.name] = prediction_result.get("latency", 0.0)
+            elif metric_config.type == "accuracy":
+                # For accuracy, we'd need ground truth - this is a placeholder
+                metrics[metric_config.name] = prediction_result.get("confidence", 0.0)
+            else:
+                # Extract other metrics from prediction result
+                metrics[metric_config.name] = prediction_result.get(metric_config.type, 0.0)
+        
+        return metrics
+    
+    async def _monitoring_loop(self):
+        """Background monitoring loop."""
+        while True:
+            try:
+                await asyncio.sleep(60)  # Check every minute
+                
+                for test_id, test in self.active_tests.items():
+                    if test.status == ABTestStatus.RUNNING:
+                        await self._check_test_conditions(test)
+                
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                logger.error(f"Error in monitoring loop: {e}")
+    
+    async def _analysis_loop(self):
+        """Background analysis loop."""
+        while True:
+            try:
+                await asyncio.sleep(300)  # Analyze every 5 minutes
+                
+                for test_id, test in self.active_tests.items():
+                    if test.status == ABTestStatus.RUNNING:
+                        await self._analyze_test_results(test)
+                
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                logger.error(f"Error in analysis loop: {e}")
+    
+    async def _check_test_conditions(self, test: ABTestExecution):
+        """Check test conditions and auto-stop if needed."""
+        try:
+            # Check maximum duration
+            if test.started_at:
+                duration = datetime.utcnow() - test.started_at
+                max_duration = timedelta(days=test.configuration.maximum_duration_days)
+                
+                if duration > max_duration:
+                    await self.stop_test(test.test_id, "Maximum duration reached")
+                    return
+            
+            # Check minimum sample size
+            min_samples = test.configuration.minimum_sample_size
+            if all(count >= min_samples for count in test.variant_samples.values()):
+                # Check if we have statistical significance
+                if test.current_statistics:
+                    significant_results = [stat for stat in test.current_statistics if stat.is_significant]
+                    if significant_results:
+                        await self.stop_test(test.test_id, "Statistical significance achieved")
+                        return
+            
+            # Check auto-stop conditions
+            auto_stop = test.configuration.auto_stop_conditions
+            if auto_stop:
+                # Implement custom auto-stop logic here
+                pass
+                
+        except Exception as e:
+            logger.error(f"Error checking test conditions for {test.test_id}: {e}")
+    
+    async def _analyze_test_results(self, test: ABTestExecution):
+        """Analyze test results and update statistics."""
+        try:
+            samples = self.samples_storage.get(test.test_id, [])
+            if len(samples) < 10:  # Need minimum samples for analysis
+                return
+            
+            statistics_results = []
+            
+            for metric_config in test.configuration.metrics:
+                # Get metric values by variant
+                variant_metrics = defaultdict(list)
+                for sample in samples:
+                    if metric_config.name in sample.metrics:
+                        variant_metrics[sample.variant_id].append(sample.metrics[metric_config.name])
+                
+                # Perform statistical analysis
+                if len(variant_metrics) >= 2:
+                    stats_result = self._perform_statistical_test(
+                        variant_metrics, metric_config, test.configuration.variants
+                    )
+                    if stats_result:
+                        statistics_results.append(stats_result)
+            
+            # Update test statistics
+            test.current_statistics = statistics_results
+            
+            # Determine winner if significant
+            primary_metrics = [stat for stat in statistics_results if stat.is_significant]
+            if primary_metrics:
+                # Use the first significant primary metric
+                winner_stat = primary_metrics[0]
+                if winner_stat.winner:
+                    test.winner_declared = winner_stat.winner
+            
+        except Exception as e:
+            logger.error(f"Error analyzing test results for {test.test_id}: {e}")
+    
+    def _perform_statistical_test(
+        self, 
+        variant_metrics: Dict[str, List[float]], 
+        metric_config: ABTestMetric,
+        variants: List[ABTestVariant]
+    ) -> Optional[ABTestStatistics]:
+        """Perform statistical test on variant metrics."""
+        try:
+            if len(variant_metrics) < 2:
+                return None
+            
+            # Get variant data
+            variant_ids = list(variant_metrics.keys())
+            variant_data = [variant_metrics[vid] for vid in variant_ids]
+            
+            # Calculate basic statistics
+            variant_stats = {}
+            for vid in variant_ids:
+                data = variant_metrics[vid]
+                if data:
+                    variant_stats[vid] = {
+                        "mean": statistics.mean(data),
+                        "std": statistics.stdev(data) if len(data) > 1 else 0,
+                        "count": len(data),
+                        "min": min(data),
+                        "max": max(data)
+                    }
+            
+            # Perform statistical test
+            if metric_config.statistical_test == StatisticalTest.T_TEST:
+                if len(variant_data) == 2 and all(len(d) > 1 for d in variant_data):
+                    t_stat, p_value = stats.ttest_ind(variant_data[0], variant_data[1])
+                else:
+                    return None
+            else:
+                # Default to t-test
+                if len(variant_data) == 2 and all(len(d) > 1 for d in variant_data):
+                    t_stat, p_value = stats.ttest_ind(variant_data[0], variant_data[1])
+                else:
+                    return None
+            
+            # Calculate effect size (Cohen's d)
+            if len(variant_data) == 2:
+                mean1, mean2 = variant_stats[variant_ids[0]]["mean"], variant_stats[variant_ids[1]]["mean"]
+                std1, std2 = variant_stats[variant_ids[0]]["std"], variant_stats[variant_ids[1]]["std"]
+                pooled_std = ((std1 ** 2 + std2 ** 2) / 2) ** 0.5
+                effect_size = (mean1 - mean2) / pooled_std if pooled_std > 0 else 0
+            else:
+                effect_size = 0
+            
+            # Determine significance
+            alpha = 1 - (metric_config.current_value / 100 if hasattr(metric_config, 'confidence_level') else 0.95)
+            is_significant = p_value < alpha
+            
+            # Determine winner
+            winner = None
+            if is_significant and len(variant_ids) == 2:
+                # Higher is better for most metrics except latency
+                if metric_config.type == "latency":
+                    winner = variant_ids[0] if variant_stats[variant_ids[0]]["mean"] < variant_stats[variant_ids[1]]["mean"] else variant_ids[1]
+                else:
+                    winner = variant_ids[0] if variant_stats[variant_ids[0]]["mean"] > variant_stats[variant_ids[1]]["mean"] else variant_ids[1]
+            
+            return ABTestStatistics(
+                metric_name=metric_config.name,
+                variant_stats=variant_stats,
+                p_value=p_value,
+                confidence_interval={"lower": 0, "upper": 1},  # Simplified
+                effect_size=effect_size,
+                statistical_power=0.8,  # Simplified
+                is_significant=is_significant,
+                winner=winner,
+                recommendation=f"{'Significant' if is_significant else 'Not significant'} difference detected"
+            )
+            
+        except Exception as e:
+            logger.error(f"Error performing statistical test: {e}")
+            return None
+    
+    def _validate_test_configuration(self, config: ABTestConfiguration):
+        """Validate A/B test configuration."""
+        # Check traffic percentages sum to 100
+        total_traffic = sum(variant.traffic_percentage for variant in config.variants)
+        if abs(total_traffic - 100.0) > 0.01:
+            raise ValueError(f"Variant traffic percentages must sum to 100, got {total_traffic}")
+        
+        # Check minimum sample size
+        if config.minimum_sample_size < 100:
+            raise ValueError("Minimum sample size must be at least 100")
+        
+        # Check confidence level
+        if not 0.8 <= config.confidence_level <= 0.99:
+            raise ValueError("Confidence level must be between 0.8 and 0.99")
+        
+        # Check metrics
+        if not config.metrics:
+            raise ValueError("At least one metric must be specified")
+        
+        primary_metrics = [m for m in config.metrics if m.is_primary]
+        if len(primary_metrics) != 1:
+            raise ValueError("Exactly one primary metric must be specified")
+    
+    async def get_test_status(self, test_id: str) -> Optional[ABTestExecution]:
+        """Get test status."""
+        return self.active_tests.get(test_id)
+    
+    async def list_tests(self) -> List[ABTestExecution]:
+        """List all tests."""
+        return list(self.active_tests.values())
+    
+    async def get_test_samples(self, test_id: str) -> List[ABTestSample]:
+        """Get samples for a test."""
+        return self.samples_storage.get(test_id, []) 

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "created_at": "2025-06-28T02:46:10.593137",
+    "version": "1.0",
+    "description": "Essential audio features for quick training",
+    "total_features": 0
+  },
+  "strategy": "audio_only",
+  "description": "Essential audio features for quick training",
+  "selected_features_by_service": {
+    "audio": [
+      "audio_energy",
+      "audio_valence",
+      "audio_danceability",
+      "audio_tempo",
+      "audio_loudness"
+    ]
+  },
+  "estimated_accuracy": "0.70-0.80",
+  "training_time": "2-3 minutes",
+  "selected_features": []
+}

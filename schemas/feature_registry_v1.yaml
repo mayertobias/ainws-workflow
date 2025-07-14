@@ -1,0 +1,306 @@
+audio_features:
+  # Basic audio features (4)
+  audio_energy:
+    producer_output: "results.features.analysis.basic.energy"
+    consumer_expected: "audio_energy"
+    frontend_name: "audio_energy"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "RMS energy and spectral power analysis"
+    validation_required: true
+    
+  audio_valence:
+    producer_output: "results.features.analysis.basic.valence"
+    consumer_expected: "audio_valence"
+    frontend_name: "audio_valence"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Musical positivity/negativity measure"
+    validation_required: true
+    
+  audio_tempo:
+    producer_output: "results.features.analysis.basic.tempo"
+    consumer_expected: "audio_tempo"
+    frontend_name: "audio_tempo"
+    type: "float"
+    range: [40.0, 250.0]
+    unit: "BPM"
+    default_value: null
+    description: "Beats per minute detection"
+    validation_required: true
+    
+  audio_danceability:
+    producer_output: "results.features.analysis.basic.danceability"
+    consumer_expected: "audio_danceability"
+    frontend_name: "audio_danceability"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Danceability score from rhythm analysis"
+    validation_required: true
+
+  # Additional comprehensive audio features (20 more)
+  audio_acousticness:
+    producer_output: "results.features.analysis.basic.acousticness"
+    consumer_expected: "audio_acousticness"
+    frontend_name: "audio_acousticness"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Acoustic vs electronic quality"
+    validation_required: true
+
+  audio_instrumentalness:
+    producer_output: "results.features.analysis.basic.instrumentalness"
+    consumer_expected: "audio_instrumentalness"
+    frontend_name: "audio_instrumentalness"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Likelihood of instrumental content"
+    validation_required: true
+
+  audio_liveness:
+    producer_output: "results.features.analysis.basic.liveness"
+    consumer_expected: "audio_liveness"
+    frontend_name: "audio_liveness"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Live performance characteristics"
+    validation_required: true
+
+  audio_speechiness:
+    producer_output: "results.features.analysis.basic.speechiness"
+    consumer_expected: "audio_speechiness"
+    frontend_name: "audio_speechiness"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Presence of spoken words"
+    validation_required: true
+
+  audio_loudness:
+    producer_output: "results.features.analysis.basic.loudness"
+    consumer_expected: "audio_loudness"
+    frontend_name: "audio_loudness"
+    type: "float"
+    range: [-60.0, 0.0]
+    default_value: null
+    description: "Overall loudness in dB"
+    validation_required: true
+
+  audio_brightness:
+    producer_output: "results.features.analysis.basic.brightness"
+    consumer_expected: "audio_brightness"
+    frontend_name: "audio_brightness"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "High frequency energy content"
+    validation_required: true
+
+  audio_complexity:
+    producer_output: "results.features.analysis.basic.complexity"
+    consumer_expected: "audio_complexity"
+    frontend_name: "audio_complexity"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Structural complexity measure"
+    validation_required: true
+
+  audio_warmth:
+    producer_output: "results.features.analysis.basic.warmth"
+    consumer_expected: "audio_warmth"
+    frontend_name: "audio_warmth"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Low frequency warmth"
+    validation_required: true
+
+  audio_harmonic_strength:
+    producer_output: "results.features.analysis.basic.harmonic_strength"
+    consumer_expected: "audio_harmonic_strength"
+    frontend_name: "audio_harmonic_strength"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Harmonic content strength"
+    validation_required: true
+
+  audio_key:
+    producer_output: "results.features.analysis.basic.key"
+    consumer_expected: "audio_key"
+    frontend_name: "audio_key"
+    type: "integer"
+    range: [0, 11]
+    default_value: null
+    description: "Musical key detection (0=C, 1=C#/Db, ..., 11=B)"
+    validation_required: true
+
+  audio_mode:
+    producer_output: "results.features.analysis.basic.mode"
+    consumer_expected: "audio_mode"
+    frontend_name: "audio_mode"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Major (1) or minor (0) mode"
+    validation_required: true
+
+  audio_duration_ms:
+    producer_output: "results.features.analysis.basic.duration_ms"
+    consumer_expected: "audio_duration_ms"
+    frontend_name: "audio_duration_ms"
+    type: "integer"
+    range: [1000, 600000]
+    default_value: null
+    description: "Track duration in milliseconds"
+    validation_required: true
+
+  audio_time_signature:
+    producer_output: "results.features.analysis.basic.time_signature"
+    consumer_expected: "audio_time_signature"
+    frontend_name: "audio_time_signature"
+    type: "integer"
+    range: [2, 8]
+    default_value: null
+    description: "Time signature (beats per measure)"
+    validation_required: true
+
+  # Genre features (3)
+  audio_primary_genre:
+    producer_output: "results.features.analysis.genre.primary_genre"
+    consumer_expected: "audio_primary_genre"
+    frontend_name: "audio_primary_genre"
+    type: "integer"
+    range: [0, 999]
+    default_value: null
+    description: "Primary genre classification (hash-encoded)"
+    validation_required: true
+
+  audio_top_genre_1_prob:
+    producer_output: "results.features.analysis.genre.top_genres[0][1]"
+    consumer_expected: "audio_top_genre_1_prob"
+    frontend_name: "audio_top_genre_1_prob"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Top genre probability"
+    validation_required: true
+
+  audio_top_genre_2_prob:
+    producer_output: "results.features.analysis.genre.top_genres[1][1]"
+    consumer_expected: "audio_top_genre_2_prob"
+    frontend_name: "audio_top_genre_2_prob"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Second genre probability"
+    validation_required: true
+
+  audio_top_genre_3_prob:
+    producer_output: "results.features.analysis.genre.top_genres.2.1"
+    consumer_expected: "audio_top_genre_3_prob"
+    frontend_name: "audio_top_genre_3_prob"
+    type: "float"
+    range: [0.0, 1.0]
+    default_value: null
+    description: "Third genre probability"
+    validation_required: true
+
+  # Mood features (7) - All converted to binary numeric for ML compatibility
+  audio_mood_happy:
+    producer_output: "results.features.analysis.mood.moods.mood_happy"
+    consumer_expected: "audio_mood_happy"
+    frontend_name: "audio_mood_happy"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Happy mood classification (1=happy, 0=not happy)"
+    validation_required: true
+
+  audio_mood_sad:
+    producer_output: "results.features.analysis.mood.moods.mood_sad"
+    consumer_expected: "audio_mood_sad"
+    frontend_name: "audio_mood_sad"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Sad mood classification (1=sad, 0=not sad)"
+    validation_required: true
+
+  audio_mood_aggressive:
+    producer_output: "results.features.analysis.mood.moods.mood_aggressive"
+    consumer_expected: "audio_mood_aggressive"
+    frontend_name: "audio_mood_aggressive"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Aggressive mood classification (1=aggressive, 0=not aggressive)"
+    validation_required: true
+
+  audio_mood_relaxed:
+    producer_output: "results.features.analysis.mood.moods.mood_relaxed"
+    consumer_expected: "audio_mood_relaxed"
+    frontend_name: "audio_mood_relaxed"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Relaxed mood classification (1=relaxed, 0=not relaxed)"
+    validation_required: true
+
+  audio_mood_party:
+    producer_output: "results.features.analysis.mood.moods.mood_party"
+    consumer_expected: "audio_mood_party"
+    frontend_name: "audio_mood_party"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Party mood classification (1=party, 0=not party)"
+    validation_required: true
+
+  audio_mood_electronic:
+    producer_output: "results.features.analysis.mood.moods.mood_electronic"
+    consumer_expected: "audio_mood_electronic"
+    frontend_name: "audio_mood_electronic"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Electronic mood classification (1=electronic, 0=not electronic)"
+    validation_required: true
+
+  audio_mood_acoustic:
+    producer_output: "results.features.analysis.mood.moods.mood_acoustic"
+    consumer_expected: "audio_mood_acoustic"
+    frontend_name: "audio_mood_acoustic"
+    type: "integer"
+    range: [0, 1]
+    default_value: null
+    description: "Acoustic mood classification (1=acoustic, 0=not acoustic)"
+    validation_required: true
+
+content_features:
+  content_sentiment_polarity:
+    producer_output: "sentiment_polarity"                         # What content service provides
+    consumer_expected: "content_sentiment_polarity"               # What ML models expect
+    frontend_name: "content_sentiment_polarity"                   # What frontend uses
+    type: "float"
+    range: [-1.0, 1.0]
+    default_value: null
+    description: "Sentiment polarity from lyrics analysis"
+    validation_required: true
+    
+  content_word_count:
+    producer_output: "word_count"
+    consumer_expected: "content_word_count"
+    frontend_name: "content_word_count"
+    type: "integer"
+    range: [1, 1000]
+    default_value: null
+    description: "Total word count in lyrics"
+    validation_required: true

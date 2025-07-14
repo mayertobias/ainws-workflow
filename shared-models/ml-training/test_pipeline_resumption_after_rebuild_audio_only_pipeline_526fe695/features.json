@@ -1,0 +1,23 @@
+{
+  "all_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_tempo",
+    "audio_acousticness",
+    "audio_instrumentalness",
+    "audio_liveness"
+  ],
+  "feature_descriptions": {
+    "audio_energy": "Energy level of the song (0-1)",
+    "audio_valence": "Musical positivity/happiness (0-1)",
+    "audio_danceability": "How suitable the song is for dancing (0-1)",
+    "audio_tempo": "Song tempo (beats per minute)",
+    "audio_acousticness": "Acoustic vs electric instrumentation (0-1)",
+    "audio_instrumentalness": "Absence of vocals (0-1)",
+    "audio_liveness": "Presence of live audience (0-1)",
+    "audio_loudness": "Overall loudness in decibels",
+    "audio_speechiness": "Presence of speech-like vocals (0-1)",
+    "audio_brightness": "Brightness/positivity of the song"
+  }
+}

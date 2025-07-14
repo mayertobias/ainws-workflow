@@ -1,0 +1,41 @@
+{
+  "all_features": [
+    "audio_acousticness",
+    "audio_instrumentalness",
+    "audio_speechiness",
+    "audio_valence",
+    "audio_tempo",
+    "audio_danceability",
+    "audio_energy",
+    "audio_loudness",
+    "audio_loudness_range_lu",
+    "audio_spectral_energy_mean",
+    "audio_beats_loudness_mean",
+    "audio_loudness_ebu128_integrated",
+    "audio_loudness_ebu128_range",
+    "audio_mood_happy",
+    "audio_mood_sad",
+    "audio_mood_relaxed",
+    "content_sentiment_polarity",
+    "content_word_count",
+    "content_unique_words",
+    "content_dale_chall_readability_score",
+    "content_sentiment_compound",
+    "content_emotional_score_love",
+    "rhythmic_appeal_index",
+    "emotional_impact_score",
+    "commercial_viability_index"
+  ],
+  "feature_descriptions": {
+    "audio_energy": "Energy level of the song (0-1)",
+    "audio_valence": "Musical positivity/happiness (0-1)",
+    "audio_danceability": "How suitable the song is for dancing (0-1)",
+    "audio_tempo": "Song tempo (beats per minute)",
+    "audio_acousticness": "Acoustic vs electric instrumentation (0-1)",
+    "audio_instrumentalness": "Absence of vocals (0-1)",
+    "audio_liveness": "Presence of live audience (0-1)",
+    "audio_loudness": "Overall loudness in decibels",
+    "audio_speechiness": "Presence of speech-like vocals (0-1)",
+    "audio_brightness": "Brightness/positivity of the song"
+  }
+}

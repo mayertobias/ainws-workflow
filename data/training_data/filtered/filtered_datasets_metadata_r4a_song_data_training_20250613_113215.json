@@ -1,0 +1,67 @@
+{
+  "creation_info": {
+    "timestamp": "20250613_113215",
+    "source_csv": "r4a_song_data_training.csv",
+    "created_by": "DatasetFilterService"
+  },
+  "source_statistics": {
+    "total_songs_in_csv": 13070,
+    "unique_songs_in_csv": 13070
+  },
+  "matching_statistics": {
+    "total_processed": 401,
+    "songs_with_audio": 400,
+    "songs_with_lyrics": 337,
+    "songs_with_both": 336,
+    "audio_match_rate": 0.9975062344139651,
+    "lyrics_match_rate": 0.8403990024937655,
+    "multimodal_rate": 0.8379052369077307
+  },
+  "datasets_created": {
+    "audio_only": {
+      "filename": "filtered_audio_only_r4a_song_data_training_20250613_113215.csv",
+      "song_count": 400,
+      "description": "Songs with available audio files for audio-only training"
+    },
+    "multimodal": {
+      "filename": "filtered_multimodal_r4a_song_data_training_20250613_113215.csv",
+      "song_count": 336,
+      "description": "Songs with both audio and lyrics files for multimodal training"
+    }
+  },
+  "popularity_distribution": {
+    "audio_only": {
+      "count": 400.0,
+      "mean": 34.725,
+      "std": 29.522929791242714,
+      "min": 0.0,
+      "25%": 10.0,
+      "50%": 30.0,
+      "75%": 50.0,
+      "max": 100.0
+    },
+    "multimodal": {
+      "count": 336.0,
+      "mean": 32.708333333333336,
+      "std": 28.59054309083435,
+      "min": 0.0,
+      "25%": 10.0,
+      "50%": 30.0,
+      "75%": 50.0,
+      "max": 100.0
+    }
+  },
+  "file_locations": {
+    "filtered_datasets_dir": "/app/training_data/filtered",
+    "source_data_dir": "/app/training_data",
+    "songs_dir": "/app/songs",
+    "lyrics_dir": "/app/lyrics"
+  },
+  "statistics": {
+    "source_songs": 13070,
+    "audio_only_songs": 400,
+    "multimodal_songs": 336,
+    "audio_match_rate": "99.8%",
+    "lyrics_match_rate": "84.0%"
+  }
+}

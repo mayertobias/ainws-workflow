@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "results": {
+    "polarity": 0.75,
+    "subjectivity": 0.7000000000000001,
+    "emotional_scores": {
+      "beautiful": 0.8,
+      "hope": 0.6,
+      "joy": 0.9
+    }
+  },
+  "processing_time_ms": 6.525754928588867
+}

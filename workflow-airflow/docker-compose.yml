@@ -1,0 +1,59 @@
+services:
+  airflow-standalone:
+    image: apache/airflow:2.7.1-python3.11
+    container_name: airflow-standalone
+    environment:
+      # Use SequentialExecutor with SQLite for simplicity
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__CORE__FERNET_KEY: ''
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+      AIRFLOW__WEBSERVER__AUTHENTICATE: 'false'
+      AIRFLOW__WEBSERVER__AUTH_BACKEND: ''
+      
+      # All Workflow service URLs (required by DAGs)
+      WORKFLOW_AUDIO_URL: http://host.docker.internal:8001
+      WORKFLOW_CONTENT_URL: http://host.docker.internal:8002
+      WORKFLOW_ML_TRAINING_URL: http://host.docker.internal:8003
+      WORKFLOW_ML_PREDICTION_URL: http://host.docker.internal:8004
+      WORKFLOW_INTELLIGENCE_URL: http://host.docker.internal:8005
+      WORKFLOW_STORAGE_URL: http://host.docker.internal:8006
+      
+      # Python path for custom operators
+      PYTHONPATH: "/opt/airflow/plugins:${PYTHONPATH:-}"
+      
+      # Install additional requirements
+      _PIP_ADDITIONAL_REQUIREMENTS: httpx pandas
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ../data:/opt/airflow/data
+      - ../shared-models:/opt/airflow/models
+      - ../songs:/opt/airflow/songs
+      - ../lyrics:/opt/airflow/lyrics
+      - airflow_data:/opt/airflow
+    ports:
+      - "8080:8080"
+    command: |
+      bash -c "
+        echo 'Initializing Airflow database...'
+        airflow db init
+        echo 'Starting scheduler in background...'
+        airflow scheduler &
+        echo 'Starting webserver on port 8080...'
+        echo 'Access Airflow at http://localhost:8080 (no authentication required)'
+        airflow webserver --port 8080
+      "
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  airflow_data:

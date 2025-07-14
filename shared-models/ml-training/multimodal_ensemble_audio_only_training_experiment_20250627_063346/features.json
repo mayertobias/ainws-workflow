@@ -1,0 +1,39 @@
+{
+  "audio_features": [],
+  "lyrics_features": [
+    "lyrics_sentiment_polarity",
+    "lyrics_sentiment_subjectivity",
+    "lyrics_avg_sentence_length",
+    "lyrics_avg_word_length",
+    "lyrics_lexical_diversity",
+    "lyrics_word_count",
+    "lyrics_unique_words",
+    "lyrics_vocabulary_density",
+    "lyrics_sentence_count",
+    "lyrics_readability",
+    "lyrics_theme_diversity",
+    "lyrics_motif_count",
+    "lyrics_verse_count",
+    "lyrics_repetition_score",
+    "lyrics_emotional_range",
+    "lyrics_emotional_mean"
+  ],
+  "all_features": [
+    "lyrics_sentiment_polarity",
+    "lyrics_sentiment_subjectivity",
+    "lyrics_avg_sentence_length",
+    "lyrics_avg_word_length",
+    "lyrics_lexical_diversity",
+    "lyrics_word_count",
+    "lyrics_unique_words",
+    "lyrics_vocabulary_density",
+    "lyrics_sentence_count",
+    "lyrics_readability",
+    "lyrics_theme_diversity",
+    "lyrics_motif_count",
+    "lyrics_verse_count",
+    "lyrics_repetition_score",
+    "lyrics_emotional_range",
+    "lyrics_emotional_mean"
+  ]
+}

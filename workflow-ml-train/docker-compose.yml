@@ -1,0 +1,107 @@
+version: '3.8'
+
+services:
+  # Main ML Training Pipeline Service
+  workflow-ml-train:
+    build: .
+    ports:
+      - "8005:8005"
+    environment:
+      - PORT=8005
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - MLFLOW_BACKEND_STORE_URI=sqlite:///mlflow.db
+      - MLFLOW_DEFAULT_ARTIFACT_ROOT=./mlruns
+      - WORKFLOW_AUDIO_URL=http://host.docker.internal:8001
+      - WORKFLOW_CONTENT_URL=http://host.docker.internal:8002
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./models:/app/models
+      - ./mlruns:/app/mlruns
+      - ./logs:/app/logs
+      - ./shared-data:/app/shared-data
+      - /Users/manojveluchuri/saas/workflow/songs:/app/songs
+      - /Users/manojveluchuri/saas/workflow/lyrics:/app/lyrics
+      - /Users/manojveluchuri/saas/workflow/data:/app/data
+    depends_on:
+      - mlflow
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8005/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # MLflow Server for Experiment Tracking
+  mlflow:
+    image: python:3.11-slim
+    command: sh -c "pip install mlflow==2.8.1 && mlflow server --backend-store-uri file:///mlruns --default-artifact-root /mlruns --host 0.0.0.0 --port 5000"
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis for Caching and Session Management
+  redis:
+    image: redis:7.0-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Airflow for Pipeline Visualization (Optional)
+  airflow-webserver:
+    image: apache/airflow:2.7.0
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:///airflow.db
+      - AIRFLOW__CORE__FERNET_KEY=81HqDtbqAywKSOumSHMpGEhoXD3LrSOpyqhTMOKfFE0=
+      - AIRFLOW__WEBSERVER__SECRET_KEY=secret
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=true
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+    command: >
+      sh -c "
+        airflow db init &&
+        airflow users create 
+          --username admin 
+          --firstname Admin 
+          --lastname User 
+          --role Admin 
+          --email admin@example.com 
+          --password admin &&
+        airflow webserver
+      "
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  redis_data:
+  mlflow_data:
+  airflow_logs:
+
+networks:
+  default:
+    name: workflow-network
+    external: true 

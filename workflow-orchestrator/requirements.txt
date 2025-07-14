@@ -1,0 +1,57 @@
+# Optimized Orchestrator Service Requirements
+# Removed: pytest, black, isort, flake8, mypy (development dependencies)
+# Focus: Core orchestration with task queue and service communication
+
+# Core FastAPI dependencies
+fastapi==0.115.12
+uvicorn==0.34.3
+pydantic==2.11.5
+pydantic-settings==2.6.1
+
+# HTTP client for service communication
+httpx==0.26.0
+
+# Redis for task queue and state management
+redis==5.0.1
+
+# Database support (PostgreSQL)
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+alembic==1.13.1
+
+# Task queue (Celery)
+celery==5.4.0
+
+# JSON and data processing
+orjson==3.10.10
+
+# Statistical analysis for A/B testing (use compatible versions)
+scipy==1.12.0
+numpy==1.26.3
+mmh3==4.1.0  # For consistent hashing in A/B testing
+
+# Environment configuration
+python-dotenv==1.0.1
+
+# Logging and monitoring
+structlog==24.4.0
+
+# Utilities
+tenacity==9.0.0  # For retry logic
+python-multipart==0.0.9  # For file uploads
+
+# Security
+cryptography==43.0.3
+
+# Rate limiting
+slowapi==0.1.9
+
+# REMOVED (saves ~200MB):
+# - pytest==8.3.3 (testing dependency)
+# - pytest-asyncio==0.24.0 (testing dependency)
+# - pytest-mock==3.14.0 (testing dependency)
+# - httpx[test]==0.26.0 (testing dependency)
+# - black==24.10.0 (development dependency)
+# - isort==5.13.2 (development dependency)
+# - flake8==7.1.1 (development dependency)
+# - mypy==1.13.0 (development dependency) 

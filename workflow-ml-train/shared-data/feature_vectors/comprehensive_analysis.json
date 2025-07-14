@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "created_at": "2024-12-28T10:30:00Z",
+    "version": "2.0",
+    "description": "Comprehensive feature vector with extensive audio and content features using corrected lyrical analysis",
+    "total_features": 27
+  },
+  "strategy": "multimodal",
+  "description": "Comprehensive feature set for maximum accuracy with longer training time",
+  "selected_features_by_service": {
+    "audio": [
+      "audio_energy",
+      "audio_valence",
+      "audio_danceability",
+      "audio_tempo",
+      "audio_acousticness",
+      "audio_instrumentalness",
+      "audio_liveness",
+      "audio_speechiness",
+      "audio_brightness",
+      "audio_complexity",
+      "audio_warmth",
+      "audio_harmonic_strength",
+      "audio_key",
+      "audio_mode",
+      "audio_loudness",
+      "audio_primary_genre"
+    ],
+    "content": [
+      "content_sentiment_polarity",
+      "content_sentiment_subjectivity",
+      "content_emotion_love",
+      "content_emotion_hope",
+      "content_emotion_pain",
+      "content_word_count",
+      "content_readability",
+      "content_lexical_diversity",
+      "content_verse_count",
+      "content_narrative_complexity",
+      "content_theme_cluster_count"
+    ]
+  },
+  "selected_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_tempo",
+    "audio_acousticness",
+    "audio_instrumentalness",
+    "audio_liveness",
+    "audio_speechiness",
+    "audio_brightness",
+    "audio_complexity",
+    "audio_warmth",
+    "audio_harmonic_strength",
+    "audio_key",
+    "audio_mode",
+    "audio_loudness",
+    "audio_primary_genre",
+    "content_sentiment_polarity",
+    "content_sentiment_subjectivity",
+    "content_emotion_love",
+    "content_emotion_hope",
+    "content_emotion_pain",
+    "content_word_count",
+    "content_readability",
+    "content_lexical_diversity",
+    "content_verse_count",
+    "content_narrative_complexity",
+    "content_theme_cluster_count"
+  ],
+  "estimated_accuracy": "0.85-0.95",
+  "training_time": "8-12 minutes",
+  "use_cases": [
+    "Maximum accuracy requirements",
+    "Research and experimentation",
+    "Production models with extensive feature analysis",
+    "Comprehensive song profiling"
+  ],
+  "notes": "Extensive feature set covering audio characteristics, rhythm, tonality, mood, genre, content sentiment, themes, and structure for comprehensive analysis."
+} 

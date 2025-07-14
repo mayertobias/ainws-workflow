@@ -1,0 +1,93 @@
+{
+  "structured_data": {
+    "lowlevel": {
+      "spectral_centroid": {
+        "mean": 1474.5140380859375
+      },
+      "spectral_entropy": {
+        "mean": 7.781487941741943
+      },
+      "spectral_spread": {
+        "mean": 6478812.0
+      },
+      "spectral_flux": {
+        "mean": 0.08423934131860733
+      },
+      "spectral_kurtosis": {
+        "mean": 2.0622944831848145
+      },
+      "spectral_complexity": {
+        "mean": 15.815526008605957
+      },
+      "spectral_rolloff": {
+        "mean": 1744.8380126953125
+      },
+      "silence_rate_30dB": {
+        "mean": 0.9983305335044861
+      },
+      "silence_rate_60dB": {
+        "mean": 0.022537562996149063
+      },
+      "spectral_energy": {
+        "mean": 0.03001658245921135
+      },
+      "dynamic_complexity": 2.7566375732421875,
+      "loudness_ebu128": {
+        "integrated": -11.33031940460205,
+        "loudness_range": 2.09183406829834
+      }
+    },
+    "tonal": {
+      "chords_changes_rate": 0.07333333045244217,
+      "chords_strength": {
+        "mean": 0.5477409958839417
+      },
+      "key_krumhansl": {
+        "key": "F",
+        "scale": "m",
+        "strength": 0.6970977187156677
+      }
+    },
+    "rhythm": {
+      "bpm": 117.41787719726562,
+      "danceability": 1.1525284051895142,
+      "onset_rate": 4.063886642456055,
+      "beats_loudness": {
+        "mean": 0.046914320439100266
+      }
+    },
+    "metadata": {
+      "audio_properties": {
+        "length": 27.792978286743164,
+        "sample_rate": 48000.0
+      }
+    }
+  },
+  "derived_features": {
+    "energy": 0.1888386567433675,
+    "valence": 0.529935205078125,
+    "tempo": 117.41787719726562,
+    "danceability": 1.1525284051895142,
+    "acousticness": 0.7705217358541011,
+    "instrumentalness": 0.2635921001434326,
+    "liveness": 0.06478812,
+    "speechiness": 0.16847868263721466,
+    "loudness": -11.33031940460205,
+    "brightness": 0.10691545811244418,
+    "complexity": 0.24034502241346573,
+    "warmth": 0.7834413248697917,
+    "harmonic_strength": 0.6970977187156677,
+    "key": "F",
+    "mode": 0,
+    "time_signature": 4,
+    "duration_ms": 27792
+  },
+  "raw_essentia_sample": {
+    "lowlevel.spectral_centroid.mean": 1474.5140380859375,
+    "lowlevel.spectral_rolloff.mean": 1744.8380126953125,
+    "rhythm.bpm": 117.41787719726562,
+    "rhythm.danceability": 1.1525284051895142,
+    "tonal.key_krumhansl.key": "F",
+    "tonal.key_krumhansl.scale": "m"
+  }
+}

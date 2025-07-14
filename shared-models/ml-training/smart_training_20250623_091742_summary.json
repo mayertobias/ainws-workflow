@@ -1,0 +1,9 @@
+{
+  "training_id": "smart_training_20250623_091742",
+  "status": "failed",
+  "strategy": "smart_ensemble",
+  "models_trained": {},
+  "performance_metrics": {},
+  "timestamp": "2025-06-23T09:17:42.182738",
+  "error": "[Errno 2] No such file or directory: '/app/shared-data/training_data/filtered_audio_only_corrected_20250621_180350.csv'"
+}

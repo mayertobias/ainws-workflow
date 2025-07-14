@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752238210463
+current_stage: None
+description: ''
+last_updated_timestamp: 1752238210463
+name: MM2_multimodal_ensemble_model
+run_id: 98f129e60167475fb25fdced4a8f4f8d
+run_link: ''
+source: /mlruns/258616727830598619/98f129e60167475fb25fdced4a8f4f8d/artifacts/ensemble_model
+status: READY
+status_message: null
+storage_location: /mlruns/258616727830598619/98f129e60167475fb25fdced4a8f4f8d/artifacts/ensemble_model
+user_id: null
+version: 1

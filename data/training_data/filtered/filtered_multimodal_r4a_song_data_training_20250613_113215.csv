@@ -1,0 +1,337 @@
+song_name,original_popularity,has_audio_file,has_lyrics_file,audio_file_path,audio_original_name,audio_popularity_level,lyrics_file_path,lyrics_original_name,lyrics_popularity_level,final_popularity
+Boulevard of Broken Dreams,73,True,True,/app/songs/popularity_8/Boulevard of Broken Dreams - .mp3,Boulevard of Broken Dreams - ,8.0,/app/lyrics/popularity_8/Boulevard of Broken Dreams.txt,Boulevard of Broken Dreams,8.0,80
+In The End,66,True,True,/app/songs/popularity_7/In The End - .mp3,In The End - ,7.0,/app/lyrics/popularity_7/In The End.txt,In The End,7.0,70
+Seven Nation Army,76,True,True,/app/songs/popularity_8/Seven Nation Army - .mp3,Seven Nation Army - ,8.0,/app/lyrics/popularity_8/Seven Nation Army.txt,Seven Nation Army,8.0,80
+By The Way,74,True,True,/app/songs/popularity_8/By The Way - .mp3,By The Way - ,8.0,/app/lyrics/popularity_8/By The Way.txt,By The Way,8.0,80
+How You Remind Me,56,True,True,/app/songs/popularity_6/How You Remind Me - .mp3,How You Remind Me - ,6.0,/app/lyrics/popularity_6/How You Remind Me.txt,How You Remind Me,6.0,60
+Bring Me To Life,80,True,True,/app/songs/popularity_8/Bring Me To Life - .mp3,Bring Me To Life - ,8.0,/app/lyrics/popularity_8/Bring Me To Life.txt,Bring Me To Life,8.0,80
+Last Resort,81,True,True,/app/songs/popularity_9/Last Resort - .mp3,Last Resort - ,9.0,/app/lyrics/popularity_9/Last Resort.txt,Last Resort,9.0,90
+Are You Gonna Be My Girl,76,True,True,/app/songs/popularity_8/Are You Gonna Be My Girl - .mp3,Are You Gonna Be My Girl - ,8.0,/app/lyrics/popularity_8/Are You Gonna Be My Girl.txt,Are You Gonna Be My Girl,8.0,80
+Mr. Brightside,80,True,True,/app/songs/popularity_2/Mr. Brightside - .mp3,Mr. Brightside - ,2.0,/app/lyrics/popularity_2/Mr. Brightside.txt,Mr. Brightside,2.0,20
+Sex on Fire,81,True,True,/app/songs/popularity_9/Sex on Fire - .mp3,Sex on Fire - ,9.0,/app/lyrics/popularity_9/Sex on Fire.txt,Sex on Fire,9.0,90
+Numb,83,True,True,/app/songs/popularity_9/Numb - .mp3,Numb - ,9.0,/app/lyrics/popularity_9/Numb.txt,Numb,9.0,90
+Can't Stop,81,True,True,/app/songs/popularity_9/Can't Stop - .mp3,Can't Stop - ,9.0,/app/lyrics/popularity_9/Can't Stop.txt,Can't Stop,9.0,90
+Chop Suey!,69,True,True,/app/songs/popularity_7/Chop Suey! - .mp3,Chop Suey! - ,7.0,/app/lyrics/popularity_7/Chop Suey!.txt,Chop Suey!,7.0,70
+Best of You,62,True,True,/app/songs/popularity_7/Best of You - .mp3,Best of You - ,7.0,/app/lyrics/popularity_7/Best of You.txt,Best of You,7.0,70
+I Write Sins Not Tragedies,77,True,True,/app/songs/popularity_7/I Write Sins Not Tragedies - .mp3,I Write Sins Not Tragedies - ,7.0,/app/lyrics/popularity_7/I Write Sins Not Tragedies.txt,I Write Sins Not Tragedies,7.0,70
+Kryptonite,79,True,True,/app/songs/popularity_7/Kryptonite - .mp3,Kryptonite - ,7.0,/app/lyrics/popularity_7/Kryptonite.txt,Kryptonite,7.0,70
+The Kill (Bury Me),69,True,True,/app/songs/popularity_7/The Kill (Bury Me) - .mp3,The Kill (Bury Me) - ,7.0,/app/lyrics/popularity_7/The Kill (Bury Me).txt,The Kill (Bury Me),7.0,70
+Use Somebody,79,True,True,/app/songs/popularity_7/Use Somebody - .mp3,Use Somebody - ,7.0,/app/lyrics/popularity_7/Use Somebody.txt,Use Somebody,7.0,70
+Jerk It Out,70,True,True,/app/songs/popularity_7/Jerk It Out - .mp3,Jerk It Out - ,7.0,/app/lyrics/popularity_7/Jerk It Out.txt,Jerk It Out,7.0,70
+Uprising,77,True,True,/app/songs/popularity_7/Uprising - .mp3,Uprising - ,7.0,/app/lyrics/popularity_7/Uprising.txt,Uprising,7.0,70
+Hey There Delilah,79,True,True,/app/songs/popularity_7/Hey There Delilah - .mp3,Hey There Delilah - ,7.0,/app/lyrics/popularity_7/Hey There Delilah.txt,Hey There Delilah,7.0,70
+Gives You Hell,71,True,True,/app/songs/popularity_8/Gives You Hell - .mp3,Gives You Hell - ,8.0,/app/lyrics/popularity_8/Gives You Hell.txt,Gives You Hell,8.0,80
+Like a Stone,77,True,True,/app/songs/popularity_8/Like a Stone - .mp3,Like a Stone - ,8.0,/app/lyrics/popularity_8/Like a Stone.txt,Like a Stone,8.0,80
+I Hate Everything About You,75,True,True,/app/songs/popularity_8/I Hate Everything About You - .mp3,I Hate Everything About You - ,8.0,/app/lyrics/popularity_8/I Hate Everything About You.txt,I Hate Everything About You,8.0,80
+Rollin' (Air Raid Vehicle),74,True,True,/app/songs/popularity_8/Rollin' (Air Raid Vehicle) - .mp3,Rollin' (Air Raid Vehicle) - ,8.0,/app/lyrics/popularity_8/Rollin' (Air Raid Vehicle).txt,Rollin' (Air Raid Vehicle),8.0,80
+Fat Lip,74,True,True,/app/songs/popularity_8/Fat Lip - .mp3,Fat Lip - ,8.0,/app/lyrics/popularity_8/Fat Lip.txt,Fat Lip,8.0,80
+The Pretender,78,True,True,/app/songs/popularity_8/The Pretender - .mp3,The Pretender - ,8.0,/app/lyrics/popularity_8/The Pretender.txt,The Pretender,8.0,80
+Savior,73,True,True,/app/songs/popularity_8/Savior - .mp3,Savior - ,8.0,/app/lyrics/popularity_8/Savior.txt,Savior,8.0,80
+Bodies,74,True,True,/app/songs/popularity_8/Bodies - .mp3,Bodies - ,8.0,/app/lyrics/popularity_8/Bodies.txt,Bodies,8.0,80
+"Sugar, We're Goin Down",79,True,True,"/app/songs/popularity_8/Sugar, We're Goin Down - .mp3","Sugar, We're Goin Down - ",8.0,"/app/lyrics/popularity_8/Sugar, We're Goin Down.txt","Sugar, We're Goin Down",8.0,80
+Through Glass,60,True,True,/app/songs/popularity_6/Through Glass - .mp3,Through Glass - ,6.0,/app/lyrics/popularity_6/Through Glass.txt,Through Glass,6.0,60
+Down With the Sickness,73,True,True,/app/songs/popularity_8/Down With the Sickness - .mp3,Down With the Sickness - ,8.0,/app/lyrics/popularity_8/Down With the Sickness.txt,Down With the Sickness,8.0,80
+Vertigo,57,True,True,/app/songs/popularity_6/Vertigo - .mp3,Vertigo - ,6.0,/app/lyrics/popularity_6/Vertigo.txt,Vertigo,6.0,60
+Crawling In The Dark,61,True,True,/app/songs/popularity_6/Crawling In The Dark - .mp3,Crawling In The Dark - ,6.0,/app/lyrics/popularity_6/Crawling In The Dark.txt,Crawling In The Dark,6.0,60
+Woman,63,True,True,/app/songs/popularity_6/Woman - .mp3,Woman - ,6.0,/app/lyrics/popularity_6/Woman.txt,Woman,6.0,60
+Plug In Baby,65,True,True,/app/songs/popularity_7/Plug In Baby - .mp3,Plug In Baby - ,7.0,/app/lyrics/popularity_7/Plug In Baby.txt,Plug In Baby,7.0,70
+MIA (feat. Drake),94,True,True,/app/songs/popularity_10/MIA (feat. Drake) - .mp3,MIA (feat. Drake) - ,10.0,/app/lyrics/popularity_10/MIA (feat. Drake).txt,MIA (feat. Drake),10.0,100
+White Boi,59,True,True,/app/songs/popularity_6/White Boi - .mp3,White Boi - ,6.0,/app/lyrics/popularity_6/White Boi.txt,White Boi,6.0,60
+Beautiful (feat. Camila Cabello),94,True,True,/app/songs/popularity_10/Beautiful (feat. Camila Cabello) - .mp3,Beautiful (feat. Camila Cabello) - ,10.0,/app/lyrics/popularity_3/Beautiful.txt,Beautiful,3.0,100
+Celoso,87,True,True,/app/songs/popularity_9/Celoso - .mp3,Celoso - ,9.0,/app/lyrics/popularity_9/Celoso.txt,Celoso,9.0,90
+Pa La Calle,61,True,True,/app/songs/popularity_7/Pa La Calle - .mp3,Pa La Calle - ,7.0,/app/lyrics/popularity_7/Pa La Calle.txt,Pa La Calle,7.0,70
+Pa Mí,58,True,True,/app/songs/popularity_6/Pa Mí - .mp3,Pa Mí - ,6.0,/app/lyrics/popularity_6/Pa Mí.txt,Pa Mí,6.0,60
+Wake Up in the Sky,92,True,True,/app/songs/popularity_10/Wake Up in the Sky - .mp3,Wake Up in the Sky - ,10.0,/app/lyrics/popularity_10/Wake Up in the Sky.txt,Wake Up in the Sky,10.0,100
+Está Rico,83,True,True,/app/songs/popularity_8/Está Rico - .mp3,Está Rico - ,8.0,/app/lyrics/popularity_8/Está Rico.txt,Está Rico,8.0,80
+YAKWTFGO (feat. Kali Uchis),44,True,True,/app/songs/popularity_5/YAKWTFGO (feat. Kali Uchis) - .mp3,YAKWTFGO (feat. Kali Uchis) - ,5.0,/app/lyrics/popularity_5/YAKWTFGO (feat. Kali Uchis).txt,YAKWTFGO (feat. Kali Uchis),5.0,50
+Come With Me,47,True,True,/app/songs/popularity_5/Come With Me - .mp3,Come With Me - ,5.0,/app/lyrics/popularity_5/Come With Me.txt,Come With Me,5.0,50
+Blah,47,True,True,/app/songs/popularity_5/Blah - .mp3,Blah - ,5.0,/app/lyrics/popularity_5/Blah.txt,Blah,5.0,50
+Coqueta,49,True,True,/app/songs/popularity_5/Coqueta - .mp3,Coqueta - ,5.0,/app/lyrics/popularity_5/Coqueta.txt,Coqueta,5.0,50
+Nuestro Planeta (feat. Reykon),64,True,True,/app/songs/popularity_7/Nuestro Planeta (feat. Reykon) - .mp3,Nuestro Planeta (feat. Reykon) - ,7.0,/app/lyrics/popularity_7/Nuestro Planeta (feat. Reykon).txt,Nuestro Planeta (feat. Reykon),7.0,70
+Hijo de Su Madre,61,True,True,/app/songs/popularity_7/Hijo de Su Madre - .mp3,Hijo de Su Madre - ,7.0,/app/lyrics/popularity_7/Hijo de Su Madre.txt,Hijo de Su Madre,7.0,70
+Lento,65,True,True,/app/songs/popularity_7/Lento - .mp3,Lento - ,7.0,/app/lyrics/popularity_7/Lento.txt,Lento,7.0,70
+BEBE,95,True,True,/app/songs/popularity_10/BEBE - .mp3,BEBE - ,10.0,/app/lyrics/popularity_10/BEBE.txt,BEBE,10.0,100
+Pum Pum,45,True,True,/app/songs/popularity_5/Pum Pum - .mp3,Pum Pum - ,5.0,/app/lyrics/popularity_5/Pum Pum.txt,Pum Pum,5.0,50
+Como,38,True,True,/app/songs/popularity_4/Como - .mp3,Como - ,4.0,/app/lyrics/popularity_4/Como.txt,Como,4.0,40
+Nice & Slow,38,True,True,/app/songs/popularity_4/Nice & Slow - .mp3,Nice & Slow - ,4.0,/app/lyrics/popularity_4/Nice & Slow.txt,Nice & Slow,4.0,40
+Don't Werk,39,True,True,/app/songs/popularity_4/Don't Werk - .mp3,Don't Werk - ,4.0,/app/lyrics/popularity_4/Don't Werk.txt,Don't Werk,4.0,40
+Lo Siento,68,True,True,/app/songs/popularity_7/Lo Siento - .mp3,Lo Siento - ,7.0,/app/lyrics/popularity_7/Lo Siento.txt,Lo Siento,7.0,70
+La Hora Loca,44,True,True,/app/songs/popularity_7/Hora Loca - .mp3,Hora Loca - ,7.0,/app/lyrics/popularity_7/Hora Loca.txt,Hora Loca,7.0,70
+Dinero - English Version,37,True,True,/app/songs/popularity_4/Dinero - English Version - .mp3,Dinero - English Version - ,4.0,/app/lyrics/popularity_4/Dinero - English Version -.txt,Dinero - English Version -,4.0,40
+Alright,43,True,True,/app/songs/popularity_4/Alright - .mp3,Alright - ,4.0,/app/lyrics/popularity_4/Alright.txt,Alright,4.0,40
+Insecure,53,True,True,/app/songs/popularity_5/Insecure - .mp3,Insecure - ,5.0,/app/lyrics/popularity_5/Insecure.txt,Insecure,5.0,50
+Si Una Vez - (If I Once)[Spanglish Version],54,True,True,/app/songs/popularity_5/Si Una Vez - (If I Once)[Spanglish Version] - .mp3,Si Una Vez - (If I Once)[Spanglish Version] - ,5.0,/app/lyrics/popularity_5/Si Una Vez - (If I Once)[Spanglish Version] -.txt,Si Una Vez - (If I Once)[Spanglish Version] -,5.0,50
+Sunny Daze,40,True,True,/app/songs/popularity_4/Sunny Daze - .mp3,Sunny Daze - ,4.0,/app/lyrics/popularity_4/Sunny Daze.txt,Sunny Daze,4.0,40
+I Know You Want Me (Calle Ocho),65,True,True,/app/songs/popularity_1/I Know You Want Me (Calle Ocho) - .mp3,I Know You Want Me (Calle Ocho) - ,1.0,/app/lyrics/popularity_1/I Know You Want Me (Calle Ocho).txt,I Know You Want Me (Calle Ocho),1.0,10
+Complicated,77,True,True,/app/songs/popularity_3/Complicated - .mp3,Complicated - ,3.0,/app/lyrics/popularity_3/Complicated.txt,Complicated,3.0,30
+Beautiful,73,True,True,/app/songs/popularity_3/Beautiful - .mp3,Beautiful - ,3.0,/app/lyrics/popularity_3/Beautiful.txt,Beautiful,3.0,30
+Raise Your Glass,54,True,True,/app/songs/popularity_5/Raise Your Glass - .mp3,Raise Your Glass - ,5.0,/app/lyrics/popularity_5/Raise Your Glass.txt,Raise Your Glass,5.0,50
+Stronger (What Doesn't Kill You),52,True,True,/app/songs/popularity_5/Stronger (What Doesn't Kill You) - .mp3,Stronger (What Doesn't Kill You) - ,5.0,/app/lyrics/popularity_5/Stronger (What Doesn't Kill You).txt,Stronger (What Doesn't Kill You),5.0,50
+Over My Head (Cable Car),60,True,True,/app/songs/popularity_6/Over My Head (Cable Car) - .mp3,Over My Head (Cable Car) - ,6.0,/app/lyrics/popularity_6/Over My Head (Cable Car).txt,Over My Head (Cable Car),6.0,60
+Superman (It's Not Easy),48,True,True,/app/songs/popularity_4/Superman (It's Not Easy) - .mp3,Superman (It's Not Easy) - ,4.0,/app/lyrics/popularity_4/Superman (It's Not Easy).txt,Superman (It's Not Easy),4.0,40
+Conga,59,True,True,/app/songs/popularity_5/Conga - .mp3,Conga - ,5.0,/app/lyrics/popularity_5/Conga.txt,Conga,5.0,50
+Guantanamera,58,True,True,/app/songs/popularity_6/Guantanamera - .mp3,Guantanamera - ,6.0,/app/lyrics/popularity_6/Guantanamera.txt,Guantanamera,6.0,60
+El Matador,11,True,True,/app/songs/popularity_2/El Matador - .mp3,El Matador - ,2.0,/app/lyrics/popularity_2/El Matador.txt,El Matador,2.0,20
+Oye Como Va,56,True,True,/app/songs/popularity_6/Oye Como Va - .mp3,Oye Como Va - ,6.0,/app/lyrics/popularity_6/Oye Como Va.txt,Oye Como Va,6.0,60
+Bamboleo,54,True,True,/app/songs/popularity_6/Bamboleo - .mp3,Bamboleo - ,6.0,/app/lyrics/popularity_6/Bamboleo.txt,Bamboleo,6.0,60
+Pedro Navaja,60,True,True,/app/songs/popularity_6/Pedro Navaja - .mp3,Pedro Navaja - ,6.0,/app/lyrics/popularity_6/Pedro Navaja.txt,Pedro Navaja,6.0,60
+Mambo No 5,52,True,True,/app/songs/popularity_6/Mambo No 5 - .mp3,Mambo No 5 - ,6.0,/app/lyrics/popularity_6/Mambo No 5.txt,Mambo No 5,6.0,60
+Querida,4,True,True,/app/songs/popularity_1/Querida - .mp3,Querida - ,1.0,/app/lyrics/popularity_1/Querida.txt,Querida,1.0,10
+Rebelión,43,True,True,/app/songs/popularity_4/Rebelión - .mp3,Rebelión - ,4.0,/app/lyrics/popularity_4/Rebelión.txt,Rebelión,4.0,40
+Besame Mucho,7,True,True,/app/songs/popularity_1/Besame Mucho - .mp3,Besame Mucho - ,1.0,/app/lyrics/popularity_1/Besame Mucho.txt,Besame Mucho,1.0,10
+Chan Chan,7,True,True,/app/songs/popularity_1/Chan Chan - .mp3,Chan Chan - ,1.0,/app/lyrics/popularity_1/Chan Chan.txt,Chan Chan,1.0,10
+"Soy un Truhán, Soy un Señor",50,True,True,"/app/songs/popularity_5/Soy un Truhán, Soy un Señor - .mp3","Soy un Truhán, Soy un Señor - ",5.0,"/app/lyrics/popularity_5/Soy un Truhán, Soy un Señor.txt","Soy un Truhán, Soy un Señor",5.0,50
+La Cumparsita,42,True,True,/app/songs/popularity_4/La Cumparsita - .mp3,La Cumparsita - ,4.0,/app/lyrics/popularity_4/La Cumparsita.txt,La Cumparsita,4.0,40
+Paloma negra,50,True,True,/app/songs/popularity_5/Paloma negra - .mp3,Paloma negra - ,5.0,/app/lyrics/popularity_5/Paloma negra.txt,Paloma negra,5.0,50
+(I Can't Get No) Satisfaction,48,True,True,/app/songs/popularity_5/(I Can't Get No) Satisfaction - .mp3,(I Can't Get No) Satisfaction - ,5.0,/app/lyrics/popularity_5/(I Can't Get No) Satisfaction.txt,(I Can't Get No) Satisfaction,5.0,50
+Hit the Road Jack,13,True,True,/app/songs/popularity_2/Hit the Road Jack - .mp3,Hit the Road Jack - ,2.0,/app/lyrics/popularity_2/Hit the Road Jack.txt,Hit the Road Jack,2.0,20
+Proud Mary,30,True,True,/app/songs/popularity_3/Proud Mary - .mp3,Proud Mary - ,3.0,/app/lyrics/popularity_3/Proud Mary.txt,Proud Mary,3.0,30
+The End - Remastered,49,True,True,/app/songs/popularity_5/The End - Remastered - .mp3,The End - Remastered - ,5.0,/app/lyrics/popularity_7/In The End.txt,In The End,7.0,50
+Brown Eyed Girl,80,True,True,/app/songs/popularity_3/Brown Eyed Girl - .mp3,Brown Eyed Girl - ,3.0,/app/lyrics/popularity_3/Brown Eyed Girl.txt,Brown Eyed Girl,3.0,30
+Hush - 2014 Remastered Version,38,True,True,/app/songs/popularity_3/Hush - 2014 Remastered Version - .mp3,Hush - 2014 Remastered Version - ,3.0,/app/lyrics/popularity_3/Hush - 2014 Remastered Version -.txt,Hush - 2014 Remastered Version -,3.0,30
+Itchycoo Park,49,True,True,/app/songs/popularity_5/Itchycoo Park - .mp3,Itchycoo Park - ,5.0,/app/lyrics/popularity_5/Itchycoo Park.txt,Itchycoo Park,5.0,50
+96 Tears,30,True,True,/app/songs/popularity_3/96 Tears - .mp3,96 Tears - ,3.0,/app/lyrics/popularity_3/96 Tears.txt,96 Tears,3.0,30
+Kick out the Jams,40,True,True,/app/songs/popularity_4/Kick out the Jams - .mp3,Kick out the Jams - ,4.0,/app/lyrics/popularity_4/Kick out the Jams.txt,Kick out the Jams,4.0,40
+Hotel California - Remastered,83,True,True,/app/songs/popularity_9/Hotel California - Remastered - .mp3,Hotel California - Remastered - ,9.0,/app/lyrics/popularity_9/Hotel California - Remastered -.txt,Hotel California - Remastered -,9.0,90
+Wildflowers - Remastered,13,True,True,/app/songs/popularity_2/Wildflowers - Remastered - .mp3,Wildflowers - Remastered - ,2.0,/app/lyrics/popularity_2/Wildflowers - Remastered -.txt,Wildflowers - Remastered -,2.0,20
+Jolene,76,True,True,/app/songs/popularity_3/Jolene - .mp3,Jolene - ,3.0,/app/lyrics/popularity_3/Jolene.txt,Jolene,3.0,30
+Solsbury Hill,21,True,True,/app/songs/popularity_3/Solsbury Hill - .mp3,Solsbury Hill - ,3.0,/app/lyrics/popularity_3/Solsbury Hill.txt,Solsbury Hill,3.0,30
+Rock And Roll All Nite,74,True,True,/app/songs/popularity_7/Rock And Roll All Nite - .mp3,Rock And Roll All Nite - ,7.0,/app/lyrics/popularity_7/Rock And Roll All Nite.txt,Rock And Roll All Nite,7.0,70
+Highway to Hell,83,True,True,/app/songs/popularity_9/Highway to Hell - .mp3,Highway to Hell - ,9.0,/app/lyrics/popularity_9/Highway to Hell.txt,Highway to Hell,9.0,90
+You Give Love A Bad Name,26,True,True,/app/songs/popularity_3/You Give Love A Bad Name - .mp3,You Give Love A Bad Name - ,3.0,/app/lyrics/popularity_3/You Give Love A Bad Name.txt,You Give Love A Bad Name,3.0,30
+Nobody's Fool,16,True,True,/app/songs/popularity_2/Nobody's Fool - .mp3,Nobody's Fool - ,2.0,/app/lyrics/popularity_2/Nobody's Fool.txt,Nobody's Fool,2.0,20
+Livin' On A Prayer,63,True,True,/app/songs/popularity_1/Livin' On A Prayer - .mp3,Livin' On A Prayer - ,1.0,/app/lyrics/popularity_1/Livin' On A Prayer.txt,Livin' On A Prayer,1.0,10
+Rock the Night,7,True,True,/app/songs/popularity_1/Rock the Night - .mp3,Rock the Night - ,1.0,/app/lyrics/popularity_1/Rock the Night.txt,Rock the Night,1.0,10
+Addicted To That Rush,4,True,True,/app/songs/popularity_1/Addicted To That Rush - .mp3,Addicted To That Rush - ,1.0,/app/lyrics/popularity_1/Addicted To That Rush.txt,Addicted To That Rush,1.0,10
+I Wanna Be Somebody,5,True,True,/app/songs/popularity_1/I Wanna Be Somebody - .mp3,I Wanna Be Somebody - ,1.0,/app/lyrics/popularity_1/I Wanna Be Somebody.txt,I Wanna Be Somebody,1.0,10
+Over The Mountain,3,True,True,/app/songs/popularity_1/Over The Mountain - .mp3,Over The Mountain - ,1.0,/app/lyrics/popularity_1/Over The Mountain.txt,Over The Mountain,1.0,10
+Wild Child,59,True,True,/app/songs/popularity_4/Real Wild Child (Wild One) - .mp3,Real Wild Child (Wild One) - ,4.0,/app/lyrics/popularity_4/Real Wild Child (Wild One).txt,Real Wild Child (Wild One),4.0,40
+Detroit Rock City,22,True,True,/app/songs/popularity_3/Detroit Rock City - .mp3,Detroit Rock City - ,3.0,/app/lyrics/popularity_3/Detroit Rock City.txt,Detroit Rock City,3.0,30
+I Was Made For Lovin' You,36,True,True,/app/songs/popularity_3/I Was Made For Lovin' You - .mp3,I Was Made For Lovin' You - ,3.0,/app/lyrics/popularity_3/I Was Made For Lovin' You.txt,I Was Made For Lovin' You,3.0,30
+Wind Of Change,37,True,True,/app/songs/popularity_3/Wind Of Change - .mp3,Wind Of Change - ,3.0,/app/lyrics/popularity_3/Wind Of Change.txt,Wind Of Change,3.0,30
+"Say You, Say Me",32,True,True,"/app/songs/popularity_3/Say You, Say Me - .mp3","Say You, Say Me - ",3.0,"/app/lyrics/popularity_3/Say You, Say Me.txt","Say You, Say Me",3.0,30
+Take On Me,85,True,True,/app/songs/popularity_9/Take On Me - .mp3,Take On Me - ,9.0,/app/lyrics/popularity_9/Take On Me.txt,Take On Me,9.0,90
+Careless Whisper,13,True,True,/app/songs/popularity_2/Careless Whisper - .mp3,Careless Whisper - ,2.0,/app/lyrics/popularity_2/Careless Whisper.txt,Careless Whisper,2.0,20
+Billie Jean,84,True,True,/app/songs/popularity_9/Billie Jean - .mp3,Billie Jean - ,9.0,/app/lyrics/popularity_9/Billie Jean.txt,Billie Jean,9.0,90
+Tainted Love,26,True,True,/app/songs/popularity_3/Tainted Love - .mp3,Tainted Love - ,3.0,/app/lyrics/popularity_3/Tainted Love.txt,Tainted Love,3.0,30
+Dr Feelgood,32,True,True,/app/songs/popularity_3/Dr Feelgood - .mp3,Dr Feelgood - ,3.0,/app/lyrics/popularity_3/Dr Feelgood.txt,Dr Feelgood,3.0,30
+Jessie's Girl,9,True,True,/app/songs/popularity_1/Jessie's Girl - .mp3,Jessie's Girl - ,1.0,/app/lyrics/popularity_1/Jessie's Girl.txt,Jessie's Girl,1.0,10
+Everybody Wants To Rule The World,82,True,True,/app/songs/popularity_9/Everybody Wants To Rule The World - .mp3,Everybody Wants To Rule The World - ,9.0,/app/lyrics/popularity_9/Everybody Wants To Rule The World.txt,Everybody Wants To Rule The World,9.0,90
+Call Me,64,True,True,/app/songs/popularity_1/Call Me - .mp3,Call Me - ,1.0,/app/lyrics/popularity_1/Call Me.txt,Call Me,1.0,10
+Rebel Yell,25,True,True,/app/songs/popularity_3/Rebel Yell - .mp3,Rebel Yell - ,3.0,/app/lyrics/popularity_3/Rebel Yell.txt,Rebel Yell,3.0,30
+Don't Change,22,True,True,/app/songs/popularity_3/Don't Change - .mp3,Don't Change - ,3.0,/app/lyrics/popularity_3/Don't Change.txt,Don't Change,3.0,30
+Africa,86,True,True,/app/songs/popularity_9/Africa - .mp3,Africa - ,9.0,/app/lyrics/popularity_9/Africa.txt,Africa,9.0,90
+I Wanna Dance with Somebody (Who Loves Me),82,True,True,/app/songs/popularity_9/I Wanna Dance with Somebody (Who Loves Me) - .mp3,I Wanna Dance with Somebody (Who Loves Me) - ,9.0,/app/lyrics/popularity_9/I Wanna Dance with Somebody (Who Loves Me).txt,I Wanna Dance with Somebody (Who Loves Me),9.0,90
+Footloose,74,True,True,/app/songs/popularity_1/Footloose - .mp3,Footloose - ,1.0,/app/lyrics/popularity_1/Footloose.txt,Footloose,1.0,10
+Wake Me Up Before You Go-Go - Remastered,62,True,True,/app/songs/popularity_3/Wake Me up Before You Go-Go - .mp3,Wake Me up Before You Go-Go - ,3.0,/app/lyrics/popularity_3/Wake Me up Before You Go-Go.txt,Wake Me up Before You Go-Go,3.0,30
+Thunderstruck,82,True,True,/app/songs/popularity_9/Thunderstruck - .mp3,Thunderstruck - ,9.0,/app/lyrics/popularity_9/Thunderstruck.txt,Thunderstruck,9.0,90
+(I've Had) The Time of My Life,21,True,True,/app/songs/popularity_2/(I've Had) The Time of My Life - .mp3,(I've Had) The Time of My Life - ,2.0,/app/lyrics/popularity_2/(I've Had) The Time of My Life.txt,(I've Had) The Time of My Life,2.0,20
+We Belong - Single Version,12,True,True,/app/songs/popularity_1/We Belong - Single Version - .mp3,We Belong - Single Version - ,1.0,/app/lyrics/popularity_1/We Belong - Single Version -.txt,We Belong - Single Version -,1.0,10
+Oh Sherrie,36,True,True,/app/songs/popularity_4/Oh Sherrie - .mp3,Oh Sherrie - ,4.0,/app/lyrics/popularity_4/Oh Sherrie.txt,Oh Sherrie,4.0,40
+"I'm Alright (Theme from ""Caddyshack"")",40,True,True,"/app/songs/popularity_4/I'm Alright (Theme from ""Caddyshack"") - .mp3","I'm Alright (Theme from ""Caddyshack"") - ",4.0,"/app/lyrics/popularity_4/I'm Alright (Theme from ""Caddyshack"").txt","I'm Alright (Theme from ""Caddyshack"")",4.0,40
+Baby Got Back,27,True,True,/app/songs/popularity_2/Baby Got Back - .mp3,Baby Got Back - ,2.0,/app/lyrics/popularity_2/Baby Got Back.txt,Baby Got Back,2.0,20
+Knockin' Boots,32,True,True,/app/songs/popularity_4/Knockin' Boots - .mp3,Knockin' Boots - ,4.0,/app/lyrics/popularity_4/Knockin' Boots.txt,Knockin' Boots,4.0,40
+Glycerine - Acoustic,14,True,True,/app/songs/popularity_1/Glycerine - Acoustic - .mp3,Glycerine - Acoustic - ,1.0,/app/lyrics/popularity_1/Glycerine - Acoustic -.txt,Glycerine - Acoustic -,1.0,10
+1979,19,True,True,/app/songs/popularity_1/1979 - .mp3,1979 - ,1.0,/app/lyrics/popularity_1/1979.txt,1979,1.0,10
+Losing My Religion,28,True,True,/app/songs/popularity_2/Losing My Religion - .mp3,Losing My Religion - ,2.0,/app/lyrics/popularity_2/Losing My Religion.txt,Losing My Religion,2.0,20
+What It's Like,17,True,True,/app/songs/popularity_1/What It's Like - .mp3,What It's Like - ,1.0,/app/lyrics/popularity_1/What It's Like.txt,What It's Like,1.0,10
+Black Hole Sun,16,True,True,/app/songs/popularity_1/Black Hole Sun - .mp3,Black Hole Sun - ,1.0,/app/lyrics/popularity_1/Black Hole Sun.txt,Black Hole Sun,1.0,10
+Santeria,24,True,True,/app/songs/popularity_2/Santeria - .mp3,Santeria - ,2.0,/app/lyrics/popularity_2/Santeria.txt,Santeria,2.0,20
+All Apologies,10,True,True,/app/songs/popularity_1/All Apologies - .mp3,All Apologies - ,1.0,/app/lyrics/popularity_1/All Apologies.txt,All Apologies,1.0,10
+Hey Leonardo (She Likes Me For Me),4,True,True,/app/songs/popularity_0/Hey Leonardo (She Likes Me For Me) - .mp3,Hey Leonardo (She Likes Me For Me) - ,0.0,/app/lyrics/popularity_0/Hey Leonardo (She Likes Me For Me).txt,Hey Leonardo (She Likes Me For Me),0.0,0
+Cannonball,8,True,True,/app/songs/popularity_0/Cannonball - .mp3,Cannonball - ,0.0,/app/lyrics/popularity_0/Cannonball.txt,Cannonball,0.0,0
+Into Your Arms,6,True,True,/app/songs/popularity_0/Into Your Arms - .mp3,Into Your Arms - ,0.0,/app/lyrics/popularity_0/Into Your Arms.txt,Into Your Arms,0.0,0
+Glycerine,15,True,True,/app/songs/popularity_2/Glycerine - Remastered - .mp3,Glycerine - Remastered - ,2.0,/app/lyrics/popularity_1/Glycerine.txt,Glycerine,1.0,20
+What I Got,20,True,True,/app/songs/popularity_2/What I Got - .mp3,What I Got - ,2.0,/app/lyrics/popularity_2/What I Got.txt,What I Got,2.0,20
+New Age Girl,0,True,True,/app/songs/popularity_0/New Age Girl - .mp3,New Age Girl - ,0.0,/app/lyrics/popularity_0/New Age Girl.txt,New Age Girl,0.0,0
+Celebrity Skin,26,True,True,/app/songs/popularity_2/Celebrity Skin - .mp3,Celebrity Skin - ,2.0,/app/lyrics/popularity_2/Celebrity Skin.txt,Celebrity Skin,2.0,20
+September,63,True,True,/app/songs/popularity_3/September Song - Guitar Acoustic - .mp3,September Song - Guitar Acoustic - ,3.0,/app/lyrics/popularity_3/September Song - Guitar Acoustic -.txt,September Song - Guitar Acoustic -,3.0,30
+Everyday Is A Winding Road,21,True,True,/app/songs/popularity_3/Everyday Is A Winding Road - .mp3,Everyday Is A Winding Road - ,3.0,/app/lyrics/popularity_3/Everyday Is A Winding Road.txt,Everyday Is A Winding Road,3.0,30
+Transformer (feat. Nicki Minaj),0,True,True,/app/songs/popularity_0/Transformer (feat. Nicki Minaj) - .mp3,Transformer (feat. Nicki Minaj) - ,0.0,/app/lyrics/popularity_0/Transformer (feat. Nicki Minaj).txt,Transformer (feat. Nicki Minaj),0.0,0
+Drip Too Hard,91,True,True,/app/songs/popularity_9/Drip Too Hard - .mp3,Drip Too Hard - ,9.0,/app/lyrics/popularity_9/Drip Too Hard.txt,Drip Too Hard,9.0,90
+Praise The Lord (Da Shine),91,True,True,/app/songs/popularity_9/Praise The Lord (Da Shine) - .mp3,Praise The Lord (Da Shine) - ,9.0,/app/lyrics/popularity_9/Praise The Lord (Da Shine).txt,Praise The Lord (Da Shine),9.0,90
+Lucky You (feat. Joyner Lucas),96,True,True,/app/songs/popularity_9/Lucky You (feat. Joyner Lucas) - .mp3,Lucky You (feat. Joyner Lucas) - ,9.0,/app/lyrics/popularity_9/Lucky You (feat. Joyner Lucas).txt,Lucky You (feat. Joyner Lucas),9.0,90
+FEFE (feat. Nicki Minaj & Murda Beatz),96,True,True,/app/songs/popularity_9/FEFE (feat. Nicki Minaj & Murda Beatz) - .mp3,FEFE (feat. Nicki Minaj & Murda Beatz) - ,9.0,/app/lyrics/popularity_9/FEFE (feat. Nicki Minaj & Murda Beatz).txt,FEFE (feat. Nicki Minaj & Murda Beatz),9.0,90
+The Code,17,True,True,/app/songs/popularity_2/The Code - .mp3,The Code - ,2.0,/app/lyrics/popularity_2/The Code.txt,The Code,2.0,20
+No Me Platiques Mas,1,True,True,/app/songs/popularity_0/No Me Platiques Mas - .mp3,No Me Platiques Mas - ,0.0,/app/lyrics/popularity_0/No Me Platiques Mas.txt,No Me Platiques Mas,0.0,0
+Payaso,2,True,True,/app/songs/popularity_0/Payaso - .mp3,Payaso - ,0.0,/app/lyrics/popularity_0/Payaso.txt,Payaso,0.0,0
+Cien años,5,True,True,/app/songs/popularity_1/Cien años - .mp3,Cien años - ,1.0,/app/lyrics/popularity_1/Cien años.txt,Cien años,1.0,10
+El Reloj,4,True,True,/app/songs/popularity_0/El Reloj - .mp3,El Reloj - ,0.0,/app/lyrics/popularity_0/El Reloj.txt,El Reloj,0.0,0
+Bachata Rosa,18,True,True,/app/songs/popularity_2/Bachata Rosa - .mp3,Bachata Rosa - ,2.0,/app/lyrics/popularity_2/Bachata Rosa.txt,Bachata Rosa,2.0,20
+No Sé Tú,17,True,True,/app/songs/popularity_2/No Sé Tú - .mp3,No Sé Tú - ,2.0,/app/lyrics/popularity_2/No Sé Tú.txt,No Sé Tú,2.0,20
+Contigo Aprendí,20,True,True,/app/songs/popularity_2/Contigo Aprendí - .mp3,Contigo Aprendí - ,2.0,/app/lyrics/popularity_2/Contigo Aprendí.txt,Contigo Aprendí,2.0,20
+El Noa Noa,19,True,True,/app/songs/popularity_2/El Noa Noa - .mp3,El Noa Noa - ,2.0,/app/lyrics/popularity_2/El Noa Noa.txt,El Noa Noa,2.0,20
+Noche de Ronda,6,True,True,/app/songs/popularity_1/Noche de Ronda - .mp3,Noche de Ronda - ,1.0,/app/lyrics/popularity_1/Noche de Ronda.txt,Noche de Ronda,1.0,10
+We Can't Stop (feat. Bea Miller),26,True,True,/app/songs/popularity_3/We Can't Stop (feat. Bea Miller) - .mp3,We Can't Stop (feat. Bea Miller) - ,3.0,/app/lyrics/popularity_3/We Can't Stop (feat. Bea Miller).txt,We Can't Stop (feat. Bea Miller),3.0,30
+Strangers,19,True,True,/app/songs/popularity_2/Strangers - .mp3,Strangers - ,2.0,/app/lyrics/popularity_2/Strangers.txt,Strangers,2.0,20
+7 Years,20,True,True,/app/songs/popularity_2/7 Years - .mp3,7 Years - ,2.0,/app/lyrics/popularity_2/7 Years.txt,7 Years,2.0,20
+Hold My Girl,30,True,True,/app/songs/popularity_3/Hold My Girl - .mp3,Hold My Girl - ,3.0,/app/lyrics/popularity_3/Hold My Girl.txt,Hold My Girl,3.0,30
+After Rain,21,True,True,/app/songs/popularity_3/After Rain - .mp3,After Rain - ,3.0,/app/lyrics/popularity_3/After Rain.txt,After Rain,3.0,30
+Moving Mountains,16,True,True,/app/songs/popularity_2/Moving Mountains - .mp3,Moving Mountains - ,2.0,/app/lyrics/popularity_2/Moving Mountains.txt,Moving Mountains,2.0,20
+Concrete Jungle - Acoustic,26,True,True,/app/songs/popularity_3/Concrete Jungle - Acoustic - .mp3,Concrete Jungle - Acoustic - ,3.0,/app/lyrics/popularity_3/Concrete Jungle - Acoustic -.txt,Concrete Jungle - Acoustic -,3.0,30
+Where's My Love,29,True,True,/app/songs/popularity_3/Where's My Love - .mp3,Where's My Love - ,3.0,/app/lyrics/popularity_3/Where's My Love.txt,Where's My Love,3.0,30
+You And Me,25,True,True,/app/songs/popularity_3/You And Me - .mp3,You And Me - ,3.0,/app/lyrics/popularity_3/You And Me.txt,You And Me,3.0,30
+Come And Get It,5,True,True,/app/songs/popularity_1/Come And Get It - .mp3,Come And Get It - ,1.0,/app/lyrics/popularity_1/Come And Get It.txt,Come And Get It,1.0,10
+Drop Dead Cynical,24,True,True,/app/songs/popularity_3/Drop Dead Cynical - .mp3,Drop Dead Cynical - ,3.0,/app/lyrics/popularity_3/Drop Dead Cynical.txt,Drop Dead Cynical,3.0,30
+Blood,9,True,True,/app/songs/popularity_1/Blood - .mp3,Blood - ,1.0,/app/lyrics/popularity_1/Blood.txt,Blood,1.0,10
+Hardwired,24,True,True,/app/songs/popularity_3/Hardwired - .mp3,Hardwired - ,3.0,/app/lyrics/popularity_3/Hardwired.txt,Hardwired,3.0,30
+Don't Need You - Edit,23,True,True,/app/songs/popularity_3/Don't Need You - Edit - .mp3,Don't Need You - Edit - ,3.0,/app/lyrics/popularity_3/Don't Need You - Edit -.txt,Don't Need You - Edit -,3.0,30
+Paranoia,65,True,True,/app/songs/popularity_1/Paranoia - .mp3,Paranoia - ,1.0,/app/lyrics/popularity_1/Paranoia.txt,Paranoia,1.0,10
+"My Love (feat. Major Lazer, WizKid, Dua Lipa)",73,True,True,/app/songs/popularity_1/My Love (feat. Mia Gladstone) - .mp3,My Love (feat. Mia Gladstone) - ,1.0,/app/lyrics/popularity_1/My Love (feat. Mia Gladstone).txt,My Love (feat. Mia Gladstone),1.0,10
+Anticipation,29,True,True,/app/songs/popularity_3/Anticipation - .mp3,Anticipation - ,3.0,/app/lyrics/popularity_3/Anticipation.txt,Anticipation,3.0,30
+I See Fire,0,True,True,/app/songs/popularity_0/I See Fire - .mp3,I See Fire - ,0.0,/app/lyrics/popularity_0/I See Fire.txt,I See Fire,0.0,0
+Game of Thrones,0,True,True,/app/songs/popularity_0/Game of Thrones - .mp3,Game of Thrones - ,0.0,/app/lyrics/popularity_0/Game of Thrones.txt,Game of Thrones,0.0,0
+Misty Mountains (A Cappella),0,True,True,/app/songs/popularity_0/Misty Mountains (A Cappella) - .mp3,Misty Mountains (A Cappella) - ,0.0,/app/lyrics/popularity_0/Misty Mountains (A Cappella).txt,Misty Mountains (A Cappella),0.0,0
+Taste,47,True,True,/app/songs/popularity_10/Taste (feat. Offset) - .mp3,Taste (feat. Offset) - ,10.0,/app/lyrics/popularity_10/Taste (feat. Offset).txt,Taste (feat. Offset),10.0,100
+Switch Up,39,True,True,/app/songs/popularity_1/Switch Up - .mp3,Switch Up - ,1.0,/app/lyrics/popularity_1/Switch Up.txt,Switch Up,1.0,10
+Lady - Hear Me Tonight,8,True,True,/app/songs/popularity_1/Lady - Hear Me Tonight - .mp3,Lady - Hear Me Tonight - ,1.0,/app/lyrics/popularity_1/Lady - Hear Me Tonight -.txt,Lady - Hear Me Tonight -,1.0,10
+King Creole,10,True,True,/app/songs/popularity_1/King Creole - .mp3,King Creole - ,1.0,/app/lyrics/popularity_1/King Creole.txt,King Creole,1.0,10
+My Girl,21,True,True,/app/songs/popularity_3/My Girl - .mp3,My Girl - ,3.0,/app/lyrics/popularity_3/My Girl.txt,My Girl,3.0,30
+San Francisco (Be Sure to Wear Flowers in Your Hair) - Single Version,64,True,True,/app/songs/popularity_1/San Francisco - .mp3,San Francisco - ,1.0,/app/lyrics/popularity_1/San Francisco.txt,San Francisco,1.0,10
+You Never Can Tell,27,True,True,/app/songs/popularity_3/You Never Can Tell - .mp3,You Never Can Tell - ,3.0,/app/lyrics/popularity_3/You Never Can Tell.txt,You Never Can Tell,3.0,30
+Fly Me To The Moon - Remastered 2008,27,True,True,/app/songs/popularity_2/To The Moon - .mp3,To The Moon - ,2.0,/app/lyrics/popularity_2/To The Moon.txt,To The Moon,2.0,20
+Mr. Blue Sky,81,True,True,/app/songs/popularity_3/Mr. Blue Sky - .mp3,Mr. Blue Sky - ,3.0,/app/lyrics/popularity_3/Mr. Blue Sky.txt,Mr. Blue Sky,3.0,30
+The Passenger,26,True,True,/app/songs/popularity_3/The Passenger - .mp3,The Passenger - ,3.0,/app/lyrics/popularity_3/The Passenger.txt,The Passenger,3.0,30
+Would I Lie To You?,20,True,True,/app/songs/popularity_2/Would I Lie To You? - .mp3,Would I Lie To You? - ,2.0,/app/lyrics/popularity_2/Would I Lie To You?.txt,Would I Lie To You?,2.0,20
+Believe,77,True,True,/app/songs/popularity_3/Believer - .mp3,Believer - ,3.0,/app/lyrics/popularity_3/Believer.txt,Believer,3.0,30
+Losin Control,7,True,True,/app/songs/popularity_1/Losin Control - .mp3,Losin Control - ,1.0,/app/lyrics/popularity_1/Losin Control.txt,Losin Control,1.0,10
+Luving U,6,True,True,/app/songs/popularity_1/Luving U - .mp3,Luving U - ,1.0,/app/lyrics/popularity_1/Luving U.txt,Luving U,1.0,10
+Ready For The Floor,9,True,True,/app/songs/popularity_1/Ready For The Floor - .mp3,Ready For The Floor - ,1.0,/app/lyrics/popularity_1/Ready For The Floor.txt,Ready For The Floor,1.0,10
+Heartbeats,7,True,True,/app/songs/popularity_1/Heartbeats - .mp3,Heartbeats - ,1.0,/app/lyrics/popularity_1/Heartbeats.txt,Heartbeats,1.0,10
+Cheap and Cheerful,5,True,True,/app/songs/popularity_1/Cheap and Cheerful - .mp3,Cheap and Cheerful - ,1.0,/app/lyrics/popularity_1/Cheap and Cheerful.txt,Cheap and Cheerful,1.0,10
+Lovely Head,5,True,True,/app/songs/popularity_1/Lovely Head - .mp3,Lovely Head - ,1.0,/app/lyrics/popularity_1/Lovely Head.txt,Lovely Head,1.0,10
+Up With People,4,True,True,/app/songs/popularity_1/Up With People - .mp3,Up With People - ,1.0,/app/lyrics/popularity_1/Up With People.txt,Up With People,1.0,10
+Default,53,True,True,/app/songs/popularity_1/Default - .mp3,Default - ,1.0,/app/lyrics/popularity_1/Default.txt,Default,1.0,10
+Holda You (I'm Psycho),29,True,True,/app/songs/popularity_3/Holda You (I'm Psycho) - .mp3,Holda You (I'm Psycho) - ,3.0,/app/lyrics/popularity_3/Holda You (I'm Psycho).txt,Holda You (I'm Psycho),3.0,30
+She's a Lover,29,True,True,/app/songs/popularity_3/She's a Lover - .mp3,She's a Lover - ,3.0,/app/lyrics/popularity_3/She's a Lover.txt,She's a Lover,3.0,30
+Mirror in the Bathroom,8,True,True,/app/songs/popularity_1/Mirror in the Bathroom - .mp3,Mirror in the Bathroom - ,1.0,/app/lyrics/popularity_1/Mirror in the Bathroom.txt,Mirror in the Bathroom,1.0,10
+Birthday,6,True,True,/app/songs/popularity_1/Birthday Song - .mp3,Birthday Song - ,1.0,/app/lyrics/popularity_1/Birthday Song.txt,Birthday Song,1.0,10
+Only Love Can Break Your Heart,9,True,True,/app/songs/popularity_1/Only Love Can Break Your Heart - .mp3,Only Love Can Break Your Heart - ,1.0,/app/lyrics/popularity_1/Only Love Can Break Your Heart.txt,Only Love Can Break Your Heart,1.0,10
+Game of Pricks,6,True,True,/app/songs/popularity_1/Game of Pricks - .mp3,Game of Pricks - ,1.0,/app/lyrics/popularity_1/Game of Pricks.txt,Game of Pricks,1.0,10
+Headlights,3,True,True,/app/songs/popularity_1/Headlights - .mp3,Headlights - ,1.0,/app/lyrics/popularity_1/Headlights.txt,Headlights,1.0,10
+Bubby's Cream,0,True,True,/app/songs/popularity_0/Bubby's Cream - .mp3,Bubby's Cream - ,0.0,/app/lyrics/popularity_0/Bubby's Cream.txt,Bubby's Cream,0.0,0
+Stuck (with Arin Ray),60,True,True,/app/songs/popularity_1/Stuck - .mp3,Stuck - ,1.0,/app/lyrics/popularity_1/Stuck.txt,Stuck,1.0,10
+Be Your Man,28,True,True,/app/songs/popularity_3/Be Your Man - .mp3,Be Your Man - ,3.0,/app/lyrics/popularity_3/Be Your Man.txt,Be Your Man,3.0,30
+Lung,54,True,True,/app/songs/popularity_1/Lungs - .mp3,Lungs - ,1.0,/app/lyrics/popularity_1/Lungs.txt,Lungs,1.0,10
+Be Alright,96,True,True,/app/songs/popularity_10/Be Alright - .mp3,Be Alright - ,10.0,/app/lyrics/popularity_10/Be Alright.txt,Be Alright,10.0,100
+I Believe in Us,24,True,True,/app/songs/popularity_3/I Believe in Us - .mp3,I Believe in Us - ,3.0,/app/lyrics/popularity_3/I Believe in Us.txt,I Believe in Us,3.0,30
+Vocales de amor,1,True,True,/app/songs/popularity_1/Vocales de amor - .mp3,Vocales de amor - ,1.0,/app/lyrics/popularity_1/Vocales de amor.txt,Vocales de amor,1.0,10
+Natural,95,True,True,/app/songs/popularity_10/Natural - .mp3,Natural - ,10.0,/app/lyrics/popularity_10/Natural.txt,Natural,10.0,100
+Coupe (feat. Rich The Kid),0,True,True,/app/songs/popularity_0/Coupe (feat. Rich The Kid) - .mp3,Coupe (feat. Rich The Kid) - ,0.0,/app/lyrics/popularity_0/Coupe (feat. Rich The Kid).txt,Coupe (feat. Rich The Kid),0.0,0
+SAD!,96,True,True,/app/songs/popularity_10/SAD! - .mp3,SAD! - ,10.0,/app/lyrics/popularity_10/SAD!.txt,SAD!,10.0,100
+The Ringer,91,True,True,/app/songs/popularity_10/The Ringer - .mp3,The Ringer - ,10.0,/app/lyrics/popularity_10/The Ringer.txt,The Ringer,10.0,100
+Flaming Hot Cheetos,27,True,True,/app/songs/popularity_3/Flaming Hot Cheetos - .mp3,Flaming Hot Cheetos - ,3.0,/app/lyrics/popularity_3/Flaming Hot Cheetos.txt,Flaming Hot Cheetos,3.0,30
+You,23,True,True,/app/songs/popularity_1/YOU - .mp3,YOU - ,1.0,/app/lyrics/popularity_1/YOU.txt,YOU,1.0,10
+Space Program,0,True,True,/app/songs/popularity_0/Space Program - .mp3,Space Program - ,0.0,/app/lyrics/popularity_0/Space Program.txt,Space Program,0.0,0
+Wake Up Everybody,0,True,True,/app/songs/popularity_0/Wake Up Everybody - .mp3,Wake Up Everybody - ,0.0,/app/lyrics/popularity_0/Wake Up Everybody.txt,Wake Up Everybody,0.0,0
+Bang Bang,40,True,True,/app/songs/popularity_1/BANG BANG BANG - .mp3,BANG BANG BANG - ,1.0,/app/lyrics/popularity_1/BANG BANG BANG.txt,BANG BANG BANG,1.0,10
+Ay Que Rico,1,True,True,/app/songs/popularity_1/Ay Que Rico - .mp3,Ay Que Rico - ,1.0,/app/lyrics/popularity_1/Ay Que Rico.txt,Ay Que Rico,1.0,10
+Long Way Home,1,True,True,/app/songs/popularity_1/Long Way Home - .mp3,Long Way Home - ,1.0,/app/lyrics/popularity_1/Long Way Home.txt,Long Way Home,1.0,10
+Rock'n Me,2,True,True,/app/songs/popularity_1/Rock'n Me - .mp3,Rock'n Me - ,1.0,/app/lyrics/popularity_1/Rock'n Me.txt,Rock'n Me,1.0,10
+For A Dancer,0,True,True,/app/songs/popularity_0/For A Dancer - .mp3,For A Dancer - ,0.0,/app/lyrics/popularity_0/For A Dancer.txt,For A Dancer,0.0,0
+Heaven Can Wait,0,True,True,/app/songs/popularity_0/Heaven Can Wait - .mp3,Heaven Can Wait - ,0.0,/app/lyrics/popularity_0/Heaven Can Wait.txt,Heaven Can Wait,0.0,0
+Saturday Night's Alright For Fighting,0,True,True,/app/songs/popularity_0/Saturday Night's Alright For Fighting - .mp3,Saturday Night's Alright For Fighting - ,0.0,/app/lyrics/popularity_0/Saturday Night's Alright For Fighting.txt,Saturday Night's Alright For Fighting,0.0,0
+Teddy Picker,0,True,True,/app/songs/popularity_0/Teddy Picker - .mp3,Teddy Picker - ,0.0,/app/lyrics/popularity_0/Teddy Picker.txt,Teddy Picker,0.0,0
+Back for More,0,True,True,/app/songs/popularity_0/Back for More - .mp3,Back for More - ,0.0,/app/lyrics/popularity_0/Back for More.txt,Back for More,0.0,0
+Show Me the Way,0,True,True,/app/songs/popularity_0/Show Me the Way - .mp3,Show Me the Way - ,0.0,/app/lyrics/popularity_0/Show Me the Way.txt,Show Me the Way,0.0,0
+Ludacris,0,True,True,/app/songs/popularity_0/Ludacris - .mp3,Ludacris - ,0.0,/app/lyrics/popularity_0/Ludacris.txt,Ludacris,0.0,0
+John Madden 2,0,True,True,/app/songs/popularity_0/John Madden 2 - .mp3,John Madden 2 - ,0.0,/app/lyrics/popularity_0/John Madden 2.txt,John Madden 2,0.0,0
+Midwayer,22,True,True,/app/songs/popularity_3/Midwayer - .mp3,Midwayer - ,3.0,/app/lyrics/popularity_3/Midwayer.txt,Midwayer,3.0,30
+Como Deseo Ser Tu Amor,0,True,True,/app/songs/popularity_0/Como Deseo Ser Tu Amor - .mp3,Como Deseo Ser Tu Amor - ,0.0,/app/lyrics/popularity_0/Como Deseo Ser Tu Amor.txt,Como Deseo Ser Tu Amor,0.0,0
+Happier,100,True,True,/app/songs/popularity_10/Happier - .mp3,Happier - ,10.0,/app/lyrics/popularity_10/Happier.txt,Happier,10.0,100
+Better Now,95,True,True,/app/songs/popularity_10/Better Now - .mp3,Better Now - ,10.0,/app/lyrics/popularity_10/Better Now.txt,Better Now,10.0,100
+Get Dripped (feat. Playboi Carti),0,True,True,/app/songs/popularity_0/Get Dripped (feat. Playboi Carti) - .mp3,Get Dripped (feat. Playboi Carti) - ,0.0,/app/lyrics/popularity_0/Get Dripped (feat. Playboi Carti).txt,Get Dripped (feat. Playboi Carti),0.0,0
+Luv Them Girls,0,True,True,/app/songs/popularity_0/Luv Them Girls - .mp3,Luv Them Girls - ,0.0,/app/lyrics/popularity_0/Luv Them Girls.txt,Luv Them Girls,0.0,0
+Oxy Music,0,True,True,/app/songs/popularity_0/Oxy Music - .mp3,Oxy Music - ,0.0,/app/lyrics/popularity_0/Oxy Music.txt,Oxy Music,0.0,0
+If I Can't,0,True,True,/app/songs/popularity_0/If I Can't - .mp3,If I Can't - ,0.0,/app/lyrics/popularity_0/If I Can't.txt,If I Can't,0.0,0
+Barbed Wire,0,True,True,/app/songs/popularity_0/Barbed Wire - .mp3,Barbed Wire - ,0.0,/app/lyrics/popularity_0/Barbed Wire.txt,Barbed Wire,0.0,0
+STFU (feat. Kid Ink),0,True,True,/app/songs/popularity_0/STFU (feat. Kid Ink) - .mp3,STFU (feat. Kid Ink) - ,0.0,/app/lyrics/popularity_0/STFU (feat. Kid Ink).txt,STFU (feat. Kid Ink),0.0,0
+Treat You Better,84,True,True,/app/songs/popularity_2/Treat You Better - .mp3,Treat You Better - ,2.0,/app/lyrics/popularity_2/Treat You Better.txt,Treat You Better,2.0,20
+Symphony (feat. Zara Larsson),24,True,True,/app/songs/popularity_3/Symphony (feat. Zara Larsson) - .mp3,Symphony (feat. Zara Larsson) - ,3.0,/app/lyrics/popularity_3/Symphony (feat. Zara Larsson).txt,Symphony (feat. Zara Larsson),3.0,30
+Good Times,49,True,True,/app/songs/popularity_1/Good Times - .mp3,Good Times - ,1.0,/app/lyrics/popularity_1/Good Times.txt,Good Times,1.0,10
+Sail On,0,True,True,/app/songs/popularity_0/Sail On - .mp3,Sail On - ,0.0,/app/lyrics/popularity_0/Sail On.txt,Sail On,0.0,0
+Details,20,True,True,/app/songs/popularity_2/Details - .mp3,Details - ,2.0,/app/lyrics/popularity_2/Details.txt,Details,2.0,20
+U Got Me,27,True,True,/app/songs/popularity_3/U Got Me - .mp3,U Got Me - ,3.0,/app/lyrics/popularity_3/U Got Me.txt,U Got Me,3.0,30
+Soun tha mi primer amor,5,True,True,/app/songs/popularity_1/Soun tha mi primer amor - .mp3,Soun tha mi primer amor - ,1.0,/app/lyrics/popularity_1/Soun tha mi primer amor.txt,Soun tha mi primer amor,1.0,10
+I'm A Long Gone Daddy,28,True,True,/app/songs/popularity_3/I'm A Long Gone Daddy - .mp3,I'm A Long Gone Daddy - ,3.0,/app/lyrics/popularity_3/I'm A Long Gone Daddy.txt,I'm A Long Gone Daddy,3.0,30
+I Love You So Much It Hurts,21,True,True,/app/songs/popularity_3/I Love You So Much It Hurts - .mp3,I Love You So Much It Hurts - ,3.0,/app/lyrics/popularity_3/I Love You So Much It Hurts.txt,I Love You So Much It Hurts,3.0,30
+Anytime - Remastered,26,True,True,/app/songs/popularity_3/Anytime - Remastered - .mp3,Anytime - Remastered - ,3.0,/app/lyrics/popularity_3/Anytime - Remastered -.txt,Anytime - Remastered -,3.0,30
+Filipino Baby,21,True,True,/app/songs/popularity_3/Filipino Baby - .mp3,Filipino Baby - ,3.0,/app/lyrics/popularity_3/Filipino Baby.txt,Filipino Baby,3.0,30
+On Top Of Old Smokey,26,True,True,/app/songs/popularity_3/On Top Of Old Smokey - .mp3,On Top Of Old Smokey - ,3.0,/app/lyrics/popularity_3/On Top Of Old Smokey.txt,On Top Of Old Smokey,3.0,30
+The Three Bells,27,True,True,/app/songs/popularity_3/The Three Bells - .mp3,The Three Bells - ,3.0,/app/lyrics/popularity_3/The Three Bells.txt,The Three Bells,3.0,30
+How's the World Treating You,26,True,True,/app/songs/popularity_3/How's the World Treating You - .mp3,How's the World Treating You - ,3.0,/app/lyrics/popularity_3/How's the World Treating You.txt,How's the World Treating You,3.0,30
+Queen of Hearts,25,True,True,/app/songs/popularity_3/Queen of Hearts - .mp3,Queen of Hearts - ,3.0,/app/lyrics/popularity_3/Queen of Hearts.txt,Queen of Hearts,3.0,30
+Holding Her and Loving You,30,True,True,/app/songs/popularity_3/Holding Her and Loving You - .mp3,Holding Her and Loving You - ,3.0,/app/lyrics/popularity_3/Holding Her and Loving You.txt,Holding Her and Loving You,3.0,30
+Heartbroken - Edit,27,True,True,/app/songs/popularity_3/Heartbroken - Edit - .mp3,Heartbroken - Edit - ,3.0,/app/lyrics/popularity_3/Heartbroken - Edit -.txt,Heartbroken - Edit -,3.0,30
+Sh-Boom,4,True,True,/app/songs/popularity_1/Sh-Boom - .mp3,Sh-Boom - ,1.0,/app/lyrics/popularity_1/Sh-Boom.txt,Sh-Boom,1.0,10
+The Lovecats,7,True,True,/app/songs/popularity_1/The Lovecats - .mp3,The Lovecats - ,1.0,/app/lyrics/popularity_1/The Lovecats.txt,The Lovecats,1.0,10
+Cosmic Dancer,5,True,True,/app/songs/popularity_1/Cosmic Dancer - .mp3,Cosmic Dancer - ,1.0,/app/lyrics/popularity_1/Cosmic Dancer.txt,Cosmic Dancer,1.0,10
+I Feel Love (Every Million Miles),8,True,True,/app/songs/popularity_1/I Feel Love (Every Million Miles) - .mp3,I Feel Love (Every Million Miles) - ,1.0,/app/lyrics/popularity_1/I Feel Love (Every Million Miles).txt,I Feel Love (Every Million Miles),1.0,10
+Fell In Love With A Girl,8,True,True,/app/songs/popularity_1/Fell In Love With A Girl - .mp3,Fell In Love With A Girl - ,1.0,/app/lyrics/popularity_1/Fell In Love With A Girl.txt,Fell In Love With A Girl,1.0,10
+Backbeat,8,True,True,/app/songs/popularity_1/Backbeat - .mp3,Backbeat - ,1.0,/app/lyrics/popularity_1/Backbeat.txt,Backbeat,1.0,10
+Gun To The Head,2,True,True,/app/songs/popularity_1/Gun To The Head - .mp3,Gun To The Head - ,1.0,/app/lyrics/popularity_1/Gun To The Head.txt,Gun To The Head,1.0,10
+Beat of My Drum,7,True,True,/app/songs/popularity_1/Beat of My Drum - .mp3,Beat of My Drum - ,1.0,/app/lyrics/popularity_1/Beat of My Drum.txt,Beat of My Drum,1.0,10
+THIS OLE BOY,0,True,True,/app/songs/popularity_0/THIS OLE BOY - .mp3,THIS OLE BOY - ,0.0,/app/lyrics/popularity_0/THIS OLE BOY.txt,THIS OLE BOY,0.0,0
+Blackened Sun,7,True,True,/app/songs/popularity_1/Blackened Sun - .mp3,Blackened Sun - ,1.0,/app/lyrics/popularity_1/Blackened Sun.txt,Blackened Sun,1.0,10
+Head On [Hold On To Your Heart],6,True,True,/app/songs/popularity_1/Head On [Hold On To Your Heart] - .mp3,Head On [Hold On To Your Heart] - ,1.0,/app/lyrics/popularity_1/Head On [Hold On To Your Heart].txt,Head On [Hold On To Your Heart],1.0,10
+All That Love Is,21,True,True,/app/songs/popularity_3/All That Love Is - .mp3,All That Love Is - ,3.0,/app/lyrics/popularity_3/All That Love Is.txt,All That Love Is,3.0,30
+Origins,4,True,True,/app/songs/popularity_1/Origins - .mp3,Origins - ,1.0,/app/lyrics/popularity_1/Origins.txt,Origins,1.0,10
+Short Court Style,29,True,True,/app/songs/popularity_3/Short Court Style - .mp3,Short Court Style - ,3.0,/app/lyrics/popularity_3/Short Court Style.txt,Short Court Style,3.0,30
+Al Oula,0,True,True,/app/songs/popularity_0/Al Oula - .mp3,Al Oula - ,0.0,/app/lyrics/popularity_0/Al Oula.txt,Al Oula,0.0,0
+Pass That,23,True,True,/app/songs/popularity_3/Pass That - .mp3,Pass That - ,3.0,/app/lyrics/popularity_3/Pass That.txt,Pass That,3.0,30
+Turn Up,0,True,True,/app/songs/popularity_1/Turn Up - .mp3,Turn Up - ,1.0,/app/lyrics/popularity_1/Turn Up.txt,Turn Up,1.0,10
+Caminos Verdes,27,True,True,/app/songs/popularity_3/Caminos Verdes - .mp3,Caminos Verdes - ,3.0,/app/lyrics/popularity_3/Caminos Verdes.txt,Caminos Verdes,3.0,30
+Might Die Young (feat. Olivia O'Brien & Tinashe),28,True,True,/app/songs/popularity_3/Might Die Young (feat. Olivia O'Brien & Tinashe) - .mp3,Might Die Young (feat. Olivia O'Brien & Tinashe) - ,3.0,/app/lyrics/popularity_3/Might Die Young (feat. Olivia O'Brien & Tinashe).txt,Might Die Young (feat. Olivia O'Brien & Tinashe),3.0,30
+Clout (feat. 21 Savage),28,True,True,/app/songs/popularity_3/Clout (feat. 21 Savage) - .mp3,Clout (feat. 21 Savage) - ,3.0,/app/lyrics/popularity_3/Clout (feat. 21 Savage).txt,Clout (feat. 21 Savage),3.0,30
+War Lord,25,True,True,/app/songs/popularity_3/War Lord - .mp3,War Lord - ,3.0,/app/lyrics/popularity_3/War Lord.txt,War Lord,3.0,30
+Dagger Jacker,0,True,True,/app/songs/popularity_0/Dagger Jacker - .mp3,Dagger Jacker - ,0.0,/app/lyrics/popularity_0/Dagger Jacker.txt,Dagger Jacker,0.0,0
+Hideaway,52,True,True,/app/songs/popularity_3/Hideaway - .mp3,Hideaway - ,3.0,/app/lyrics/popularity_3/Hideaway.txt,Hideaway,3.0,30
+All Eyez feat. Jeremih,1,True,True,/app/songs/popularity_1/All Eyez feat. Jeremih - .mp3,All Eyez feat. Jeremih - ,1.0,/app/lyrics/popularity_1/All Eyez feat. Jeremih.txt,All Eyez feat. Jeremih,1.0,10
+Trust Nobody,5,True,True,/app/songs/popularity_1/Trust Nobody - .mp3,Trust Nobody - ,1.0,/app/lyrics/popularity_1/Trust Nobody.txt,Trust Nobody,1.0,10
+Just Say,5,True,True,/app/songs/popularity_1/Just Say - .mp3,Just Say - ,1.0,/app/lyrics/popularity_1/Just Say.txt,Just Say,1.0,10
+Devastated,8,True,True,/app/songs/popularity_1/Devastated - .mp3,Devastated - ,1.0,/app/lyrics/popularity_1/Devastated.txt,Devastated,1.0,10
+It's A Love Thing,3,True,True,/app/songs/popularity_1/It's A Love Thing - .mp3,It's A Love Thing - ,1.0,/app/lyrics/popularity_1/It's A Love Thing.txt,It's A Love Thing,1.0,10
+Hollis To Hollywood,2,True,True,/app/songs/popularity_1/Hollis To Hollywood - .mp3,Hollis To Hollywood - ,1.0,/app/lyrics/popularity_1/Hollis To Hollywood.txt,Hollis To Hollywood,1.0,10
+Lost on Me,44,True,True,/app/songs/popularity_3/Lost on Me - .mp3,Lost on Me - ,3.0,/app/lyrics/popularity_3/Lost on Me.txt,Lost on Me,3.0,30
+History Eraser,2,True,True,/app/songs/popularity_1/History Eraser - .mp3,History Eraser - ,1.0,/app/lyrics/popularity_1/History Eraser.txt,History Eraser,1.0,10
+We Used To Wait,22,True,True,/app/songs/popularity_3/We Used To Wait - .mp3,We Used To Wait - ,3.0,/app/lyrics/popularity_3/We Used To Wait.txt,We Used To Wait,3.0,30
+Post Break-Up Sex,2,True,True,/app/songs/popularity_1/Post Break-Up Sex - .mp3,Post Break-Up Sex - ,1.0,/app/lyrics/popularity_1/Post Break-Up Sex.txt,Post Break-Up Sex,1.0,10
+Sweet Disaster,7,True,True,/app/songs/popularity_1/Sweet Disaster - .mp3,Sweet Disaster - ,1.0,/app/lyrics/popularity_1/Sweet Disaster.txt,Sweet Disaster,1.0,10
+Enter Sandman,24,True,True,/app/songs/popularity_3/Enter Sandman - .mp3,Enter Sandman - ,3.0,/app/lyrics/popularity_3/Enter Sandman.txt,Enter Sandman,3.0,30
+Siga Boyando,0,True,True,/app/songs/popularity_0/Siga Boyando - .mp3,Siga Boyando - ,0.0,/app/lyrics/popularity_0/Siga Boyando.txt,Siga Boyando,0.0,0
+You Don't Know About Me,4,True,True,/app/songs/popularity_1/You Don't Know About Me - .mp3,You Don't Know About Me - ,1.0,/app/lyrics/popularity_1/You Don't Know About Me.txt,You Don't Know About Me,1.0,10
+Perfect Illusion,28,True,True,/app/songs/popularity_1/Perfect Illusion - .mp3,Perfect Illusion - ,1.0,/app/lyrics/popularity_1/Perfect Illusion.txt,Perfect Illusion,1.0,10
+Cómo Puedes Vivir Contigo Mismo?,0,True,True,/app/songs/popularity_0/Cómo Puedes Vivir Contigo Mismo? - .mp3,Cómo Puedes Vivir Contigo Mismo? - ,0.0,/app/lyrics/popularity_0/Cómo Puedes Vivir Contigo Mismo?.txt,Cómo Puedes Vivir Contigo Mismo?,0.0,0
+Selena,29,True,True,/app/songs/popularity_3/Selena - .mp3,Selena - ,3.0,/app/lyrics/popularity_3/Selena.txt,Selena,3.0,30
+Maldita Ingenuidad,26,True,True,/app/songs/popularity_3/Maldita Ingenuidad - .mp3,Maldita Ingenuidad - ,3.0,/app/lyrics/popularity_3/Maldita Ingenuidad.txt,Maldita Ingenuidad,3.0,30
+Best Part of Us,25,True,True,/app/songs/popularity_3/Best Part of Us - .mp3,Best Part of Us - ,3.0,/app/lyrics/popularity_3/Best Part of Us.txt,Best Part of Us,3.0,30
+Callin',4,True,True,/app/songs/popularity_1/Callin' - .mp3,Callin' - ,1.0,/app/lyrics/popularity_1/Callin'.txt,Callin',1.0,10
+Hands Dirty,2,True,True,/app/songs/popularity_1/Hands Dirty - .mp3,Hands Dirty - ,1.0,/app/lyrics/popularity_1/Hands Dirty.txt,Hands Dirty,1.0,10
+Un Poquito Mas,25,True,True,/app/songs/popularity_3/Un Poquito Mas - .mp3,Un Poquito Mas - ,3.0,/app/lyrics/popularity_3/Un Poquito Mas.txt,Un Poquito Mas,3.0,30
+Sophia,25,True,True,/app/songs/popularity_3/Sophia - .mp3,Sophia - ,3.0,/app/lyrics/popularity_3/Sophia.txt,Sophia,3.0,30
+Slight Work (feat. Big Sean),29,True,True,/app/songs/popularity_3/Slight Work (feat. Big Sean) - .mp3,Slight Work (feat. Big Sean) - ,3.0,/app/lyrics/popularity_3/Slight Work (feat. Big Sean).txt,Slight Work (feat. Big Sean),3.0,30
+Heard Em Say,22,True,True,/app/songs/popularity_3/Heard Em Say - .mp3,Heard Em Say - ,3.0,/app/lyrics/popularity_3/Heard Em Say.txt,Heard Em Say,3.0,30
+Ayy,29,True,True,/app/songs/popularity_3/Ayy - .mp3,Ayy - ,3.0,/app/lyrics/popularity_3/Ayy.txt,Ayy,3.0,30
+Química,30,True,True,/app/songs/popularity_3/Química - .mp3,Química - ,3.0,/app/lyrics/popularity_3/Química.txt,Química,3.0,30
+Halghe Tala(Moein),20,True,True,/app/songs/popularity_2/Halghe Tala(Moein) - .mp3,Halghe Tala(Moein) - ,2.0,/app/lyrics/popularity_2/Halghe Tala(Moein).txt,Halghe Tala(Moein),2.0,20
+Shahre Gham,20,True,True,/app/songs/popularity_2/Shahre Gham - .mp3,Shahre Gham - ,2.0,/app/lyrics/popularity_2/Shahre Gham.txt,Shahre Gham,2.0,20
+New Noise,3,True,True,/app/songs/popularity_1/New Noise - .mp3,New Noise - ,1.0,/app/lyrics/popularity_1/New Noise.txt,New Noise,1.0,10
+Where Did The Angels Go,1,True,True,/app/songs/popularity_1/Where Did The Angels Go - .mp3,Where Did The Angels Go - ,1.0,/app/lyrics/popularity_1/Where Did The Angels Go.txt,Where Did The Angels Go,1.0,10
+Bones,1,True,True,/app/songs/popularity_1/Bones - .mp3,Bones - ,1.0,/app/lyrics/popularity_1/Bones.txt,Bones,1.0,10
+thelove,0,True,True,/app/songs/popularity_0/thelove - .mp3,thelove - ,0.0,/app/lyrics/popularity_0/thelove.txt,thelove,0.0,0
+Super!,28,True,True,/app/songs/popularity_3/Super! - .mp3,Super! - ,3.0,/app/lyrics/popularity_3/Super!.txt,Super!,3.0,30
+Short Change Hero,9,True,True,/app/songs/popularity_1/Short Change Hero - .mp3,Short Change Hero - ,1.0,/app/lyrics/popularity_1/Short Change Hero.txt,Short Change Hero,1.0,10
+Tie Up the Tides,0,True,True,/app/songs/popularity_0/Tie Up the Tides - .mp3,Tie Up the Tides - ,0.0,/app/lyrics/popularity_0/Tie Up the Tides.txt,Tie Up the Tides,0.0,0
+The Feeling,42,True,True,/app/songs/popularity_1/Lost The Feeling - .mp3,Lost The Feeling - ,1.0,/app/lyrics/popularity_1/Lost The Feeling.txt,Lost The Feeling,1.0,10
+Number One,1,True,True,/app/songs/popularity_1/Number One - .mp3,Number One - ,1.0,/app/lyrics/popularity_1/Number One.txt,Number One,1.0,10
+Miracle Mile,6,True,True,/app/songs/popularity_1/Miracle Mile - .mp3,Miracle Mile - ,1.0,/app/lyrics/popularity_1/Miracle Mile.txt,Miracle Mile,1.0,10
+Everything Is Alright,22,True,True,/app/songs/popularity_3/Everything Is Alright - .mp3,Everything Is Alright - ,3.0,/app/lyrics/popularity_3/Everything Is Alright.txt,Everything Is Alright,3.0,30
+Wavey - VIP Mix,25,True,True,/app/songs/popularity_3/Wavey - VIP Mix - .mp3,Wavey - VIP Mix - ,3.0,/app/lyrics/popularity_3/Wavey - VIP Mix -.txt,Wavey - VIP Mix -,3.0,30
+Life Itself,9,True,True,/app/songs/popularity_1/Life Itself - .mp3,Life Itself - ,1.0,/app/lyrics/popularity_1/Life Itself.txt,Life Itself,1.0,10
+The Woods,8,True,True,/app/songs/popularity_1/The Woods - .mp3,The Woods - ,1.0,/app/lyrics/popularity_1/The Woods.txt,The Woods,1.0,10
+Violent Shiver,9,True,True,/app/songs/popularity_1/Violent Shiver - .mp3,Violent Shiver - ,1.0,/app/lyrics/popularity_1/Violent Shiver.txt,Violent Shiver,1.0,10
+Nightcall,8,True,True,/app/songs/popularity_1/Nightcall - .mp3,Nightcall - ,1.0,/app/lyrics/popularity_1/Nightcall.txt,Nightcall,1.0,10
+F E M A L E,1,True,True,/app/songs/popularity_1/F E M A L E - .mp3,F E M A L E - ,1.0,/app/lyrics/popularity_1/F E M A L E.txt,F E M A L E,1.0,10
+Little Numbers,9,True,True,/app/songs/popularity_1/Little Numbers - .mp3,Little Numbers - ,1.0,/app/lyrics/popularity_1/Little Numbers.txt,Little Numbers,1.0,10
+Moments Passed,7,True,True,/app/songs/popularity_1/Moments Passed - .mp3,Moments Passed - ,1.0,/app/lyrics/popularity_1/Moments Passed.txt,Moments Passed,1.0,10
+Fall in Deep,8,True,True,/app/songs/popularity_1/Fall in Deep - .mp3,Fall in Deep - ,1.0,/app/lyrics/popularity_1/Fall in Deep.txt,Fall in Deep,1.0,10

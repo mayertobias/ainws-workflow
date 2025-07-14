@@ -1,0 +1,61 @@
+{
+  "model_id": "Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d",
+  "model_type": "Ensemble",
+  "ensemble_models": [
+    "RandomForest",
+    "XGBoost"
+  ],
+  "strategy": "audio_only",
+  "pipeline_id": "pipeline_8ff2d12d",
+  "experiment_name": "Exp_AO_1",
+  "accuracy": 0.4875,
+  "n_features": 7,
+  "selected_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_tempo",
+    "audio_acousticness",
+    "audio_loudness",
+    "audio_speechiness"
+  ],
+  "feature_importance": {
+    "random_forest": {
+      "audio_energy": 0.13846003430870205,
+      "audio_valence": 0.13451334089471015,
+      "audio_danceability": 0.1796312142274583,
+      "audio_tempo": 0.1263105849172309,
+      "audio_acousticness": 0.13522327539517556,
+      "audio_loudness": 0.14181507660197953,
+      "audio_speechiness": 0.14404647365474355
+    },
+    "xgboost": {
+      "audio_energy": "0.13204654",
+      "audio_valence": "0.16218272",
+      "audio_danceability": "0.17440282",
+      "audio_tempo": "0.13322861",
+      "audio_acousticness": "0.118344344",
+      "audio_loudness": "0.13665427",
+      "audio_speechiness": "0.14314072"
+    },
+    "ensemble": {
+      "audio_energy": 0.13525328495992733,
+      "audio_valence": 0.14834802970505312,
+      "audio_danceability": 0.17701701615561072,
+      "audio_tempo": 0.12976959992178455,
+      "audio_acousticness": 0.12678380979693965,
+      "audio_loudness": 0.1392346746387469,
+      "audio_speechiness": 0.14359359599780863
+    }
+  },
+  "shap_feature_importance": {},
+  "training_timestamp": "2025-07-01T04:14:11.774571",
+  "mlflow_run_id": "17647eb9803742b8aaa459296910bb60",
+  "mlflow_experiment_id": "483713280673768284",
+  "model_paths": {
+    "ensemble_joblib": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/ensemble_model.joblib",
+    "ensemble_pkl": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/ensemble_model.pkl",
+    "random_forest": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/random_forest_model.joblib",
+    "xgboost": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/xgboost_model.joblib"
+  }
+}

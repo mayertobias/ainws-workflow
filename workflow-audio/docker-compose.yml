@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  # Workflow Audio Analysis Service with Persistent Storage
+  workflow-audio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./output:/app/output
+      - ./temp:/app/temp
+      - ../shared-models:/app/models  # Mount shared models directory
+    environment:
+      - PYTHONUNBUFFERED=1
+      - AUDIO_DEBUG=false
+      - AUDIO_LOG_LEVEL=INFO
+      # Database configuration for persistent storage
+      - AUDIO_DATABASE_URL=postgresql://postgres:postgres@postgres-audio:5432/workflow_audio
+      - AUDIO_REDIS_URL=redis://redis-audio:6379/0
+      - AUDIO_ENABLE_RESULT_PERSISTENCE=true
+      - AUDIO_ENABLE_FEATURE_CACHING=true
+      - AUDIO_ENABLE_IDEMPOTENCY=true
+      # Model paths
+      - ESSENTIA_MODELS_PATH=/app/models/essentia
+    depends_on:
+      postgres-audio:
+        condition: service_healthy
+      redis-audio:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - audio-network
+    restart: unless-stopped
+
+  # PostgreSQL Database for Audio Analysis Persistence
+  postgres-audio:
+    image: postgres:15-alpine
+    container_name: postgres-audio
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=workflow_audio
+    volumes:
+      - postgres_audio_data:/var/lib/postgresql/data/
+    ports:
+      - "5439:5432"  # Different port to avoid conflicts
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d workflow_audio"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - audio-network
+    restart: unless-stopped
+
+  # Redis for Caching and Idempotency
+  redis-audio:
+    image: redis:7-alpine
+    container_name: redis-audio
+    ports:
+      - "6386:6379"  # Different port to avoid conflicts
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_audio_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - audio-network
+    restart: unless-stopped
+
+volumes:
+  postgres_audio_data:
+  redis_audio_data:
+
+networks:
+  audio-network:
+    driver: bridge 

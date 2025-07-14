@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "created_at": "2024-12-28T10:30:00Z",
+    "version": "1.0", 
+    "description": "Quick audio-only feature vector for fast training",
+    "total_features": 5
+  },
+  "strategy": "audio_only",
+  "description": "Essential audio features for quick training with good baseline accuracy",
+  "selected_features_by_service": {
+    "audio": [
+      "audio_energy",
+      "audio_valence",
+      "audio_danceability",
+      "audio_tempo",
+      "audio_loudness"
+    ]
+  },
+  "selected_features": [
+    "audio_energy",
+    "audio_valence", 
+    "audio_danceability",
+    "audio_tempo",
+    "audio_loudness"
+  ],
+  "estimated_accuracy": "0.70-0.80",
+  "training_time": "2-3 minutes",
+  "use_cases": [
+    "Quick baseline training",
+    "Audio-only analysis",
+    "Fast prototyping",
+    "Resource-constrained environments"
+  ],
+  "notes": "Minimal but effective feature set for rapid training and baseline establishment."
+} 

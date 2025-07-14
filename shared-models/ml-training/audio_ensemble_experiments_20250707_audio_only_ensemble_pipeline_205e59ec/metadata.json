@@ -1,0 +1,518 @@
+{
+  "model_id": "audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec",
+  "model_type": "Enhanced_Ensemble_Musical",
+  "ensemble_models": [
+    "RandomForest",
+    "XGBoost"
+  ],
+  "strategy": "audio_only",
+  "pipeline_id": "pipeline_205e59ec",
+  "experiment_name": "audio_ensemble_experiments_20250707",
+  "accuracy": 0.99,
+  "n_features": 28,
+  "selected_features": [
+    "audio_tempo",
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_loudness",
+    "audio_speechiness",
+    "audio_acousticness",
+    "audio_instrumentalness",
+    "audio_liveness",
+    "audio_key",
+    "audio_mode",
+    "audio_brightness",
+    "audio_complexity",
+    "audio_warmth",
+    "audio_harmonic_strength",
+    "audio_mood_happy",
+    "audio_mood_sad",
+    "audio_mood_aggressive",
+    "audio_mood_relaxed",
+    "audio_mood_party",
+    "audio_mood_electronic",
+    "audio_primary_genre",
+    "audio_top_genre_1_prob",
+    "audio_top_genre_2_prob",
+    "rhythmic_appeal_index",
+    "emotional_impact_score",
+    "commercial_viability_index",
+    "sonic_sophistication_score"
+  ],
+  "feature_importance": {
+    "audio_tempo": 0.06869402993118869,
+    "audio_energy": 0.059311692407447957,
+    "audio_valence": 0.05088505947253315,
+    "audio_danceability": 0.041307381766109326,
+    "audio_loudness": 0.04236612456292036,
+    "audio_speechiness": 0.030319672496798743,
+    "audio_acousticness": 0.027041722557729256,
+    "audio_instrumentalness": 0.024231994912301776,
+    "audio_liveness": 0.04058751724375948,
+    "audio_key": 0.02799276686943846,
+    "audio_mode": 0.027227824238684455,
+    "audio_brightness": 0.04557068912755874,
+    "audio_complexity": 0.04062032674058687,
+    "audio_warmth": 0.04252288472596989,
+    "audio_harmonic_strength": 0.037353250332259495,
+    "audio_mood_happy": 0.011093223851007241,
+    "audio_mood_sad": 0.01534376631251998,
+    "audio_mood_aggressive": 0.015271220930002459,
+    "audio_mood_relaxed": 0.011324248628061124,
+    "audio_mood_party": 0.010323333837368193,
+    "audio_mood_electronic": 0.01531307838786313,
+    "audio_primary_genre": 0.037491509539312455,
+    "audio_top_genre_1_prob": 0.04261468710187812,
+    "audio_top_genre_2_prob": 0.033267921707227976,
+    "rhythmic_appeal_index": 0.05212627971113052,
+    "emotional_impact_score": 0.050298375689378894,
+    "commercial_viability_index": 0.05332015868965394,
+    "sonic_sophistication_score": 0.04617925822930926
+  },
+  "shap_feature_importance": {
+    "ensemble": {
+      "audio_tempo": 0.15381952428141793,
+      "audio_energy": 0.03364646036611505,
+      "audio_valence": 0.05087958531556999,
+      "audio_danceability": 0.027706250588105386,
+      "audio_loudness": 0.033182401462906096,
+      "audio_speechiness": 0.1293341420735,
+      "audio_acousticness": 0.022547523353146404,
+      "audio_instrumentalness": 0.0549146976702794,
+      "audio_liveness": 0.09966731901749343,
+      "audio_key": 0.011978023365004498,
+      "audio_mode": 0.014423294613500077,
+      "audio_brightness": 0.02560380087365348,
+      "audio_complexity": 0.021515492739241755,
+      "audio_warmth": 0.03572729873850025,
+      "audio_harmonic_strength": 0.015270755960517118,
+      "audio_mood_happy": 0.003585252519793563,
+      "audio_mood_sad": 0.07189892739517285,
+      "audio_mood_aggressive": 0.012276223917772071,
+      "audio_mood_relaxed": 0.03052413391557264,
+      "audio_mood_party": 0.0034190276497675755,
+      "audio_mood_electronic": 0.03654822419719522,
+      "audio_primary_genre": 1.1915886312750108,
+      "audio_top_genre_1_prob": 0.20095540742514223,
+      "audio_top_genre_2_prob": 0.03884201334029761,
+      "rhythmic_appeal_index": 0.02451751323218814,
+      "emotional_impact_score": 0.05234214663408593,
+      "commercial_viability_index": 0.11684107097625503,
+      "sonic_sophistication_score": 0.009575545336722197
+    },
+    "random_forest": {
+      "audio_tempo": 0.025745585279058666,
+      "audio_energy": 0.007746027663682807,
+      "audio_valence": 0.009149251738302023,
+      "audio_danceability": 0.0013772379651680196,
+      "audio_loudness": 0.040426265870650964,
+      "audio_speechiness": 0.008675507633900442,
+      "audio_acousticness": 0.00145629989634652,
+      "audio_instrumentalness": 0.0048781490937642065,
+      "audio_liveness": 0.0021874300793521453,
+      "audio_key": 0.005947220285152176,
+      "audio_mode": 0.001164289504707295,
+      "audio_brightness": 0.012806991510697838,
+      "audio_complexity": 0.0022967972961004477,
+      "audio_warmth": 0.004862917998609776,
+      "audio_harmonic_strength": 0.0023448510285189518,
+      "audio_mood_happy": 0.0011215295621426018,
+      "audio_mood_sad": 0.003330413029148342,
+      "audio_mood_aggressive": 0.0005243148731692249,
+      "audio_mood_relaxed": 0.006117718959101056,
+      "audio_mood_party": 0.00048470812824281826,
+      "audio_mood_electronic": 0.0017578200069616637,
+      "audio_primary_genre": 0.1308949673229703,
+      "audio_top_genre_1_prob": 0.03542012771840273,
+      "audio_top_genre_2_prob": 0.014540691267407509,
+      "rhythmic_appeal_index": 0.007018049069740609,
+      "emotional_impact_score": 0.0039319622726569,
+      "commercial_viability_index": 0.004424280457076338,
+      "sonic_sophistication_score": 0.004327216756648793
+    },
+    "xgboost": {
+      "audio_tempo": "0.28189343",
+      "audio_energy": "0.059923388",
+      "audio_valence": "0.09368872",
+      "audio_danceability": "0.054344673",
+      "audio_loudness": "0.03458996",
+      "audio_speechiness": "0.24999279",
+      "audio_acousticness": "0.045656096",
+      "audio_instrumentalness": "0.10503419",
+      "audio_liveness": "0.20148402",
+      "audio_key": "0.018062979",
+      "audio_mode": "0.02890162",
+      "audio_brightness": "0.03842095",
+      "audio_complexity": "0.044487633",
+      "audio_warmth": "0.06659187",
+      "audio_harmonic_strength": "0.030127745",
+      "audio_mood_happy": "0.007143745",
+      "audio_mood_sad": "0.1429922",
+      "audio_mood_aggressive": "0.024307309",
+      "audio_mood_relaxed": "0.06037036",
+      "audio_mood_party": "0.0067077233",
+      "audio_mood_electronic": "0.07241006",
+      "audio_primary_genre": "2.2522821",
+      "audio_top_genre_1_prob": "0.36649075",
+      "audio_top_genre_2_prob": "0.06314334",
+      "rhythmic_appeal_index": "0.045726147",
+      "emotional_impact_score": "0.106737725",
+      "commercial_viability_index": "0.22948974",
+      "sonic_sophistication_score": "0.019906145"
+    },
+    "categorical_analysis": {
+      "audio_features": {
+        "total_importance": 0,
+        "percentage_contribution": 0,
+        "feature_count": 0,
+        "top_features": {}
+      },
+      "lyrics_features": {
+        "total_importance": 0,
+        "percentage_contribution": 0,
+        "feature_count": 0,
+        "top_features": {}
+      }
+    },
+    "business_insights": {
+      "dominant_modality": "lyrics",
+      "dominance_strength": 0.0,
+      "audio_contribution": 0,
+      "lyrics_contribution": 0,
+      "prediction_driver": "lyrics_driven_hits",
+      "top_audio_predictors": [],
+      "top_lyrics_predictors": [],
+      "model_confidence_factors": {
+        "feature_coverage": 28,
+        "sample_reliability": 100,
+        "ensemble_agreement": "high"
+      }
+    },
+    "analysis_meta": {
+      "sample_size": 100,
+      "total_features": 28,
+      "models_analyzed": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "combination_method": "average",
+      "feature_categories": {
+        "audio": 0,
+        "lyrics": 0
+      }
+    }
+  },
+  "music_theory_analysis": {
+    "core_musical_features": {
+      "rhythmic_foundation": [
+        "audio_tempo",
+        "audio_danceability"
+      ],
+      "emotional_core": [
+        "audio_valence",
+        "audio_energy",
+        "lyrics_sentiment_positive",
+        "lyrics_sentiment_negative"
+      ],
+      "sonic_character": [
+        "audio_loudness",
+        "audio_brightness",
+        "audio_warmth",
+        "audio_complexity"
+      ],
+      "textural_elements": [
+        "audio_acousticness",
+        "audio_instrumentalness",
+        "audio_speechiness"
+      ],
+      "narrative_depth": [
+        "lyrics_complexity_score",
+        "lyrics_narrative_complexity",
+        "lyrics_unique_words"
+      ],
+      "genre_context": [
+        "audio_primary_genre",
+        "audio_top_genre_1_prob"
+      ]
+    },
+    "feature_weights": {
+      "audio_tempo": 1.5,
+      "audio_energy": 1.5,
+      "audio_valence": 1.5,
+      "audio_danceability": 1.5,
+      "audio_loudness": 1.2,
+      "audio_speechiness": 0.8,
+      "audio_acousticness": 0.8,
+      "audio_instrumentalness": 0.8,
+      "audio_liveness": 1.0,
+      "audio_key": 1.0,
+      "audio_mode": 1.0,
+      "audio_brightness": 1.2,
+      "audio_complexity": 1.2,
+      "audio_warmth": 1.2,
+      "audio_harmonic_strength": 1.0,
+      "audio_mood_happy": 1.0,
+      "audio_mood_sad": 1.0,
+      "audio_mood_aggressive": 1.0,
+      "audio_mood_relaxed": 1.0,
+      "audio_mood_party": 1.0,
+      "audio_mood_electronic": 1.0,
+      "audio_primary_genre": 0.8,
+      "audio_top_genre_1_prob": 0.8,
+      "audio_top_genre_2_prob": 0.8,
+      "rhythmic_appeal_index": 1.5,
+      "emotional_impact_score": 1.5,
+      "commercial_viability_index": 1.5,
+      "sonic_sophistication_score": 1.2
+    },
+    "alignment_score": 0.3759429776674426,
+    "engineered_features": [
+      "rhythmic_appeal_index",
+      "emotional_impact_score",
+      "commercial_viability_index",
+      "sonic_sophistication_score"
+    ],
+    "core_features_ratio": 0.25
+  },
+  "pca_analysis": {
+    "total_features": 28,
+    "components_for_80_variance": "10",
+    "components_for_90_variance": "14",
+    "components_for_95_variance": "17",
+    "feature_loadings": {
+      "PC1": {
+        "variance_explained": 0.17597453683980252,
+        "top_features": [
+          [
+            "audio_acousticness",
+            0.3483338232124457
+          ],
+          [
+            "sonic_sophistication_score",
+            0.34314365776119543
+          ],
+          [
+            "audio_brightness",
+            0.321028481795847
+          ],
+          [
+            "audio_warmth",
+            0.31416159501752744
+          ],
+          [
+            "audio_complexity",
+            0.2647872526071487
+          ]
+        ]
+      },
+      "PC2": {
+        "variance_explained": 0.16618484293282046,
+        "top_features": [
+          [
+            "commercial_viability_index",
+            0.3486679650519201
+          ],
+          [
+            "audio_mood_relaxed",
+            0.28436545836412136
+          ],
+          [
+            "emotional_impact_score",
+            0.2834294868265165
+          ],
+          [
+            "audio_danceability",
+            0.2701047079974594
+          ],
+          [
+            "audio_mood_party",
+            0.23684149058290657
+          ]
+        ]
+      },
+      "PC3": {
+        "variance_explained": 0.10301225197995,
+        "top_features": [
+          [
+            "audio_speechiness",
+            0.35855959719699526
+          ],
+          [
+            "audio_tempo",
+            0.3537632691064578
+          ],
+          [
+            "audio_complexity",
+            0.3092251170926992
+          ],
+          [
+            "sonic_sophistication_score",
+            0.28123191928280217
+          ],
+          [
+            "audio_danceability",
+            0.271967952829451
+          ]
+        ]
+      },
+      "PC4": {
+        "variance_explained": 0.08790974798865099,
+        "top_features": [
+          [
+            "audio_mode",
+            0.43806782200291094
+          ],
+          [
+            "audio_valence",
+            0.43419208410795274
+          ],
+          [
+            "audio_harmonic_strength",
+            0.299192360404743
+          ],
+          [
+            "audio_instrumentalness",
+            0.26013767126440207
+          ],
+          [
+            "audio_mood_happy",
+            0.2449576852943129
+          ]
+        ]
+      },
+      "PC5": {
+        "variance_explained": 0.07071248999498879,
+        "top_features": [
+          [
+            "audio_tempo",
+            0.39447946551391294
+          ],
+          [
+            "audio_danceability",
+            0.32400804130947136
+          ],
+          [
+            "rhythmic_appeal_index",
+            0.31900750177245196
+          ],
+          [
+            "audio_primary_genre",
+            0.27031317105211183
+          ],
+          [
+            "audio_instrumentalness",
+            0.2692470699468009
+          ]
+        ]
+      },
+      "PC6": {
+        "variance_explained": 0.05388313563590138,
+        "top_features": [
+          [
+            "audio_top_genre_1_prob",
+            0.568046370055591
+          ],
+          [
+            "audio_top_genre_2_prob",
+            0.5607148910020188
+          ],
+          [
+            "audio_mood_electronic",
+            0.4244271969839535
+          ],
+          [
+            "audio_complexity",
+            0.1558970568701818
+          ],
+          [
+            "audio_acousticness",
+            0.1522703677073216
+          ]
+        ]
+      }
+    },
+    "musical_patterns": {
+      "PC1": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.17597453683980252,
+        "features": [
+          "audio_acousticness",
+          "sonic_sophistication_score",
+          "audio_brightness",
+          "audio_warmth",
+          "audio_complexity"
+        ]
+      },
+      "PC2": {
+        "type": "\ud83c\udfb5 Engineered Musical",
+        "variance": 0.16618484293282046,
+        "features": [
+          "commercial_viability_index",
+          "audio_mood_relaxed",
+          "emotional_impact_score",
+          "audio_danceability",
+          "audio_mood_party"
+        ]
+      },
+      "PC3": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.10301225197995,
+        "features": [
+          "audio_speechiness",
+          "audio_tempo",
+          "audio_complexity",
+          "sonic_sophistication_score",
+          "audio_danceability"
+        ]
+      },
+      "PC4": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.08790974798865099,
+        "features": [
+          "audio_mode",
+          "audio_valence",
+          "audio_harmonic_strength",
+          "audio_instrumentalness",
+          "audio_mood_happy"
+        ]
+      },
+      "PC5": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.07071248999498879,
+        "features": [
+          "audio_tempo",
+          "audio_danceability",
+          "rhythmic_appeal_index",
+          "audio_primary_genre",
+          "audio_instrumentalness"
+        ]
+      },
+      "PC6": {
+        "type": "\ud83c\udfa7 Audio-Dominant",
+        "variance": 0.05388313563590138,
+        "features": [
+          "audio_top_genre_1_prob",
+          "audio_top_genre_2_prob",
+          "audio_mood_electronic",
+          "audio_complexity",
+          "audio_acousticness"
+        ]
+      }
+    },
+    "dimensionality_reduction_potential": {
+      "high": "10",
+      "medium": "14",
+      "conservative": "17"
+    }
+  },
+  "training_timestamp": "2025-07-07T10:51:15.517406",
+  "mlflow_run_id": "884f6714c51f473e9100ee136b9ed581",
+  "mlflow_experiment_id": "758458646233598700",
+  "model_paths": {
+    "ensemble_joblib": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/ensemble_model.joblib",
+    "ensemble_pkl": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/ensemble_model.pkl",
+    "random_forest": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/random_forest_model.joblib",
+    "xgboost": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/xgboost_model.joblib"
+  }
+}

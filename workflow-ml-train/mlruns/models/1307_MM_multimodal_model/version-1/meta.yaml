@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752385843607
+current_stage: None
+description: ''
+last_updated_timestamp: 1752385843607
+name: 1307_MM_multimodal_model
+run_id: 6cfd80064dad4a9d885ec1c28a1f312c
+run_link: ''
+source: /mlruns/917657262768203840/6cfd80064dad4a9d885ec1c28a1f312c/artifacts/model
+status: READY
+status_message: null
+storage_location: /mlruns/917657262768203840/6cfd80064dad4a9d885ec1c28a1f312c/artifacts/model
+user_id: null
+version: 1

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752248587759
+current_stage: None
+description: ''
+last_updated_timestamp: 1752248587759
+name: MM3_TEST_multimodal_ensemble_model
+run_id: 841cdb5342ff4891be09af058a07efd1
+run_link: ''
+source: /mlruns/520393141491738637/841cdb5342ff4891be09af058a07efd1/artifacts/ensemble_model
+status: READY
+status_message: null
+storage_location: /mlruns/520393141491738637/841cdb5342ff4891be09af058a07efd1/artifacts/ensemble_model
+user_id: null
+version: 1

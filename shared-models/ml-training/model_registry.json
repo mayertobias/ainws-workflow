@@ -1,0 +1,474 @@
+{
+  "latest_training": "audio_only_fixed_redis_20250627_121910",
+  "available_models": {
+    "audio_only": {
+      "version": "audio_only_fixed_redis_20250627_121910",
+      "model_path": "/app/models/ml-training/audio_only_ensemble_audio_only_fixed_redis_20250627_121910/model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_only_ensemble_audio_only_fixed_redis_20250627_121910/metadata.json",
+      "features_path": "/app/models/ml-training/audio_only_ensemble_audio_only_fixed_redis_20250627_121910/features.json",
+      "performance": {
+        "r2_score": -1.9537050624999992,
+        "mse": 1846.0656640624995
+      }
+    },
+    "test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695": {
+      "model_path": "/app/models/ml-training/test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695/model.joblib",
+      "metadata_path": "/app/models/ml-training/test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695/metadata.json",
+      "features_path": "/app/models/ml-training/test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695/features.json",
+      "performance": {
+        "accuracy": 0.4375,
+        "r2_score": 0.4375,
+        "mse": 0.5625
+      },
+      "model_type": "RandomForest",
+      "strategy": "audio_only",
+      "created_at": "2025-06-29T20:48:54.238592",
+      "mlflow_run_id": "1a8b9cfb56b740ae9efee32dde2de154"
+    },
+    "audio_ensemble_experiments_20250630_audio_only_ensemble_pipeline_5797040d": {
+      "model_path": "/app/models/ml-training/audio_ensemble_experiments_20250630_audio_only_ensemble_pipeline_5797040d/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_ensemble_experiments_20250630_audio_only_ensemble_pipeline_5797040d/metadata.json",
+      "features_path": "/app/models/ml-training/audio_ensemble_experiments_20250630_audio_only_ensemble_pipeline_5797040d/features.json",
+      "performance": {
+        "accuracy": 0.525,
+        "r2_score": 0.525,
+        "mse": 0.475
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-06-30T22:17:36.427496",
+      "mlflow_run_id": "33a29ec449f44ce3ac1e206493c657c8",
+      "has_shap_analysis": false
+    },
+    "Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d": {
+      "model_path": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/metadata.json",
+      "features_path": "/app/models/ml-training/Exp_AO_1_audio_only_ensemble_pipeline_8ff2d12d/features.json",
+      "performance": {
+        "accuracy": 0.4875,
+        "r2_score": 0.4875,
+        "mse": 0.5125
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-07-01T04:14:11.776818",
+      "mlflow_run_id": "17647eb9803742b8aaa459296910bb60",
+      "has_shap_analysis": false
+    },
+    "multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_30aed7cc": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_30aed7cc/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_30aed7cc/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_30aed7cc/features.json",
+      "performance": {
+        "accuracy": 0.4875,
+        "r2_score": 0.4875,
+        "mse": 0.5125
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-02T06:42:20.125175",
+      "mlflow_run_id": "cf2381d65e624bbfa4d5724322926567",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_97208bc4": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_97208bc4/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_97208bc4/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_97208bc4/features.json",
+      "performance": {
+        "accuracy": 0.5147058823529411,
+        "r2_score": 0.5147058823529411,
+        "mse": 0.4852941176470589
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-02T11:57:37.858308",
+      "mlflow_run_id": "e3ce0122db0a44c9b8abfe70d3059329",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_4c418ce8": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_4c418ce8/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_4c418ce8/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250702_multimodal_ensemble_pipeline_4c418ce8/features.json",
+      "performance": {
+        "accuracy": 0.5147058823529411,
+        "r2_score": 0.5147058823529411,
+        "mse": 0.4852941176470589
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-02T14:01:35.242771",
+      "mlflow_run_id": "c264d3b55c194895845c3e15a29da817",
+      "has_shap_analysis": true
+    },
+    "audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_ac936f35": {
+      "model_path": "/app/models/ml-training/audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_ac936f35/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_ac936f35/metadata.json",
+      "features_path": "/app/models/ml-training/audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_ac936f35/features.json",
+      "performance": {
+        "accuracy": 0.99,
+        "r2_score": 0.99,
+        "mse": 0.010000000000000009
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-07-06T04:42:14.609570",
+      "mlflow_run_id": "3ec9e60218b84c2a9fa821f776512daa",
+      "has_shap_analysis": true
+    },
+    "audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_45daad1f": {
+      "model_path": "/app/models/ml-training/audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_45daad1f/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_45daad1f/metadata.json",
+      "features_path": "/app/models/ml-training/audio_ensemble_experiments_20250706_audio_only_ensemble_pipeline_45daad1f/features.json",
+      "performance": {
+        "accuracy": 0.99,
+        "r2_score": 0.99,
+        "mse": 0.010000000000000009
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-07-06T04:52:00.160836",
+      "mlflow_run_id": "c20899f7ea9841b1aeb0be977fd161b9",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_ee03c52a": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_ee03c52a/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_ee03c52a/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_ee03c52a/features.json",
+      "performance": {
+        "accuracy": 0.9940476190476191,
+        "r2_score": 0.9940476190476191,
+        "mse": 0.005952380952380931
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-06T05:05:02.625158",
+      "mlflow_run_id": "b64a62e3aca64812a465e7348a671f88",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_19d34201": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_19d34201/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_19d34201/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250706_multimodal_ensemble_pipeline_19d34201/features.json",
+      "performance": {
+        "accuracy": 0.9940476190476191,
+        "r2_score": 0.9940476190476191,
+        "mse": 0.005952380952380931
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-06T06:22:20.963049",
+      "mlflow_run_id": "9871fb7a5e404db8a3fa44183ac85c18",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_0fcedfa8": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_0fcedfa8/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_0fcedfa8/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_0fcedfa8/features.json",
+      "performance": {
+        "accuracy": 0.9940476190476191,
+        "r2_score": 0.9940476190476191,
+        "mse": 0.005952380952380931
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-07T10:30:58.824878",
+      "mlflow_run_id": "e44b31d107b641408bdef5f5c6a8b95d",
+      "has_shap_analysis": true
+    },
+    "audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec": {
+      "model_path": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/metadata.json",
+      "features_path": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_205e59ec/features.json",
+      "performance": {
+        "accuracy": 0.99,
+        "r2_score": 0.99,
+        "mse": 0.010000000000000009
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-07-07T10:51:15.520105",
+      "mlflow_run_id": "884f6714c51f473e9100ee136b9ed581",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_9b307a6d": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_9b307a6d/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_9b307a6d/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250707_multimodal_ensemble_pipeline_9b307a6d/features.json",
+      "performance": {
+        "accuracy": 1.0,
+        "r2_score": 1.0,
+        "mse": 0.0
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-07T12:13:33.416825",
+      "mlflow_run_id": "aaed04f523424b00a5ae7c14321c365a",
+      "has_shap_analysis": true
+    },
+    "audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_ce3c4568": {
+      "model_path": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_ce3c4568/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_ce3c4568/metadata.json",
+      "features_path": "/app/models/ml-training/audio_ensemble_experiments_20250707_audio_only_ensemble_pipeline_ce3c4568/features.json",
+      "performance": {
+        "accuracy": 0.99,
+        "r2_score": 0.99,
+        "mse": 0.010000000000000009
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-07-07T12:17:06.303915",
+      "mlflow_run_id": "006f21fbdb4f43a8aa932f5fe6f955c6",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250708_multimodal_ensemble_pipeline_36b9c688": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250708_multimodal_ensemble_pipeline_36b9c688/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250708_multimodal_ensemble_pipeline_36b9c688/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250708_multimodal_ensemble_pipeline_36b9c688/features.json",
+      "performance": {
+        "accuracy": 1.0,
+        "r2_score": 1.0,
+        "mse": 0.0
+      },
+      "model_type": "Ensemble",
+      "ensemble_models": [
+        "RandomForest",
+        "XGBoost"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-08T19:40:10.034289",
+      "mlflow_run_id": "3e0592f0dcb549169267a555eea053a9",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_83ac1f76": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_83ac1f76/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_83ac1f76/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_83ac1f76/features.json",
+      "performance": {
+        "r2_score": 0.9465922154597162,
+        "mse": 0.0045400626895485885,
+        "rmse": 0.06737998730742377,
+        "mae": 0.05602962974289395,
+        "mape": 77325369.40632945
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-09T05:05:19.718455",
+      "mlflow_run_id": "f85d5db75f844529b43a9399fb96e3df",
+      "has_shap_analysis": true
+    },
+    "audio_ensemble_experiments_20250709_audio_only_ensemble_pipeline_b9846e75": {
+      "model_path": "/app/models/ml-training/audio_ensemble_experiments_20250709_audio_only_ensemble_pipeline_b9846e75/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/audio_ensemble_experiments_20250709_audio_only_ensemble_pipeline_b9846e75/metadata.json",
+      "features_path": "/app/models/ml-training/audio_ensemble_experiments_20250709_audio_only_ensemble_pipeline_b9846e75/features.json",
+      "performance": {
+        "r2_score": 0.9308871649430622,
+        "mse": 0.005987364800897247,
+        "rmse": 0.07737806408083138,
+        "mae": 0.061613141836059475,
+        "mape": 76240554.48651367
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "audio_only",
+      "created_at": "2025-07-09T06:33:09.829332",
+      "mlflow_run_id": "c4457991e9284a768b42f699d1daac65",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_49f90c39": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_49f90c39/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_49f90c39/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250709_multimodal_ensemble_pipeline_49f90c39/features.json",
+      "performance": {
+        "r2_score": 0.9473847559177612,
+        "mse": 0.004484207253636695,
+        "rmse": 0.06696422368426812,
+        "mae": 0.05587994584914234,
+        "mape": 73782876.53540725
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-09T11:17:12.240138",
+      "mlflow_run_id": "91064c6f4ada4178ad60105473df74b3",
+      "has_shap_analysis": true
+    },
+    "multimodal_ensemble_experiments_20250710_multimodal_ensemble_pipeline_2fda0be2": {
+      "model_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250710_multimodal_ensemble_pipeline_2fda0be2/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250710_multimodal_ensemble_pipeline_2fda0be2/metadata.json",
+      "features_path": "/app/models/ml-training/multimodal_ensemble_experiments_20250710_multimodal_ensemble_pipeline_2fda0be2/features.json",
+      "performance": {
+        "r2_score": 0.9470497203589711,
+        "mse": 0.004512761124461744,
+        "rmse": 0.0671770877938434,
+        "mae": 0.05604611511479997,
+        "mape": 74506593.39801154
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-10T17:07:59.431287",
+      "mlflow_run_id": "858a8ff5a141483a80e91e21edfbd232",
+      "has_shap_analysis": true
+    },
+    "test_skip_agreement_multimodal_ensemble_pipeline_f0a8ee62": {
+      "model_path": "/app/models/ml-training/test_skip_agreement_multimodal_ensemble_pipeline_f0a8ee62/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/test_skip_agreement_multimodal_ensemble_pipeline_f0a8ee62/metadata.json",
+      "features_path": "/app/models/ml-training/test_skip_agreement_multimodal_ensemble_pipeline_f0a8ee62/features.json",
+      "performance": {
+        "r2_score": 0.9459325259540452,
+        "mse": 0.004607975569280452,
+        "rmse": 0.06788207104442566,
+        "mae": 0.05690025693319113,
+        "mape": 76873996.91505861
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-11T01:39:18.983706",
+      "mlflow_run_id": "46ecb989474e47d7b139c5189e3cb5e9",
+      "has_shap_analysis": true
+    },
+    "MM_UI_1_multimodal_ensemble_pipeline_4a1f31dd": {
+      "model_path": "/app/models/ml-training/MM_UI_1_multimodal_ensemble_pipeline_4a1f31dd/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/MM_UI_1_multimodal_ensemble_pipeline_4a1f31dd/metadata.json",
+      "features_path": "/app/models/ml-training/MM_UI_1_multimodal_ensemble_pipeline_4a1f31dd/features.json",
+      "performance": {
+        "r2_score": 0.941698010002277,
+        "mse": 0.004968868072542051,
+        "rmse": 0.07049019841468777,
+        "mae": 0.05878304560825574,
+        "mape": 81199028.4832103
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-11T01:46:24.697573",
+      "mlflow_run_id": "b6cc0c104b3a419b8e9c52311a8b5d38",
+      "has_shap_analysis": true
+    },
+    "MM2_multimodal_ensemble_pipeline_7d7bbdaa": {
+      "model_path": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/metadata.json",
+      "features_path": "/app/models/ml-training/MM2_multimodal_ensemble_pipeline_7d7bbdaa/features.json",
+      "performance": {
+        "r2_score": 0.9459325259540452,
+        "mse": 0.004607975569280452,
+        "rmse": 0.06788207104442566,
+        "mae": 0.05690025693319113,
+        "mape": 76873996.91505861
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-11T12:50:10.654943",
+      "mlflow_run_id": "98f129e60167475fb25fdced4a8f4f8d",
+      "has_shap_analysis": true
+    },
+    "MM3_TEST_multimodal_ensemble_pipeline_233119e0": {
+      "model_path": "/app/models/ml-training/MM3_TEST_multimodal_ensemble_pipeline_233119e0/ensemble_model.joblib",
+      "metadata_path": "/app/models/ml-training/MM3_TEST_multimodal_ensemble_pipeline_233119e0/metadata.json",
+      "features_path": "/app/models/ml-training/MM3_TEST_multimodal_ensemble_pipeline_233119e0/features.json",
+      "performance": {
+        "r2_score": 0.9483451256951313,
+        "mse": 0.0044023584055134166,
+        "rmse": 0.06635027057603772,
+        "mae": 0.055298389232327425,
+        "mape": 75417533.89083149
+      },
+      "model_type": "Ensemble",
+      "task_type": "regression",
+      "ensemble_models": [
+        "RandomForestRegressor",
+        "XGBRegressor"
+      ],
+      "strategy": "multimodal",
+      "created_at": "2025-07-11T15:43:07.952104",
+      "mlflow_run_id": "841cdb5342ff4891be09af058a07efd1",
+      "has_shap_analysis": true
+    }
+  },
+  "prediction_strategy": "smart_ensemble",
+  "created_at": "2025-06-27T12:22:14.540620",
+  "last_updated": "2025-07-11T15:43:07.952114"
+}

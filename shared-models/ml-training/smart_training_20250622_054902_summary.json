@@ -1,0 +1,8 @@
+{
+  "training_id": "smart_training_20250622_054902",
+  "status": "training",
+  "strategy": "smart_ensemble",
+  "models_trained": {},
+  "performance_metrics": {},
+  "timestamp": "2025-06-22T05:49:02.583312"
+}

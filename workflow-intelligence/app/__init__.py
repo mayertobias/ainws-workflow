@@ -1,0 +1,3 @@
+"""
+workflow-intelligence application package
+""" 

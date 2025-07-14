@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752198384836
+current_stage: None
+description: ''
+last_updated_timestamp: 1752198384836
+name: MM_UI_1_multimodal_model
+run_id: b6cc0c104b3a419b8e9c52311a8b5d38
+run_link: ''
+source: /mlruns/571363228862957206/b6cc0c104b3a419b8e9c52311a8b5d38/artifacts/model
+status: READY
+status_message: null
+storage_location: /mlruns/571363228862957206/b6cc0c104b3a419b8e9c52311a8b5d38/artifacts/model
+user_id: null
+version: 1

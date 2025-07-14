@@ -1,0 +1,34 @@
+{
+  "model_id": "test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695",
+  "model_type": "RandomForest",
+  "strategy": "audio_only",
+  "pipeline_id": "pipeline_526fe695",
+  "experiment_name": "test_pipeline_resumption_after_rebuild",
+  "accuracy": 0.4375,
+  "n_features": 7,
+  "selected_features": [
+    "audio_energy",
+    "audio_valence",
+    "audio_danceability",
+    "audio_tempo",
+    "audio_acousticness",
+    "audio_instrumentalness",
+    "audio_liveness"
+  ],
+  "feature_importance": {
+    "audio_energy": 0.13893891511757134,
+    "audio_valence": 0.1330518030285763,
+    "audio_danceability": 0.18721511714071873,
+    "audio_tempo": 0.1239024785902492,
+    "audio_acousticness": 0.1354905805207779,
+    "audio_instrumentalness": 0.14059948304025205,
+    "audio_liveness": 0.14080162256185452
+  },
+  "training_timestamp": "2025-06-29T20:48:54.236269",
+  "mlflow_run_id": "1a8b9cfb56b740ae9efee32dde2de154",
+  "mlflow_experiment_id": "170099965644103441",
+  "model_paths": {
+    "joblib": "/app/models/ml-training/test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695/model.joblib",
+    "pkl": "/app/models/ml-training/test_pipeline_resumption_after_rebuild_audio_only_pipeline_526fe695/model.pkl"
+  }
+}
