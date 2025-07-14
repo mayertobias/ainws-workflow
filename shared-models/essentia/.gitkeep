@@ -1,0 +1,2 @@
+# This file ensures the essentia models directory is tracked in git
+# Upload your .pb and .pkl model files here
